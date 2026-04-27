@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VocabFloat - 置顶悬浮，背词更轻松</title>
+    <meta name="description" content="macOS 桌面悬浮单词学习工具，置顶显示单词卡片，帮助高效记忆英语词汇">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --bg: #313244;
+            --bg-secondary: #45475a;
+            --text: #cdd6f4;
+            --text-secondary: #6c7088;
+            --accent: #89b4fa;
+            --accent-hover: #b4befe;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Segoe UI", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+        }
+        .btn-primary {
+            background-color: var(--accent);
+            color: var(--bg);
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            transform: scale(1.02);
+        }
+        .btn-secondary {
+            background-color: var(--bg-secondary);
+            color: var(--text);
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.2s;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn-secondary:hover {
+            background-color: #585b70;
+        }
+        .section { padding: 80px 24px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .card {
+            background-color: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 24px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade { animation: fadeIn 0.6s ease-out; }
+        .mock-card {
+            background: linear-gradient(135deg, #1e1e2e 0%, #313244 100%);
+            border: 1px solid #45475a;
+            border-radius: 16px;
+            padding: 20px 24px;
+            text-align: left;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="section min-h-screen flex items-center">
+        <div class="container text-center">
+            <h1 class="text-5xl font-bold mb-4">VocabFloat</h1>
+            <p class="text-2xl text-[--accent] mb-6">置顶悬浮，背词更轻松</p>
+            <p class="text-[--text-secondary] max-w-2xl mx-auto mb-8">
+                macOS 桌面悬浮单词学习工具，置顶显示单词卡片，帮助高效记忆英语词汇
+            </p>
+            <div class="flex gap-4 justify-center flex-wrap">
+                <a href="#download" class="btn-primary">立即下载</a>
+                <a href="#features" class="btn-secondary">查看功能</a>
+            </div>
+            <!-- 模拟悬浮窗卡片 -->
+            <div class="mt-12 max-w-md mx-auto mock-card animate-fade">
+                <div class="text-sm text-[--text-secondary] text-left mb-1">Vocabulary</div>
+                <div class="text-3xl font-bold text-left my-2 text-white">persistent</div>
+                <div class="text-lg text-[--accent] text-left">/pərˈsɪstənt/</div>
+                <div class="text-[--text-secondary] text-left mt-2">adj. 坚持的；持续的</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section bg-[--bg-secondary]">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-12">核心功能</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Feature 1 -->
+                <div class="card">
+                    <div class="text-3xl mb-3">📌</div>
+                    <h3 class="text-xl font-semibold mb-2">悬浮单词卡片</h3>
+                    <p class="text-[--text-secondary]">macOS 置顶窗口，不干扰日常操作</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="card">
+                    <div class="text-3xl mb-3">🔄</div>
+                    <h3 class="text-xl font-semibold mb-2">自动轮播</h3>
+                    <p class="text-[--text-secondary]">可配置间隔时间，循环随机展示单词</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="card">
+                    <div class="text-3xl mb-3">🎨</div>
+                    <h3 class="text-xl font-semibold mb-2">三套主题</h3>
+                    <p class="text-[--text-secondary]">暗色 / 浅色 / 跟随系统</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="card">
+                    <div class="text-3xl mb-3">🔊</div>
+                    <h3 class="text-xl font-semibold mb-2">语音朗读</h3>
+                    <p class="text-[--text-secondary]">macOS TTS 发音，支持连续点击排队播放</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="card">
+                    <div class="text-3xl mb-3">📚</div>
+                    <h3 class="text-xl font-semibold mb-2">生词本管理</h3>
+                    <p class="text-[--text-secondary]">添加/删除单词，输入自动补全翻译、音标、例句</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="card">
+                    <div class="text-3xl mb-3">📊</div>
+                    <h3 class="text-xl font-semibold mb-2">学习统计</h3>
+                    <p class="text-[--text-secondary]">每日新记单词数、记忆日期记录</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Theme Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-4">主题展示</h2>
+            <p class="text-[--text-secondary] text-center mb-12">多种主题，随心切换</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card text-center">
+                    <div class="bg-[#313244] rounded-lg p-6 mb-4">
+                        <span class="text-[#cdd6f4] text-lg">暗色主题</span>
+                    </div>
+                    <p class="text-[--text-secondary]">Catppuccin Mocha</p>
+                </div>
+                <div class="card text-center">
+                    <div class="bg-[#eff1f5] rounded-lg p-6 mb-4">
+                        <span class="text-[#4c4f69] text-lg">浅色主题</span>
+                    </div>
+                    <p class="text-[--text-secondary]">Catppuccin Latte</p>
+                </div>
+                <div class="card text-center">
+                    <div class="bg-gradient-to-r from-[#313244] to-[#eff1f5] rounded-lg p-6 mb-4">
+                        <span class="text-white text-lg">跟随系统</span>
+                    </div>
+                    <p class="text-[--text-secondary]">自动适配系统主题</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section bg-[--bg-secondary]">
+        <div class="container text-center">
+            <h2 class="text-3xl font-bold mb-4">价格与试用</h2>
+            <div class="max-w-md mx-auto card mt-8">
+                <p class="text-5xl font-bold text-[--accent] mb-2">¥5</p>
+                <p class="text-[--text-secondary] mb-4">一次付费，终身使用</p>
+                <p class="text-sm text-[--text-secondary] mb-6">免费试用 7 天，不满意退款</p>
+                <a href="#download" class="btn-primary block w-full">立即下载试用</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="section">
+        <div class="container text-center">
+            <h2 class="text-3xl font-bold mb-12">下载</h2>
+            <div class="flex flex-wrap gap-6 justify-center">
+                <div class="card flex flex-col items-center min-w-[200px]">
+                    <h3 class="text-xl font-semibold">macOS</h3>
+                    <p class="text-[--text-secondary] text-sm">支持 macOS 12+</p>
+                    <p class="text-[--text-secondary] text-sm">Apple Silicon / Intel</p>
+                </div>
+                <div class="card flex flex-col items-center min-w-[200px]">
+                    <h3 class="text-xl font-semibold">Windows</h3>
+                    <p class="text-[--text-secondary] text-sm">支持 Windows 10+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section bg-[--bg-secondary] py-8">
+        <div class="container text-center">
+            <p class="text-[--text-secondary] mb-4">
+                联系反馈：
+                <a href="mailto:vocab_float@firegod.cn" class="text-[--accent] hover:underline">vocab_float@firegod.cn</a>
+            </p>
+            <p class="text-[--text-secondary] text-sm">VocabFloat v1.0.7</p>
+            <p class="text-[--text-secondary] text-sm">© 2026 Firegod.cn. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

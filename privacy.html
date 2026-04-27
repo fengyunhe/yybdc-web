@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私策略 - VocabFloat</title>
+    <meta name="description" content="VocabFloat 隐私策略">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --bg: #313244;
+            --bg-secondary: #45475a;
+            --text: #cdd6f4;
+            --text-secondary: #6c7088;
+            --accent: #89b4fa;
+            --accent-hover: #b4befe;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Microsoft YaHei", "Segoe UI", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+        }
+        .section { padding: 60px 24px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { font-size: 2.5rem; font-weight: 700; text-align: center; margin-bottom: 0.5rem; }
+        h2 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; }
+        p, li { line-height: 1.8; color: var(--text); }
+        ul { padding-left: 1.5rem; }
+        li { margin-bottom: 0.5rem; }
+        .date { text-align: center; color: var(--text-secondary); font-size: 0.9rem; }
+        .nav-link {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .nav-link:hover { color: var(--accent-hover); }
+    </style>
+</head>
+<body>
+    <nav class="section pb-0">
+        <div class="container">
+            <a href="index.html" class="nav-link">← 返回首页</a>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h1>VocabFloat 隐私策略</h1>
+            <p class="date">生效日期：2026年4月27日</p>
+
+            <p class="mt-8">欢迎您使用 VocabFloat（词汇悬浮窗）！本隐私策略旨在向您说明我们在使用这款应用时如何收集、使用、存储和保护您的个人信息。</p>
+
+            <h2>一、信息收集</h2>
+            <p>我们仅收集为您提供服务所必需的最少信息：</p>
+            <ul>
+                <li><strong>词汇数据</strong>：您添加或导入的单词、释义、例句等学习内容</li>
+                <li><strong>学习记录</strong>：已记住/未记住的单词标记、学习进度</li>
+                <li><strong>应用设置</strong>：主题偏好、显示间隔、发音设置等配置信息</li>
+            </ul>
+
+            <h2>二、信息使用</h2>
+            <p>我们收集的信息仅用于：</p>
+            <ul>
+                <li>提供核心学习功能：显示单词、释义、例句，跟踪学习进度</li>
+                <li>个性化体验：根据您的设置调整界面主题、显示间隔等</li>
+                <li>学习分析：统计已记住/未记住的单词数量，帮助您了解学习进度</li>
+            </ul>
+
+            <h2>三、数据存储与安全</h2>
+            <ul>
+                <li><strong>存储位置</strong>：<code>~/.yybdc/</code> 目录（用户主目录下的隐藏文件夹）</li>
+                <li><strong>离线使用</strong>：本应用完全离线运行，无需网络连接即可使用全部功能</li>
+                <li><strong>本地保护</strong>：数据仅存储在您的设备上，不上传至任何服务器</li>
+                <li><strong>备份导出</strong>：您可以随时导出数据备份或导入恢复</li>
+            </ul>
+
+            <h2>四、第三方服务</h2>
+            <p>本应用的在线功能依赖以下第三方服务：</p>
+            <ul>
+                <li><strong>Free Dictionary API</strong> (dictionaryapi.dev)：获取单词释义、例句、音标
+                    <ul>
+                        <li>仅在您主动查询新单词时调用</li>
+                        <li>仅发送您输入的查询单词，不包含其他个人信息</li>
+                        <li>遵循该服务的 Privacy Policy</li>
+                    </ul>
+                </li>
+                <li><strong>GitHub API</strong>：检查应用更新
+                    <ul>
+                        <li>仅发送版本检查请求，不包含任何个人信息</li>
+                        <li>您的 IP 地址可能被记录用于速率限制</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>五、语音功能</h2>
+            <p>发音功能使用系统自带语音服务：</p>
+            <ul>
+                <li>macOS：使用系统 say 命令</li>
+                <li>Windows：使用系统 SAPI 语音合成</li>
+                <li>不收集或传输任何语音数据</li>
+            </ul>
+
+            <h2>六、权限说明</h2>
+            <p>本应用无需特殊权限即可运行。桌面悬浮窗功能依赖系统窗口管理权限。</p>
+
+            <h2>七、变更与更新</h2>
+            <p>我们将通过应用内通知或发布页面告知隐私策略的更新。如有重大变更，我们将明确通知您并获取您的继续使用视为同意。</p>
+
+            <h2>八、联系我们</h2>
+            <p>如您对本隐私策略有任何疑问，请通过以下方式联系我们：</p>
+            <ul>
+                <li>网站：<a href="https://vocab-float.firegod.cn" class="nav-link" target="_blank">vocab-float.firegod.cn</a></li>
+            </ul>
+
+            <p class="text-center text-[--text-secondary] text-sm mt-12">© 2026 Firegod.cn 保留所有权利。</p>
+        </div>
+    </section>
+</body>
+</html>
