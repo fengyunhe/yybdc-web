@@ -182,16 +182,19 @@
     <!-- Download Section -->
     <section id="download" class="section">
         <div class="container text-center">
-            <h2 class="text-3xl font-bold mb-12">下载</h2>
+            <h2 class="text-3xl font-bold mb-4">下载</h2>
+            <p id="version-display" class="text-[--text-secondary] mb-12"></p>
             <div class="flex flex-wrap gap-6 justify-center">
                 <div class="card flex flex-col items-center min-w-[200px]">
                     <h3 class="text-xl font-semibold">macOS</h3>
                     <p class="text-[--text-secondary] text-sm">支持 macOS 12+</p>
-                    <p class="text-[--text-secondary] text-sm">Apple Silicon / Intel</p>
+                    <p class="text-[--text-secondary] text-sm mb-4">Apple Silicon / Intel</p>
+                    <a id="macos-link" href="#" class="btn-primary">下载 DMG</a>
                 </div>
                 <div class="card flex flex-col items-center min-w-[200px]">
                     <h3 class="text-xl font-semibold">Windows</h3>
-                    <p class="text-[--text-secondary] text-sm">支持 Windows 10+</p>
+                    <p class="text-[--text-secondary] text-sm mb-4">支持 Windows 10+</p>
+                    <a id="windows-link" href="#" class="btn-primary">下载 EXE</a>
                 </div>
             </div>
         </div>
@@ -208,5 +211,26 @@
             <p class="text-[--text-secondary] text-sm">© 2026 Firegod.cn. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+    (async function() {
+        try {
+            const res = await fetch("https://raw.githubusercontent.com/fengyunhe/yybdc-web/main/latest-release.json");
+            if (!res.ok) return;
+            const data = await res.json();
+
+            const versionDisplay = document.getElementById("version-display");
+            if (versionDisplay) versionDisplay.textContent = "最新版本: " + data.version;
+
+            const macosLink = document.getElementById("macos-link");
+            if (macosLink && data.macos_url) macosLink.href = data.macos_url;
+
+            const windowsLink = document.getElementById("windows-link");
+            if (windowsLink && data.windows_url) windowsLink.href = data.windows_url;
+        } catch (e) {
+            console.error("Failed to load release info:", e);
+        }
+    })();
+    </script>
 </body>
 </html>
