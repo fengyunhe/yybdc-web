@@ -1,7 +1,9 @@
 {
-  "version": "v1.0.30",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.30/VocabFloat-v1.0.30-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.30/VocabFloat.exe",
-  "release_notes": "Automated release",
-  "updated_at": "2026-05-01T07:56:53Z"
+  "version": "v1.0.31",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.31/VocabFloat-v1.0.31-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.31/VocabFloat.exe",
+  "release_notes": "
+### Fixed
+- 修复发布工作流中重复推送同名标签时 Release 资源不可删除的问题，创建前先清理已有 Release",
+  "updated_at": "2026-05-01T09:23:20Z"
 }
