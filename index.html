@@ -6,122 +6,36 @@
     <title>VocabFloat - 置顶悬浮，背词更轻松</title>
     <meta name="description" content="macOS 桌面悬浮单词学习工具，置顶显示单词卡片，帮助高效记忆英语词汇">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        :root {
-            --bg: #313244;
-            --bg-secondary: #45475a;
-            --text: #cdd6f4;
-            --text-secondary: #6c7088;
-            --accent: #89b4fa;
-            --accent-hover: #b4befe;
-        }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Segoe UI", sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-        }
-        .btn-primary {
-            background-color: var(--accent);
-            color: var(--bg);
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.2s;
-            display: inline-block;
-            text-decoration: none;
-        }
-        .btn-primary:hover {
-            background-color: var(--accent-hover);
-            transform: scale(1.02);
-        }
-        .btn-secondary {
-            background-color: var(--bg-secondary);
-            color: var(--text);
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: 500;
-            transition: all 0.2s;
-            display: inline-block;
-            text-decoration: none;
-        }
-        .btn-secondary:hover {
-            background-color: #585b70;
-        }
-        .section { padding: 80px 24px; }
-        .container { max-width: 1200px; margin: 0 auto; }
-        .card {
-            background-color: var(--bg-secondary);
-            border-radius: 12px;
-            padding: 24px;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade { animation: fadeIn 0.6s ease-out; }
-        .mock-card {
-            background: linear-gradient(135deg, #1e1e2e 0%, #313244 100%);
-            border: 1px solid #45475a;
-            border-radius: 16px;
-            padding: 20px 24px;
-            text-align: left;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-        }
-        .faq-item {
-            border-bottom: 1px solid #45475a;
-        }
-        .faq-item:last-child {
-            border-bottom: none;
-        }
-        .faq-question {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-            padding: 20px 0;
-            user-select: none;
-        }
-        .faq-question:hover {
-            color: var(--accent);
-        }
-        .faq-icon {
-            transition: transform 0.3s ease;
-            flex-shrink: 0;
-            margin-left: 16px;
-            font-size: 1.2rem;
-        }
-        .faq-item.active .faq-icon {
-            transform: rotate(45deg);
-        }
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-            color: var(--text-secondary);
-            line-height: 1.8;
-        }
-        .faq-item.active .faq-answer {
-            max-height: 200px;
-            padding-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <a href="#" class="navbar-brand">Vocab<span>Float</span></a>
+            <ul class="navbar-links">
+                <li><a href="#features">功能</a></li>
+                <li><a href="#pricing">价格</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#download">下载</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
-    <section class="section min-h-screen flex items-center">
+    <section class="section min-h-screen flex items-center hero-bg">
         <div class="container text-center">
-            <h1 class="text-5xl font-bold mb-4">VocabFloat</h1>
-            <p class="text-2xl text-[--accent] mb-6">置顶悬浮，背词更轻松</p>
-            <p class="text-[--text-secondary] max-w-2xl mx-auto mb-8">
+            <h1 class="text-6xl font-bold mb-4 animate-fade">VocabFloat</h1>
+            <p class="text-2xl text-[--accent] mb-6 animate-fade-delay">置顶悬浮，背词更轻松</p>
+            <p class="text-[--text-secondary] max-w-2xl mx-auto mb-10 text-lg animate-fade-delay">
                 macOS 桌面悬浮单词学习工具，置顶显示单词卡片，帮助高效记忆英语词汇
             </p>
-            <div class="flex gap-4 justify-center flex-wrap">
+            <div class="flex gap-4 justify-center flex-wrap animate-fade-delay">
                 <a href="#download" class="btn-primary">立即下载</a>
                 <a href="#features" class="btn-secondary">查看功能</a>
             </div>
             <!-- 模拟悬浮窗卡片 -->
-            <div class="mt-12 max-w-md mx-auto mock-card animate-fade">
+            <div class="mt-16 max-w-md mx-auto mock-card animate-float">
                 <div class="text-sm text-[--text-secondary] text-left mb-1">Vocabulary</div>
                 <div class="text-3xl font-bold text-left my-2 text-white">persistent</div>
                 <div class="text-lg text-[--accent] text-left">/pərˈsɪstənt/</div>
@@ -131,43 +45,44 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="section bg-[--bg-secondary]">
+    <section id="features" class="section">
         <div class="container">
-            <h2 class="text-3xl font-bold text-center mb-12">核心功能</h2>
+            <h2 class="section-title scroll-animate">核心功能</h2>
+            <p class="section-subtitle scroll-animate">为高效背词而设计的每一个细节</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Feature 1 -->
-                <div class="card">
-                    <div class="text-3xl mb-3">📌</div>
+                <div class="card scroll-animate">
+                    <div class="feature-icon">📌</div>
                     <h3 class="text-xl font-semibold mb-2">悬浮单词卡片</h3>
                     <p class="text-[--text-secondary]">macOS 置顶窗口，不干扰日常操作</p>
                 </div>
                 <!-- Feature 2 -->
-                <div class="card">
-                    <div class="text-3xl mb-3">🔄</div>
+                <div class="card scroll-animate">
+                    <div class="feature-icon">🔄</div>
                     <h3 class="text-xl font-semibold mb-2">自动轮播</h3>
                     <p class="text-[--text-secondary]">可配置间隔时间，循环随机展示单词</p>
                 </div>
                 <!-- Feature 3 -->
-                <div class="card">
-                    <div class="text-3xl mb-3">🎨</div>
+                <div class="card scroll-animate">
+                    <div class="feature-icon">🎨</div>
                     <h3 class="text-xl font-semibold mb-2">三套主题</h3>
                     <p class="text-[--text-secondary]">暗色 / 浅色 / 跟随系统</p>
                 </div>
                 <!-- Feature 4 -->
-                <div class="card">
-                    <div class="text-3xl mb-3">🔊</div>
+                <div class="card scroll-animate">
+                    <div class="feature-icon">🔊</div>
                     <h3 class="text-xl font-semibold mb-2">语音朗读</h3>
                     <p class="text-[--text-secondary]">macOS TTS 发音，支持连续点击排队播放</p>
                 </div>
                 <!-- Feature 5 -->
-                <div class="card">
-                    <div class="text-3xl mb-3">📚</div>
+                <div class="card scroll-animate">
+                    <div class="feature-icon">📚</div>
                     <h3 class="text-xl font-semibold mb-2">生词本管理</h3>
                     <p class="text-[--text-secondary]">添加/删除单词，输入自动补全翻译、音标、例句</p>
                 </div>
                 <!-- Feature 6 -->
-                <div class="card">
-                    <div class="text-3xl mb-3">📊</div>
+                <div class="card scroll-animate">
+                    <div class="feature-icon">📊</div>
                     <h3 class="text-xl font-semibold mb-2">学习统计</h3>
                     <p class="text-[--text-secondary]">每日新记单词数、记忆日期记录</p>
                 </div>
@@ -363,6 +278,32 @@
             faqItem.classList.add("active");
         }
     }
+
+    // 导航栏滚动效果
+    window.addEventListener("scroll", function() {
+        var navbar = document.getElementById("navbar");
+        if (navbar) {
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        }
+    });
+
+    // 滚动动画：元素进入视口时添加 visible 类
+    var scrollObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                scrollObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll(".scroll-animate").forEach(function(el) {
+        scrollObserver.observe(el);
+    });
     </script>
 </body>
 </html>
