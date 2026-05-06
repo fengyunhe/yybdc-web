@@ -68,6 +68,43 @@
             text-align: left;
             box-shadow: 0 8px 32px rgba(0,0,0,0.3);
         }
+        .faq-item {
+            border-bottom: 1px solid #45475a;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 20px 0;
+            user-select: none;
+        }
+        .faq-question:hover {
+            color: var(--accent);
+        }
+        .faq-icon {
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+            margin-left: 16px;
+            font-size: 1.2rem;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -179,6 +216,17 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-4">常见问题</h2>
+            <p class="text-[--text-secondary] text-center mb-12">如有其他疑问，请联系 <a href="mailto:vocab_float@firegod.cn" class="text-[--accent] hover:underline">vocab_float@firegod.cn</a></p>
+            <div class="max-w-2xl mx-auto card" id="faq-list">
+                <p class="text-[--text-secondary] text-center py-4">加载中…</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Download Section -->
     <section id="download" class="section">
         <div class="container text-center">
@@ -190,11 +238,19 @@
                     <p class="text-[--text-secondary] text-sm">支持 macOS 12+</p>
                     <p class="text-[--text-secondary] text-sm mb-4">Apple Silicon / Intel</p>
                     <a id="macos-link" href="#" class="btn-primary">下载 DMG</a>
+                    <a id="macos-backup-link" href="#" class="text-sm text-[--text-secondary] hover:text-[--accent] mt-2 transition-colors" style="display:none">备用下载</a>
                 </div>
                 <div class="card flex flex-col items-center min-w-[200px]">
                     <h3 class="text-xl font-semibold">Windows</h3>
                     <p class="text-[--text-secondary] text-sm mb-4">支持 Windows 10+</p>
                     <a id="windows-link" href="#" class="btn-primary">下载 EXE</a>
+                    <a id="windows-backup-link" href="#" class="text-sm text-[--text-secondary] hover:text-[--accent] mt-2 transition-colors" style="display:none">备用下载</a>
+                </div>
+                <div class="card flex flex-col items-center min-w-[200px]">
+                    <h3 class="text-xl font-semibold">Linux</h3>
+                    <p class="text-[--text-secondary] text-sm mb-4">支持 Ubuntu / Debian</p>
+                    <a id="linux-link" href="#" class="btn-primary">下载 DEB</a>
+                    <a id="linux-backup-link" href="#" class="text-sm text-[--text-secondary] hover:text-[--accent] mt-2 transition-colors" style="display:none">备用下载</a>
                 </div>
             </div>
         </div>
@@ -207,7 +263,7 @@
                 联系反馈：
                 <a href="mailto:vocab_float@firegod.cn" class="text-[--accent] hover:underline">vocab_float@firegod.cn</a>
             </p>
-            <p class="text-[--text-secondary] text-sm">VocabFloat v1.0.7</p>
+            <p id="footer-version" class="text-[--text-secondary] text-sm">VocabFloat</p>
             <p class="text-[--text-secondary] text-sm">© 2026 Firegod.cn. All rights reserved.</p>
         </div>
     </footer>
@@ -222,15 +278,91 @@
             const versionDisplay = document.getElementById("version-display");
             if (versionDisplay) versionDisplay.textContent = "最新版本: " + data.version;
 
+            const footerVersion = document.getElementById("footer-version");
+            if (footerVersion) footerVersion.textContent = "VocabFloat " + data.version;
+
             const macosLink = document.getElementById("macos-link");
             if (macosLink && data.macos_url) macosLink.href = data.macos_url;
 
             const windowsLink = document.getElementById("windows-link");
             if (windowsLink && data.windows_url) windowsLink.href = data.windows_url;
+
+            // 备用下载链接
+            function getBackupUrl(url) {
+                return "https://0.z1z.link/https/" + url.replace(/^https?:\/\//, "");
+            }
+
+            const macosBackupLink = document.getElementById("macos-backup-link");
+            if (macosBackupLink && data.macos_url) {
+                macosBackupLink.href = getBackupUrl(data.macos_url);
+                macosBackupLink.style.display = "";
+            }
+
+            const windowsBackupLink = document.getElementById("windows-backup-link");
+            if (windowsBackupLink && data.windows_url) {
+                windowsBackupLink.href = getBackupUrl(data.windows_url);
+                windowsBackupLink.style.display = "";
+            }
+
+            const linuxLink = document.getElementById("linux-link");
+            if (linuxLink && data.linux_url) linuxLink.href = data.linux_url;
+
+            const linuxBackupLink = document.getElementById("linux-backup-link");
+            if (linuxBackupLink && data.linux_url) {
+                linuxBackupLink.href = getBackupUrl(data.linux_url);
+                linuxBackupLink.style.display = "";
+            }
         } catch (e) {
             console.error("Failed to load release info:", e);
         }
     })();
+
+    // 加载 FAQ 数据并渲染手风琴
+    (async function() {
+        const faqList = document.getElementById("faq-list");
+        if (!faqList) return;
+
+        try {
+            const res = await fetch("faq.json");
+            if (!res.ok) throw new Error("Failed to load faq.json");
+            const faqData = await res.json();
+
+            if (!faqData || faqData.length === 0) {
+                faqList.innerHTML = '<p class="text-[--text-secondary] text-center py-4">暂无常见问题</p>';
+                return;
+            }
+
+            faqList.innerHTML = faqData.map((item) => 
+                '<div class="faq-item">' +
+                    '<div class="faq-question" onclick="toggleFaq(this)">' +
+                        '<span class="font-medium">' + item.question + '</span>' +
+                        '<span class="faq-icon">+</span>' +
+                    '</div>' +
+                    '<div class="faq-answer">' +
+                        '<p>' + item.answer + '</p>' +
+                    '</div>' +
+                '</div>'
+            ).join("");
+        } catch (e) {
+            console.error("Failed to load FAQ:", e);
+            faqList.innerHTML = '<p class="text-[--text-secondary] text-center py-4">加载失败，请刷新重试</p>';
+        }
+    })();
+
+    function toggleFaq(el) {
+        const faqItem = el.parentElement;
+        const wasActive = faqItem.classList.contains("active");
+
+        // 关闭所有其他项
+        document.querySelectorAll(".faq-item.active").forEach(function(item) {
+            item.classList.remove("active");
+        });
+
+        // 切换当前项
+        if (!wasActive) {
+            faqItem.classList.add("active");
+        }
+    }
     </script>
 </body>
 </html>
