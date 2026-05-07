@@ -224,7 +224,7 @@
     <script>
     (async function() {
         try {
-            const res = await fetch("https://raw.githubusercontent.com/fengyunhe/yybdc-web/main/latest-release.json");
+            const res = await fetch("latest-release.json");
             if (!res.ok) return;
             const data = await res.json();
 
