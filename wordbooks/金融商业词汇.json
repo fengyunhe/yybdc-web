@@ -1,0 +1,566 @@
+[
+  {
+    "word": "portfolio",
+    "phonetic": "/pɔːrtˈfoʊlioʊ/",
+    "definition": "n. 投资组合",
+    "example": "She diversified her portfolio across stocks and bonds."
+  },
+  {
+    "word": "dividend",
+    "phonetic": "/ˈdɪvɪdend/",
+    "definition": "n. 股息；红利",
+    "example": "The company declared a quarterly dividend of $0.50 per share."
+  },
+  {
+    "word": "equity",
+    "phonetic": "/ˈɛkwɪti/",
+    "definition": "n. 股权；净资产",
+    "example": "The shareholders' equity increased by 15% this year."
+  },
+  {
+    "word": "leverage",
+    "phonetic": "/ˈlɛvərɪdʒ/",
+    "definition": "n./v. 杠杆；利用",
+    "example": "High leverage can amplify both gains and losses."
+  },
+  {
+    "word": "liability",
+    "phonetic": "/ˌlaɪəˈbɪlɪti/",
+    "definition": "n. 负债；责任",
+    "example": "The company reported significant long-term liabilities."
+  },
+  {
+    "word": "revenue",
+    "phonetic": "/ˈrɛvənuː/",
+    "definition": "n. 收入；营业收入",
+    "example": "Annual revenue exceeded $10 billion for the first time."
+  },
+  {
+    "word": "fiscal",
+    "phonetic": "/ˈfɪskəl/",
+    "definition": "adj. 财政的；国库的",
+    "example": "The government announced new fiscal policies."
+  },
+  {
+    "word": "monetary",
+    "phonetic": "/ˈmʌnɪtɛri/",
+    "definition": "adj. 货币的；金融的",
+    "example": "The central bank adjusted its monetary policy."
+  },
+  {
+    "word": "inflation",
+    "phonetic": "/ɪnˈfleɪʃən/",
+    "definition": "n. 通货膨胀",
+    "example": "Inflation rate rose to 3.5% last quarter."
+  },
+  {
+    "word": "deflation",
+    "phonetic": "/diːˈfleɪʃən/",
+    "definition": "n. 通货紧缩",
+    "example": "Deflation can lead to reduced consumer spending."
+  },
+  {
+    "word": "bullion",
+    "phonetic": "/ˈbʊliən/",
+    "definition": "n. 金条；银条",
+    "example": "Investors bought gold bullion as a safe haven."
+  },
+  {
+    "word": "amortization",
+    "phonetic": "/ˌæmərtaɪˈzeɪʃən/",
+    "definition": "n. 摊销；分期偿还",
+    "example": "The loan amortization schedule spans 30 years."
+  },
+  {
+    "word": "depreciation",
+    "phonetic": "/dɪˌpriːʃiˈeɪʃən/",
+    "definition": "n. 折旧；贬值",
+    "example": "The depreciation of equipment is recorded annually."
+  },
+  {
+    "word": "overhead",
+    "phonetic": "/ˈoʊvərhɛd/",
+    "definition": "n. 营运开支；经常费用",
+    "example": "Reducing overhead costs improved the profit margin."
+  },
+  {
+    "word": "liquidity",
+    "phonetic": "/lɪˈkwɪdɪti/",
+    "definition": "n. 流动性；流动资产",
+    "example": "The stock has high liquidity with millions of shares traded daily."
+  },
+  {
+    "word": "tariff",
+    "phonetic": "/ˈtærɪf/",
+    "definition": "n. 关税；收费表",
+    "example": "New tariffs on imported steel raised concerns among manufacturers."
+  },
+  {
+    "word": "merger",
+    "phonetic": "/ˈmɜːrdʒər/",
+    "definition": "n. 合并；兼并",
+    "example": "The merger of the two banks created the largest in the country."
+  },
+  {
+    "word": "acquisition",
+    "phonetic": "/ˌækwɪˈzɪʃən/",
+    "definition": "n. 收购；获得",
+    "example": "The acquisition cost the company $2.5 billion."
+  },
+  {
+    "word": "franchise",
+    "phonetic": "/ˈfræntʃaɪz/",
+    "definition": "n. 特许经营权；加盟店",
+    "example": "She opened a fast-food franchise in downtown."
+  },
+  {
+    "word": "benchmark",
+    "phonetic": "/ˈbɛntʃmɑːrk/",
+    "definition": "n. 基准；标准",
+    "example": "The S&P 500 serves as a benchmark for market performance."
+  },
+  {
+    "word": "hedge",
+    "phonetic": "/hɛdʒ/",
+    "definition": "n./v. 对冲；规避",
+    "example": "Investors hedged their positions against currency risk."
+  },
+  {
+    "word": "speculation",
+    "phonetic": "/ˌspɛkjəˈleɪʃən/",
+    "definition": "n. 投机；推测",
+    "example": "Real estate speculation drove up housing prices."
+  },
+  {
+    "word": "diversification",
+    "phonetic": "/dɪˌvɜːrsɪfɪˈkeɪʃən/",
+    "definition": "n. 多元化；多样化",
+    "example": "Diversification of investments reduces overall risk."
+  },
+  {
+    "word": "collateral",
+    "phonetic": "/kəˈlætərəl/",
+    "definition": "n./adj. 抵押品；附属的",
+    "example": "The house was used as collateral for the business loan."
+  },
+  {
+    "word": "mortgage",
+    "phonetic": "/ˈmɔːrɡɪdʒ/",
+    "definition": "n./v. 抵押贷款",
+    "example": "They took out a 30-year mortgage to buy the house."
+  },
+  {
+    "word": "underwrite",
+    "phonetic": "/ˌʌndərˈraɪt/",
+    "definition": "v. 承销；担保",
+    "example": "The bank agreed to underwrite the new bond issue."
+  },
+  {
+    "word": "subsidiary",
+    "phonetic": "/səbˈsɪdiɛri/",
+    "definition": "n./adj. 子公司；附属的",
+    "example": "The subsidiary operates independently in Asian markets."
+  },
+  {
+    "word": "inventory",
+    "phonetic": "/ˈɪnvəntɔːri/",
+    "definition": "n. 库存；存货",
+    "example": "Inventory management is crucial for retail businesses."
+  },
+  {
+    "word": "audit",
+    "phonetic": "/ˈɔːdɪt/",
+    "definition": "n./v. 审计；查账",
+    "example": "The annual audit revealed discrepancies in the accounts."
+  },
+  {
+    "word": "gross",
+    "phonetic": "/ɡroʊs/",
+    "definition": "adj. 总的；毛的",
+    "example": "The company's gross profit margin is 40%."
+  },
+  {
+    "word": "net",
+    "phonetic": "/nɛt/",
+    "definition": "adj. 净的；纯的",
+    "example": "Net income after tax was $5 million."
+  },
+  {
+    "word": "yield",
+    "phonetic": "/jiːld/",
+    "definition": "n./v. 产量；收益",
+    "example": "The bond yield rose to 4.5%."
+  },
+  {
+    "word": "bond",
+    "phonetic": "/bɑːnd/",
+    "definition": "n. 债券",
+    "example": "Government bonds are considered low-risk investments."
+  },
+  {
+    "word": "broker",
+    "phonetic": "/ˈbroʊkər/",
+    "definition": "n. 经纪人；中间商",
+    "example": "The stockbroker recommended buying tech shares."
+  },
+  {
+    "word": "capital",
+    "phonetic": "/ˈkæpɪtəl/",
+    "definition": "n. 资本；资金",
+    "example": "The startup raised $10 million in venture capital."
+  },
+  {
+    "word": "shareholder",
+    "phonetic": "/ˈʃɛrˌhoʊldər/",
+    "definition": "n. 股东",
+    "example": "Shareholders voted to approve the merger."
+  },
+  {
+    "word": "divestiture",
+    "phonetic": "/dɪˈvɛstɪtʃər/",
+    "definition": "n. 剥离；出售资产",
+    "example": "The divestiture of the subsidiary raised $800 million."
+  },
+  {
+    "word": "commodity",
+    "phonetic": "/kəˈmɑːdɪti/",
+    "definition": "n. 商品；日用品",
+    "example": "Oil is the most traded commodity in the world."
+  },
+  {
+    "word": "forex",
+    "phonetic": "/ˈfɔːrɛks/",
+    "definition": "n. 外汇",
+    "example": "The forex market operates 24 hours a day."
+  },
+  {
+    "word": "arbitrage",
+    "phonetic": "/ˈɑːrbɪtrɑːʒ/",
+    "definition": "n./v. 套利",
+    "example": "Traders exploited arbitrage opportunities between exchanges."
+  },
+  {
+    "word": "IPO",
+    "phonetic": "/ˌaɪ piː ˈoʊ/",
+    "definition": "n. 首次公开募股",
+    "example": "The tech company's IPO raised $2 billion."
+  },
+  {
+    "word": "credit",
+    "phonetic": "/ˈkrɛdɪt/",
+    "definition": "n./v. 信用；信贷",
+    "example": "Good credit history helps secure better loan terms."
+  },
+  {
+    "word": "debit",
+    "phonetic": "/ˈdɛbɪt/",
+    "definition": "n./v. 借记；支出",
+    "example": "The transaction was debited from her account."
+  },
+  {
+    "word": "recession",
+    "phonetic": "/rɪˈsɛʃən/",
+    "definition": "n. 经济衰退",
+    "example": "The economy entered a recession during the pandemic."
+  },
+  {
+    "word": "surplus",
+    "phonetic": "/ˈsɜːrpləs/",
+    "definition": "n./adj. 盈余；过剩",
+    "example": "The trade surplus grew to $50 billion."
+  },
+  {
+    "word": "deficit",
+    "phonetic": "/ˈdɛfɪsɪt/",
+    "definition": "n. 赤字；逆差",
+    "example": "The government aims to reduce the budget deficit."
+  },
+  {
+    "word": "securities",
+    "phonetic": "/sɪˈkjʊrɪtiz/",
+    "definition": "n. 证券",
+    "example": "The Securities and Exchange Commission oversees the market."
+  },
+  {
+    "word": "derivative",
+    "phonetic": "/dɪˈrɪvətɪv/",
+    "definition": "n. 衍生品",
+    "example": "Financial derivatives can be used for hedging or speculation."
+  },
+  {
+    "word": "treasury",
+    "phonetic": "/ˈtrɛʒəri/",
+    "definition": "n. 国库；财政部",
+    "example": "Treasury bonds are backed by the government."
+  },
+  {
+    "word": "solvency",
+    "phonetic": "/ˈsɑlvənsi/",
+    "definition": "n. 偿付能力",
+    "example": "The company's solvency was questioned after heavy losses."
+  },
+  {
+    "word": "bankruptcy",
+    "phonetic": "/ˈbæŋkrʌptsi/",
+    "definition": "n. 破产",
+    "example": "The firm filed for bankruptcy protection."
+  },
+  {
+    "word": "depreciate",
+    "phonetic": "/dɪˈpriːʃieɪt/",
+    "definition": "v. 贬值；折旧",
+    "example": "The currency depreciated against the dollar."
+  },
+  {
+    "word": "appreciate",
+    "phonetic": "/əˈpriːʃieɪt/",
+    "definition": "v. 增值；升值",
+    "example": "The property appreciated by 20% over five years."
+  },
+  {
+    "word": "aggregate",
+    "phonetic": "/ˈæɡrɪɡət/",
+    "definition": "adj./n. 总计的；合计",
+    "example": "Aggregate demand drives economic growth."
+  },
+  {
+    "word": "brokerage",
+    "phonetic": "/ˈbroʊkərɪdʒ/",
+    "definition": "n. 经纪公司；佣金",
+    "example": "Online brokerages have reduced trading costs significantly."
+  },
+  {
+    "word": "compliance",
+    "phonetic": "/kəmˈplaɪəns/",
+    "definition": "n. 合规；遵从",
+    "example": "Financial institutions must ensure regulatory compliance."
+  },
+  {
+    "word": "due diligence",
+    "phonetic": "/djuː ˈdɪlɪdʒəns/",
+    "definition": "n. 尽职调查",
+    "example": "Due diligence is required before any major acquisition."
+  },
+  {
+    "word": "fiduciary",
+    "phonetic": "/fɪˈdjuːʃiɛri/",
+    "definition": "adj./n. 受托的；受托人",
+    "example": "A fiduciary must act in the client's best interest."
+  },
+  {
+    "word": "prospectus",
+    "phonetic": "/prəˈspɛktʃəs/",
+    "definition": "n. 招股说明书",
+    "example": "The prospectus details the company's financial health."
+  },
+  {
+    "word": "underperform",
+    "phonetic": "/ˌʌndərpərˈfɔːrm/",
+    "definition": "v. 表现不佳",
+    "example": "The stock underperformed compared to sector peers."
+  },
+  {
+    "word": "outperform",
+    "phonetic": "/ˌaʊtpərˈfɔːrm/",
+    "definition": "v. 跑赢；超越",
+    "example": "Growth stocks tend to outperform in bull markets."
+  },
+  {
+    "word": "annuity",
+    "phonetic": "/əˈnjuːɪti/",
+    "definition": "n. 年金",
+    "example": "An annuity provides a steady income stream in retirement."
+  },
+  {
+    "word": "pension",
+    "phonetic": "/ˈpɛnʃən/",
+    "definition": "n. 养老金",
+    "example": "The company offers a generous pension plan."
+  },
+  {
+    "word": "remit",
+    "phonetic": "/rɪˈmɪt/",
+    "definition": "v. 汇款；免除",
+    "example": "They remit money to their family every month."
+  },
+  {
+    "word": "receivable",
+    "phonetic": "/rɪˈsiːvəbəl/",
+    "definition": "n. 应收账款",
+    "example": "Accounts receivable increased by 10% this quarter."
+  },
+  {
+    "word": "payable",
+    "phonetic": "/ˈpeɪəbəl/",
+    "definition": "n. 应付账款",
+    "example": "The payable account reflects amounts owed to suppliers."
+  },
+  {
+    "word": "accrual",
+    "phonetic": "/əˈkruːəl/",
+    "definition": "n. 应计；权责发生",
+    "example": "Accrual accounting records revenue when earned."
+  },
+  {
+    "word": "warranty",
+    "phonetic": "/ˈwɔːrənti/",
+    "definition": "n. 保修；保证",
+    "example": "The product comes with a two-year warranty."
+  },
+  {
+    "word": "quota",
+    "phonetic": "/ˈkwoʊtə/",
+    "definition": "n. 配额；定额",
+    "example": "The sales team exceeded their quarterly quota."
+  },
+  {
+    "word": "markup",
+    "phonetic": "/ˈmɑːrkʌp/",
+    "definition": "n. 加价；利润率",
+    "example": "The markup on luxury goods can be several hundred percent."
+  },
+  {
+    "word": "turnover",
+    "phonetic": "/ˈtɜːrnoʊvər/",
+    "definition": "n. 营业额；人员流动率",
+    "example": "Annual turnover reached $50 million."
+  },
+  {
+    "word": "prospect",
+    "phonetic": "/ˈprɑːspɛkt/",
+    "definition": "n. 前景；潜在客户",
+    "example": "The economic outlook and growth prospects remain positive."
+  },
+  {
+    "word": "budget",
+    "phonetic": "/ˈbʌdʒɪt/",
+    "definition": "n./v. 预算",
+    "example": "The department needs to stay within its budget."
+  },
+  {
+    "word": "venture",
+    "phonetic": "/ˈvɛntʃər/",
+    "definition": "n. 风险企业；冒险",
+    "example": "Venture capital fuels early-stage startups."
+  },
+  {
+    "word": "provision",
+    "phonetic": "/prəˈvɪʒən/",
+    "definition": "n. 拨备；条款",
+    "example": "The bank made provisions for bad loans."
+  },
+  {
+    "word": "contingency",
+    "phonetic": "/kənˈtɪndʒənsi/",
+    "definition": "n. 或有事项；应急费用",
+    "example": "A contingency plan was prepared for unexpected events."
+  },
+  {
+    "word": "amortize",
+    "phonetic": "/ˈæmərtaɪz/",
+    "definition": "v. 摊销；分期偿还",
+    "example": "The intangible asset will be amortized over ten years."
+  },
+  {
+    "word": "capitalize",
+    "phonetic": "/kəˈpɪtəlaɪz/",
+    "definition": "v. 资本化；利用",
+    "example": "The company capitalized on the growing demand for EVs."
+  },
+  {
+    "word": "reconcile",
+    "phonetic": "/ˈrɛkənsaɪl/",
+    "definition": "v. 调和；核对",
+    "example": "We need to reconcile the bank statement with our records."
+  },
+  {
+    "word": "disbursement",
+    "phonetic": "/dɪsˈbɜːrsmənt/",
+    "definition": "n. 支付；支出",
+    "example": "Loan disbursement will occur within 48 hours."
+  },
+  {
+    "word": "escrow",
+    "phonetic": "/ˈɛskroʊ/",
+    "definition": "n. 代管账户",
+    "example": "The funds were held in escrow until the deal closed."
+  },
+  {
+    "word": "goodwill",
+    "phonetic": "/ˈɡʊdwɪl/",
+    "definition": "n. 商誉",
+    "example": "The acquisition premium was recorded as goodwill."
+  },
+  {
+    "word": "intangible",
+    "phonetic": "/ɪnˈtændʒəbəl/",
+    "definition": "adj./n. 无形的；无形资产",
+    "example": "Brand reputation is an intangible asset."
+  },
+  {
+    "word": "tangible",
+    "phonetic": "/ˈtændʒəbəl/",
+    "definition": "adj. 有形的；切实的",
+    "example": "Tangible assets include property, plant, and equipment."
+  },
+  {
+    "word": "overdraft",
+    "phonetic": "/ˈoʊvərdræft/",
+    "definition": "n. 透支",
+    "example": "She used an overdraft facility to cover expenses."
+  },
+  {
+    "word": "installment",
+    "phonetic": "/ɪnˈstɔːlmənt/",
+    "definition": "n. 分期付款",
+    "example": "The car was purchased in monthly installments."
+  },
+  {
+    "word": "principal",
+    "phonetic": "/ˈprɪnsəpəl/",
+    "definition": "n. 本金；负责人",
+    "example": "The loan principal must be repaid by the end of the term."
+  },
+  {
+    "word": "interest",
+    "phonetic": "/ˈɪntrəst/",
+    "definition": "n. 利息；兴趣",
+    "example": "Compound interest grows your savings over time."
+  },
+  {
+    "word": "insolvency",
+    "phonetic": "/ɪnˈsɑlvənsi/",
+    "definition": "n. 无力偿债",
+    "example": "Insolvency proceedings were initiated against the company."
+  },
+  {
+    "word": "capitalism",
+    "phonetic": "/ˈkæpɪtəlɪzəm/",
+    "definition": "n. 资本主义",
+    "example": "Capitalism drives innovation through market competition."
+  },
+  {
+    "word": "diversify",
+    "phonetic": "/dɪˈvɜːrsɪfaɪ/",
+    "definition": "v. 使多元化",
+    "example": "The company plans to diversify into new markets."
+  },
+  {
+    "word": "franchisee",
+    "phonetic": "/ˌfræntʃaɪˈziː/",
+    "definition": "n. 加盟商；特许经营人",
+    "example": "The franchisee opened three new outlets this year."
+  },
+  {
+    "word": "franchisor",
+    "phonetic": "/ˌfræntʃaɪˈzɔːr/",
+    "definition": "n. 特许方；授权方",
+    "example": "The franchisor provides training and brand support."
+  },
+  {
+    "word": "monetize",
+    "phonetic": "/ˈmʌnɪtaɪz/",
+    "definition": "v. 变现；货币化",
+    "example": "Social media platforms monetize through targeted ads."
+  }
+]

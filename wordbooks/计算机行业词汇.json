@@ -1,0 +1,1202 @@
+[
+  {
+    "word": "abstraction",
+    "phonetic": "/æbˈstrækʃn/",
+    "definition": "n. 抽象",
+    "example": "Abstraction helps developers focus on essential features while hiding complexity."
+  },
+  {
+    "word": "agile",
+    "phonetic": "/ˈædʒaɪl/",
+    "definition": "adj. 敏捷的",
+    "example": "The team adopted agile methodology for faster iteration."
+  },
+  {
+    "word": "aggregation",
+    "phonetic": "/ˌæɡrɪˈɡeɪʃn/",
+    "definition": "n. 聚合",
+    "example": "Use aggregation pipelines in MongoDB to process data in stages."
+  },
+  {
+    "word": "algorithm",
+    "phonetic": "/ˈælɡərɪðəm/",
+    "definition": "n. 算法",
+    "example": "The quicksort algorithm has O(n log n) average complexity."
+  },
+  {
+    "word": "API",
+    "phonetic": "/ˌeɪ piː ˈaɪ/",
+    "definition": "n. 应用程序接口",
+    "example": "The API returns a JSON response with the requested data."
+  },
+  {
+    "word": "array",
+    "phonetic": "/əˈreɪ/",
+    "definition": "n. 数组",
+    "example": "The array stores elements in contiguous memory locations."
+  },
+  {
+    "word": "asynchronous",
+    "phonetic": "/eɪˈsɪŋkrənəs/",
+    "definition": "adj. 异步的",
+    "example": "Asynchronous programming allows the application to handle other tasks while waiting."
+  },
+  {
+    "word": "authentication",
+    "phonetic": "/ˌɔːθentɪˈkeɪʃn/",
+    "definition": "n. 身份验证",
+    "example": "Two-factor authentication adds an extra layer of security."
+  },
+  {
+    "word": "bandwidth",
+    "phonetic": "/ˈbændwɪdθ/",
+    "definition": "n. 带宽",
+    "example": "Streaming video requires significant network bandwidth."
+  },
+  {
+    "word": "binary",
+    "phonetic": "/ˈbaɪnəri/",
+    "definition": "adj. 二进制的",
+    "example": "Computers store data in binary format using zeros and ones."
+  },
+  {
+    "word": "blob",
+    "phonetic": "/blɒb/",
+    "definition": "n. 二进制大对象",
+    "example": "Store image files as blobs in the database."
+  },
+  {
+    "word": "boolean",
+    "phonetic": "/ˈbuːliən/",
+    "definition": "n. 布尔型",
+    "example": "The function returns a boolean value indicating success or failure."
+  },
+  {
+    "word": "buffer",
+    "phonetic": "/ˈbʌfər/",
+    "definition": "n. 缓冲区",
+    "example": "The read buffer temporarily stores incoming data from the network."
+  },
+  {
+    "word": "bug",
+    "phonetic": "/bʌɡ/",
+    "definition": "n. 程序错误",
+    "example": "The developer spent hours tracking down a subtle race condition bug."
+  },
+  {
+    "word": "bytecode",
+    "phonetic": "/ˈbaɪtkoʊd/",
+    "definition": "n. 字节码",
+    "example": "The compiler translates Java source code into bytecode."
+  },
+  {
+    "word": "cache",
+    "phonetic": "/kæʃ/",
+    "definition": "n. 缓存",
+    "example": "The browser cache stores static assets to speed up page loading."
+  },
+  {
+    "word": "caching",
+    "phonetic": "/ˈkæʃɪŋ/",
+    "definition": "n. 缓存策略",
+    "example": "Implement caching to reduce database query overhead."
+  },
+  {
+    "word": "callback",
+    "phonetic": "/ˈkɔːlbæk/",
+    "definition": "n. 回调函数",
+    "example": "Pass a callback function to handle the result asynchronously."
+  },
+  {
+    "word": "circuit breaker",
+    "phonetic": "/ˈsɜːrkɪt ˈbreɪkər/",
+    "definition": "n. 断路器模式",
+    "example": "Implement the circuit breaker pattern to prevent cascade failures."
+  },
+  {
+    "word": "class",
+    "phonetic": "/klɑːs/",
+    "definition": "n. 类",
+    "example": "The class defines the blueprint for creating objects."
+  },
+  {
+    "word": "closure",
+    "phonetic": "/ˈkloʊʒər/",
+    "definition": "n. 闭包",
+    "example": "The closure captures variables from its enclosing scope."
+  },
+  {
+    "word": "cloud",
+    "phonetic": "/klaʊd/",
+    "definition": "n. 云计算",
+    "example": "Deploy the application to the cloud for scalability."
+  },
+  {
+    "word": "cohesion",
+    "phonetic": "/koʊˈhiːʒn/",
+    "definition": "n. 内聚性",
+    "example": "High cohesion within a module makes the code easier to maintain."
+  },
+  {
+    "word": "compiler",
+    "phonetic": "/kəmˈpaɪlər/",
+    "definition": "n. 编译器",
+    "example": "The compiler translates source code into machine-readable bytecode."
+  },
+  {
+    "word": "composition",
+    "phonetic": "/ˌkɒmpəˈzɪʃn/",
+    "definition": "n. 组合",
+    "example": "Favor composition over inheritance for more flexible class design."
+  },
+  {
+    "word": "concurrency",
+    "phonetic": "/kənˈkʌrənsi/",
+    "definition": "n. 并发",
+    "example": "Go provides excellent support for concurrency using goroutines."
+  },
+  {
+    "word": "configuration",
+    "phonetic": "/kənˌfɪɡəˈreɪʃn/",
+    "definition": "n. 配置",
+    "example": "Update the configuration file to change the database connection."
+  },
+  {
+    "word": "consistency",
+    "phonetic": "/kənˈsɪstənsi/",
+    "definition": "n. 一致性",
+    "example": "The CAP theorem describes the trade-off between consistency and availability."
+  },
+  {
+    "word": "container",
+    "phonetic": "/kənˈteɪnər/",
+    "definition": "n. 容器",
+    "example": "Docker containers package applications with their dependencies."
+  },
+  {
+    "word": "containerization",
+    "phonetic": "/ˌkɒnteɪnəraɪˈzeɪʃn/",
+    "definition": "n. 容器化",
+    "example": "Containerization ensures consistent behavior across development and production environments."
+  },
+  {
+    "word": "constructor",
+    "phonetic": "/kənˈstrʌktər/",
+    "definition": "n. 构造函数",
+    "example": "The constructor initializes the object's properties when it is created."
+  },
+  {
+    "word": "cyclomatic complexity",
+    "phonetic": "/ˌsaɪkləˈmætɪk kəmˈplɛksəti/",
+    "definition": "n. 圈复杂度",
+    "example": "Reduce cyclomatic complexity by breaking down large functions into smaller ones."
+  },
+  {
+    "word": "daemon",
+    "phonetic": "/ˈdiːmən/",
+    "definition": "n. 守护进程",
+    "example": "The background daemon listens for incoming requests on port 8080."
+  },
+  {
+    "word": "database",
+    "phonetic": "/ˈdeɪtəbeɪs/",
+    "definition": "n. 数据库",
+    "example": "The relational database stores user data across multiple tables."
+  },
+  {
+    "word": "deadlock",
+    "phonetic": "/ˈdɛdlɒk/",
+    "definition": "n. 死锁",
+    "example": "Two threads waiting for each other's resources can cause a deadlock."
+  },
+  {
+    "word": "debug",
+    "phonetic": "/diːˈbʌɡ/",
+    "definition": "v. 调试",
+    "example": "Use the debugger to step through the code line by line."
+  },
+  {
+    "word": "debugging",
+    "phonetic": "/diːˈbʌɡɪŋ/",
+    "definition": "n. 调试",
+    "example": "Effective debugging requires patience and a systematic approach."
+  },
+  {
+    "word": "decorator",
+    "phonetic": "/ˈdekəreɪtər/",
+    "definition": "n. 装饰器",
+    "example": "Use a decorator to add logging functionality to the function."
+  },
+  {
+    "word": "dependency",
+    "phonetic": "/dɪˈpendənsi/",
+    "definition": "n. 依赖",
+    "example": "Manage project dependencies using a package manager like npm."
+  },
+  {
+    "word": "dependency injection",
+    "phonetic": "/dɪˈpendənsi ɪnˈdʒekʃn/",
+    "definition": "n. 依赖注入",
+    "example": "Dependency injection promotes loose coupling between components."
+  },
+  {
+    "word": "deployment",
+    "phonetic": "/dɪˈplɔɪmənt/",
+    "definition": "n. 部署",
+    "example": "Automate the deployment process with a CI/CD pipeline."
+  },
+  {
+    "word": "deserialization",
+    "phonetic": "/diːsɪəriəlaɪˈzeɪʃn/",
+    "definition": "n. 反序列化",
+    "example": "Validate input during deserialization to prevent security attacks."
+  },
+  {
+    "word": "deterministic",
+    "phonetic": "/dɪˌtɜːrmɪˈnɪstɪk/",
+    "definition": "adj. 确定性的",
+    "example": "A deterministic algorithm produces the same output for the same input."
+  },
+  {
+    "word": "DevOps",
+    "phonetic": "/ˈdevɒps/",
+    "definition": "n. 开发运维",
+    "example": "The DevOps team automates infrastructure provisioning and deployment."
+  },
+  {
+    "word": "distributed system",
+    "phonetic": "/dɪˈstrɪbjuːtɪd ˈsɪstəm/",
+    "definition": "n. 分布式系统",
+    "example": "A distributed system coordinates multiple machines to work together."
+  },
+  {
+    "word": "docker",
+    "phonetic": "/ˈdɒkər/",
+    "definition": "n. Docker容器引擎",
+    "example": "Package the application as a Docker image for consistent deployment."
+  },
+  {
+    "word": "domain",
+    "phonetic": "/doʊˈmeɪn/",
+    "definition": "n. 域；领域",
+    "example": "Register a domain name for the new web application."
+  },
+  {
+    "word": "driver",
+    "phonetic": "/ˈdraɪvər/",
+    "definition": "n. 驱动程序",
+    "example": "Install the latest graphics driver to improve performance."
+  },
+  {
+    "word": "edge case",
+    "phonetic": "/ɛdʒ keɪs/",
+    "definition": "n. 边界情况",
+    "example": "Test the function with edge cases such as empty inputs and null values."
+  },
+  {
+    "word": "encapsulation",
+    "phonetic": "/ɪnˌkæpsjuˈleɪʃn/",
+    "definition": "n. 封装",
+    "example": "Encapsulation hides the internal state of an object from the outside."
+  },
+  {
+    "word": "encoding",
+    "phonetic": "/ɪnˈkoʊdɪŋ/",
+    "definition": "n. 编码",
+    "example": "Use UTF-8 encoding to support international characters."
+  },
+  {
+    "word": "encryption",
+    "phonetic": "/ɪnˈkrɪpʃn/",
+    "definition": "n. 加密",
+    "example": "AES encryption protects sensitive data at rest."
+  },
+  {
+    "word": "endpoint",
+    "phonetic": "/ˈendpɔɪnt/",
+    "definition": "n. 端点",
+    "example": "The REST API exposes several endpoints for client communication."
+  },
+  {
+    "word": "event-driven",
+    "phonetic": "/ɪˈvɛnt ˈdrɪvn/",
+    "definition": "adj. 事件驱动的",
+    "example": "Event-driven architecture enables loose coupling between services."
+  },
+  {
+    "word": "event loop",
+    "phonetic": "/ɪˈvɛnt luːp/",
+    "definition": "n. 事件循环",
+    "example": "JavaScript uses an event loop to handle asynchronous operations."
+  },
+  {
+    "word": "exception",
+    "phonetic": "/ɪkˈsepʃn/",
+    "definition": "n. 异常",
+    "example": "Handle the exception gracefully to prevent the application from crashing."
+  },
+  {
+    "word": "factory",
+    "phonetic": "/ˈfæktri/",
+    "definition": "n. 工厂模式",
+    "example": "Use a factory pattern to create objects without specifying their exact class."
+  },
+  {
+    "word": "firewall",
+    "phonetic": "/ˈfaɪərwɔːl/",
+    "definition": "n. 防火墙",
+    "example": "Configure the firewall to block unauthorized access to the server."
+  },
+  {
+    "word": "firmware",
+    "phonetic": "/ˈfɜːrmwer/",
+    "definition": "n. 固件",
+    "example": "Update the device firmware to fix security vulnerabilities."
+  },
+  {
+    "word": "framework",
+    "phonetic": "/ˈfreɪmwɜːk/",
+    "definition": "n. 框架",
+    "example": "React is a popular framework for building user interfaces."
+  },
+  {
+    "word": "function",
+    "phonetic": "/ˈfʌŋkʃn/",
+    "definition": "n. 函数",
+    "example": "Define a reusable function to calculate the total price."
+  },
+  {
+    "word": "garbage collection",
+    "phonetic": "/ˈɡɑːrbɪdʒ kəˈlekʃn/",
+    "definition": "n. 垃圾回收",
+    "example": "The garbage collector automatically frees unused memory."
+  },
+  {
+    "word": "gateway",
+    "phonetic": "/ˈɡeɪtweɪ/",
+    "definition": "n. 网关",
+    "example": "The API gateway routes requests to the appropriate microservice."
+  },
+  {
+    "word": "gRPC",
+    "phonetic": "/ˌdʒiː ɑːr piː ˈsiː/",
+    "definition": "n. gRPC远程过程调用框架",
+    "example": "gRPC provides high-performance communication between microservices."
+  },
+  {
+    "word": "GraphQL",
+    "phonetic": "/ˈɡrɑːf kjuː ɛl/",
+    "definition": "n. GraphQL查询语言",
+    "example": "GraphQL allows clients to request exactly the data they need."
+  },
+  {
+    "word": "handshake",
+    "phonetic": "/ˈhændʃeɪk/",
+    "definition": "n. 握手",
+    "example": "The TLS handshake establishes a secure connection between client and server."
+  },
+  {
+    "word": "hash",
+    "phonetic": "/hæʃ/",
+    "definition": "n. 哈希",
+    "example": "A hash table provides O(1) average-case lookup time."
+  },
+  {
+    "word": "hashmap",
+    "phonetic": "/ˈhæʃmæp/",
+    "definition": "n. 哈希映射",
+    "example": "The hashmap provides constant-time performance for key lookups."
+  },
+  {
+    "word": "heap",
+    "phonetic": "/hiːp/",
+    "definition": "n. 堆",
+    "example": "Objects allocated on the heap are managed by the garbage collector."
+  },
+  {
+    "word": "hook",
+    "phonetic": "/hʊk/",
+    "definition": "n. 钩子",
+    "example": "Use a lifecycle hook to perform actions when the component mounts."
+  },
+  {
+    "word": "horizontal scaling",
+    "phonetic": "/həˈrɪzɒntl ˈskeɪlɪŋ/",
+    "definition": "n. 水平扩展",
+    "example": "Horizontal scaling adds more machines to handle increased load."
+  },
+  {
+    "word": "hypervisor",
+    "phonetic": "/ˌhaɪpərˈvaɪzər/",
+    "definition": "n. 虚拟机监控程序",
+    "example": "The hypervisor manages multiple virtual machines on a single physical server."
+  },
+  {
+    "word": "idempotent",
+    "phonetic": "/ˌaɪdɛmˈpoʊtənt/",
+    "definition": "adj. 幂等的",
+    "example": "A REST DELETE operation should be idempotent."
+  },
+  {
+    "word": "idempotency",
+    "phonetic": "/ˌaɪdɛmpoʊˈtɛnsi/",
+    "definition": "n. 幂等性",
+    "example": "Ensure idempotency in API calls to handle duplicate requests safely."
+  },
+  {
+    "word": "imperative",
+    "phonetic": "/ɪmˈperətɪv/",
+    "definition": "adj. 命令式的",
+    "example": "Imperative programming focuses on describing how a program operates."
+  },
+  {
+    "word": "immutable",
+    "phonetic": "/ɪˈmjuːtəbl/",
+    "definition": "adj. 不可变的",
+    "example": "Strings in Java are immutable, so each modification creates a new object."
+  },
+  {
+    "word": "index",
+    "phonetic": "/ˈɪndeks/",
+    "definition": "n. 索引",
+    "example": "Create a database index to speed up query performance."
+  },
+  {
+    "word": "inheritance",
+    "phonetic": "/ɪnˈherɪtəns/",
+    "definition": "n. 继承",
+    "example": "The child class inherits properties and methods from the parent class."
+  },
+  {
+    "word": "input",
+    "phonetic": "/ˈɪnpʊt/",
+    "definition": "n. 输入",
+    "example": "Validate user input before processing it on the server."
+  },
+  {
+    "word": "instance",
+    "phonetic": "/ˈɪnstəns/",
+    "definition": "n. 实例",
+    "example": "Create a new instance of the class with the specified parameters."
+  },
+  {
+    "word": "integration",
+    "phonetic": "/ˌɪntɪˈɡreɪʃn/",
+    "definition": "n. 集成",
+    "example": "Perform integration testing to verify that modules work together."
+  },
+  {
+    "word": "interface",
+    "phonetic": "/ˈɪntərfeɪs/",
+    "definition": "n. 接口",
+    "example": "Define an interface to specify the contract for implementing classes."
+  },
+  {
+    "word": "interpolation",
+    "phonetic": "/ɪnˌtɜːrpəˈleɪʃn/",
+    "definition": "n. 插值",
+    "example": "Use string interpolation to embed expressions within a string."
+  },
+  {
+    "word": "inversion of control",
+    "phonetic": "/ɪnˈvɜːrʒn əv kənˈtroʊl/",
+    "definition": "n. 控制反转",
+    "example": "Inversion of control allows a framework to manage object lifecycle."
+  },
+  {
+    "word": "iterator",
+    "phonetic": "/ˈɪtəreɪtər/",
+    "definition": "n. 迭代器",
+    "example": "The iterator traverses each element in the collection one by one."
+  },
+  {
+    "word": "JSON",
+    "phonetic": "/ˈdʒeɪsɒn/",
+    "definition": "n. JSON数据格式",
+    "example": "The API returns data in JSON format."
+  },
+  {
+    "word": "kernel",
+    "phonetic": "/ˈkɜːnl/",
+    "definition": "n. 内核",
+    "example": "The Linux kernel manages hardware resources and system calls."
+  },
+  {
+    "word": "kubernetes",
+    "phonetic": "/ˌkjuːbərˈnɛtɪz/",
+    "definition": "n. Kubernetes容器编排平台",
+    "example": "Deploy the microservices to a Kubernetes cluster for orchestration."
+  },
+  {
+    "word": "lambda",
+    "phonetic": "/ˈlæmdə/",
+    "definition": "n. 匿名函数",
+    "example": "Use a lambda expression to create a short inline function."
+  },
+  {
+    "word": "latency",
+    "phonetic": "/ˈleɪtənsi/",
+    "definition": "n. 延迟",
+    "example": "Minimize network latency by deploying servers closer to users."
+  },
+  {
+    "word": "lazy loading",
+    "phonetic": "/ˈleɪzi ˈloʊdɪŋ/",
+    "definition": "n. 懒加载",
+    "example": "Implement lazy loading to defer loading of off-screen images."
+  },
+  {
+    "word": "library",
+    "phonetic": "/ˈlaɪbrəri/",
+    "definition": "n. 库",
+    "example": "Import the math library to access advanced mathematical functions."
+  },
+  {
+    "word": "linked list",
+    "phonetic": "/lɪŋkt lɪst/",
+    "definition": "n. 链表",
+    "example": "A linked list allows efficient insertion and deletion of elements."
+  },
+  {
+    "word": "load balancer",
+    "phonetic": "/loʊd ˈbælənsər/",
+    "definition": "n. 负载均衡器",
+    "example": "The load balancer distributes incoming traffic across multiple servers."
+  },
+  {
+    "word": "load testing",
+    "phonetic": "/loʊd ˈtɛstɪŋ/",
+    "definition": "n. 负载测试",
+    "example": "Perform load testing to determine the system's maximum capacity."
+  },
+  {
+    "word": "logger",
+    "phonetic": "/ˈlɒɡər/",
+    "definition": "n. 日志记录器",
+    "example": "Configure the logger to write application logs to a file."
+  },
+  {
+    "word": "logging",
+    "phonetic": "/ˈlɒɡɪŋ/",
+    "definition": "n. 日志记录",
+    "example": "Enable detailed logging to help diagnose production issues."
+  },
+  {
+    "word": "macro",
+    "phonetic": "/ˈmækroʊ/",
+    "definition": "n. 宏",
+    "example": "Define a macro to reuse a block of code across multiple programs."
+  },
+  {
+    "word": "marshalling",
+    "phonetic": "/ˈmɑːrʃəlɪŋ/",
+    "definition": "n. 编组",
+    "example": "Marshalling converts data structures into a format suitable for transmission."
+  },
+  {
+    "word": "memory leak",
+    "phonetic": "/ˈmeməri liːk/",
+    "definition": "n. 内存泄漏",
+    "example": "The memory leak caused the application to consume increasing amounts of RAM."
+  },
+  {
+    "word": "metadata",
+    "phonetic": "/ˈmetədeɪtə/",
+    "definition": "n. 元数据",
+    "example": "The file's metadata includes the creation date and author information."
+  },
+  {
+    "word": "message queue",
+    "phonetic": "/ˈmɛsɪdʒ kjuː/",
+    "definition": "n. 消息队列",
+    "example": "Use a message queue to decouple the producer and consumer of tasks."
+  },
+  {
+    "word": "method",
+    "phonetic": "/ˈmeθəd/",
+    "definition": "n. 方法",
+    "example": "Call the method to process the user's request."
+  },
+  {
+    "word": "microservice",
+    "phonetic": "/ˈmaɪkroʊsɜːrvɪs/",
+    "definition": "n. 微服务",
+    "example": "Each microservice handles a specific business capability independently."
+  },
+  {
+    "word": "middleware",
+    "phonetic": "/ˈmɪdlwer/",
+    "definition": "n. 中间件",
+    "example": "The authentication middleware verifies tokens before routing requests."
+  },
+  {
+    "word": "module",
+    "phonetic": "/ˈmɒdjuːl/",
+    "definition": "n. 模块",
+    "example": "Import the authentication module to handle user login."
+  },
+  {
+    "word": "monitoring",
+    "phonetic": "/ˈmɒnɪtərɪŋ/",
+    "definition": "n. 监控",
+    "example": "Set up monitoring to track application performance in real time."
+  },
+  {
+    "word": "monolith",
+    "phonetic": "/ˈmɒnəlɪθ/",
+    "definition": "n. 单体应用",
+    "example": "Migrate the monolith to a microservices architecture."
+  },
+  {
+    "word": "monolithic",
+    "phonetic": "/ˌmɒnəˈlɪθɪk/",
+    "definition": "adj. 单体的",
+    "example": "Break down the monolithic application into smaller, independent services."
+  },
+  {
+    "word": "multithreading",
+    "phonetic": "/ˌmʌltiˈθreɪdɪŋ/",
+    "definition": "n. 多线程",
+    "example": "Multithreading allows the program to perform multiple tasks concurrently."
+  },
+  {
+    "word": "mutex",
+    "phonetic": "/ˈmjuːtɛks/",
+    "definition": "n. 互斥锁",
+    "example": "The mutex ensures that only one thread can access the critical section."
+  },
+  {
+    "word": "namespace",
+    "phonetic": "/ˈneɪmspeɪs/",
+    "definition": "n. 命名空间",
+    "example": "Namespaces prevent naming conflicts between different modules."
+  },
+  {
+    "word": "network",
+    "phonetic": "/ˈnetwɜːk/",
+    "definition": "n. 网络",
+    "example": "The server communicates with clients over the network."
+  },
+  {
+    "word": "node",
+    "phonetic": "/noʊd/",
+    "definition": "n. 节点",
+    "example": "Each node in the linked list contains data and a reference to the next node."
+  },
+  {
+    "word": "null",
+    "phonetic": "/nʌl/",
+    "definition": "n. 空值",
+    "example": "The variable is null because it has not been initialized."
+  },
+  {
+    "word": "object",
+    "phonetic": "/ˈɒbdʒɪkt/",
+    "definition": "n. 对象",
+    "example": "The object encapsulates both data and methods."
+  },
+  {
+    "word": "object-oriented",
+    "phonetic": "/ˈɒbdʒɪkt ˈɔːrientɪd/",
+    "definition": "adj. 面向对象的",
+    "example": "Java is an object-oriented programming language."
+  },
+  {
+    "word": "observability",
+    "phonetic": "/əbˌzɜːrvəˈbɪləti/",
+    "definition": "n. 可观测性",
+    "example": "Improve observability by adding structured logging and distributed tracing."
+  },
+  {
+    "word": "OAuth",
+    "phonetic": "/ˈoʊɔːθ/",
+    "definition": "n. 开放授权协议",
+    "example": "Implement OAuth to allow users to log in with their Google account."
+  },
+  {
+    "word": "operating system",
+    "phonetic": "/ˈɒpəreɪtɪŋ ˈsɪstəm/",
+    "definition": "n. 操作系统",
+    "example": "The operating system manages hardware resources and provides services to applications."
+  },
+  {
+    "word": "operator",
+    "phonetic": "/ˈɒpəreɪtər/",
+    "definition": "n. 运算符",
+    "example": "The ternary operator provides a shorthand for conditional expressions."
+  },
+  {
+    "word": "orchestration",
+    "phonetic": "/ˌɔːrkɪˈstreɪʃn/",
+    "definition": "n. 编排",
+    "example": "Kubernetes provides orchestration for managing containerized applications."
+  },
+  {
+    "word": "packet",
+    "phonetic": "/ˈpækɪt/",
+    "definition": "n. 数据包",
+    "example": "Each packet contains a header with source and destination addresses."
+  },
+  {
+    "word": "parallelism",
+    "phonetic": "/ˈpærəlelɪzəm/",
+    "definition": "n. 并行",
+    "example": "Parallelism improves performance by executing tasks simultaneously."
+  },
+  {
+    "word": "parameter",
+    "phonetic": "/pəˈræmɪtər/",
+    "definition": "n. 参数",
+    "example": "Pass the URL as a parameter to the fetch function."
+  },
+  {
+    "word": "parser",
+    "phonetic": "/ˈpɑːrsər/",
+    "definition": "n. 解析器",
+    "example": "The JSON parser converts the string into a usable object."
+  },
+  {
+    "word": "partition tolerance",
+    "phonetic": "/pɑːrˈtɪʃn ˈtɒlərəns/",
+    "definition": "n. 分区容错性",
+    "example": "Partition tolerance ensures the system continues to operate despite network failures."
+  },
+  {
+    "word": "partitioning",
+    "phonetic": "/ˌpɑːrtɪˈʃənɪŋ/",
+    "definition": "n. 分区",
+    "example": "Database partitioning distributes data across multiple storage units."
+  },
+  {
+    "word": "payload",
+    "phonetic": "/ˈpeɪloʊd/",
+    "definition": "n. 有效载荷",
+    "example": "The HTTP request body contains the JSON payload."
+  },
+  {
+    "word": "peer",
+    "phonetic": "/pɪr/",
+    "definition": "n. 对等节点",
+    "example": "In a peer-to-peer network, each node can act as both client and server."
+  },
+  {
+    "word": "permission",
+    "phonetic": "/pəˈmɪʃn/",
+    "definition": "n. 权限",
+    "example": "Grant read permission to the user for the shared directory."
+  },
+  {
+    "word": "pipeline",
+    "phonetic": "/ˈpaɪplaɪn/",
+    "definition": "n. 流水线",
+    "example": "The CI/CD pipeline automates testing and deployment."
+  },
+  {
+    "word": "platform",
+    "phonetic": "/ˈplætfɔːrm/",
+    "definition": "n. 平台",
+    "example": "The application runs on multiple platforms including Windows, macOS, and Linux."
+  },
+  {
+    "word": "pointer",
+    "phonetic": "/ˈpɔɪntər/",
+    "definition": "n. 指针",
+    "example": "A pointer stores the memory address of another variable."
+  },
+  {
+    "word": "polymorphism",
+    "phonetic": "/ˌpɒliˈmɔːrfɪzəm/",
+    "definition": "n. 多态",
+    "example": "Polymorphism allows objects of different types to be treated uniformly."
+  },
+  {
+    "word": "port",
+    "phonetic": "/pɔːrt/",
+    "definition": "n. 端口",
+    "example": "The web server listens on port 443 for HTTPS connections."
+  },
+  {
+    "word": "process",
+    "phonetic": "/ˈprɒses/",
+    "definition": "n. 进程",
+    "example": "The operating system allocates resources to each running process."
+  },
+  {
+    "word": "producer-consumer",
+    "phonetic": "/prəˈdjuːsər kənˈsjuːmər/",
+    "definition": "n. 生产者-消费者模式",
+    "example": "The producer-consumer pattern decouples data generation from processing."
+  },
+  {
+    "word": "protocol",
+    "phonetic": "/ˈproʊtəkɒl/",
+    "definition": "n. 协议",
+    "example": "HTTP is a protocol used for transferring web pages."
+  },
+  {
+    "word": "prototype",
+    "phonetic": "/ˈproʊtətaɪp/",
+    "definition": "n. 原型",
+    "example": "JavaScript objects inherit properties through the prototype chain."
+  },
+  {
+    "word": "query",
+    "phonetic": "/ˈkwɪəri/",
+    "definition": "n. 查询",
+    "example": "Write a SQL query to retrieve all active users from the database."
+  },
+  {
+    "word": "rate limiting",
+    "phonetic": "/reɪt ˈlɪmɪtɪŋ/",
+    "definition": "n. 速率限制",
+    "example": "Implement rate limiting to prevent abuse of the API."
+  },
+  {
+    "word": "recursion",
+    "phonetic": "/rɪˈkɜːrʒn/",
+    "definition": "n. 递归",
+    "example": "Solve the tree traversal problem using recursion."
+  },
+  {
+    "word": "refactoring",
+    "phonetic": "/riːˈfæktərɪŋ/",
+    "definition": "v. 重构",
+    "example": "Refactor the legacy code to improve readability and maintainability."
+  },
+  {
+    "word": "regex",
+    "phonetic": "/ˈriːdʒɛks/",
+    "definition": "n. 正则表达式",
+    "example": "Use a regex pattern to validate email address formats."
+  },
+  {
+    "word": "repository",
+    "phonetic": "/rɪˈpɒzətri/",
+    "definition": "n. 仓库",
+    "example": "Push the code changes to the remote repository."
+  },
+  {
+    "word": "REST",
+    "phonetic": "/rɛst/",
+    "definition": "n. 表述性状态传递",
+    "example": "Design the API following REST principles for scalability."
+  },
+  {
+    "word": "rollback",
+    "phonetic": "/ˈroʊlbæk/",
+    "definition": "n. 回滚",
+    "example": "Roll back the database migration if the deployment fails."
+  },
+  {
+    "word": "runtime",
+    "phonetic": "/ˈrʌntaɪm/",
+    "definition": "n. 运行时",
+    "example": "The error occurs at runtime, not during compilation."
+  },
+  {
+    "word": "sandbox",
+    "phonetic": "/ˈsændbɒks/",
+    "definition": "n. 沙箱",
+    "example": "Run untrusted code in a sandbox to isolate it from the host system."
+  },
+  {
+    "word": "scalability",
+    "phonetic": "/ˌskeɪləˈbɪləti/",
+    "definition": "n. 可扩展性",
+    "example": "Design the system with scalability in mind from the beginning."
+  },
+  {
+    "word": "schema",
+    "phonetic": "/ˈskiːmə/",
+    "definition": "n. 模式",
+    "example": "Define the database schema with appropriate data types and constraints."
+  },
+  {
+    "word": "semaphore",
+    "phonetic": "/ˈsɛməfɔːr/",
+    "definition": "n. 信号量",
+    "example": "Use a semaphore to control access to a limited number of resources."
+  },
+  {
+    "word": "serialization",
+    "phonetic": "/ˌsɪəriəlaɪˈzeɪʃn/",
+    "definition": "n. 序列化",
+    "example": "Serialization converts objects into a transmissible format."
+  },
+  {
+    "word": "server",
+    "phonetic": "/ˈsɜːrvər/",
+    "definition": "n. 服务器",
+    "example": "The web server handles HTTP requests from clients."
+  },
+  {
+    "word": "sharding",
+    "phonetic": "/ˈʃɑːrdɪŋ/",
+    "definition": "n. 分片",
+    "example": "Sharding distributes the database across multiple servers for scalability."
+  },
+  {
+    "word": "singleton",
+    "phonetic": "/ˈsɪŋɡltən/",
+    "definition": "n. 单例",
+    "example": "Use the singleton pattern to ensure only one instance of the class exists."
+  },
+  {
+    "word": "snippet",
+    "phonetic": "/ˈsnɪpɪt/",
+    "definition": "n. 代码片段",
+    "example": "Save the useful code snippet for future reference."
+  },
+  {
+    "word": "socket",
+    "phonetic": "/ˈsɒkɪt/",
+    "definition": "n. 套接字",
+    "example": "Establish a TCP socket connection to communicate with the server."
+  },
+  {
+    "word": "SQL",
+    "phonetic": "/ˌɛs kjuː ˈɛl/",
+    "definition": "n. 结构化查询语言",
+    "example": "Write a SQL statement to join the users and orders tables."
+  },
+  {
+    "word": "stack",
+    "phonetic": "/stæk/",
+    "definition": "n. 栈",
+    "example": "The call stack grows with each nested function call."
+  },
+  {
+    "word": "stack trace",
+    "phonetic": "/stæk treɪs/",
+    "definition": "n. 堆栈跟踪",
+    "example": "The stack trace shows the sequence of function calls that led to the error."
+  },
+  {
+    "word": "string",
+    "phonetic": "/strɪŋ/",
+    "definition": "n. 字符串",
+    "example": "Concatenate the first name and last name into a single string."
+  },
+  {
+    "word": "sudo",
+    "phonetic": "/ˈsuːdoʊ/",
+    "definition": "v. 以超级用户身份执行",
+    "example": "Use sudo to install the package with administrative privileges."
+  },
+  {
+    "word": "synchronization",
+    "phonetic": "/ˌsɪŋkrənaɪˈzeɪʃn/",
+    "definition": "n. 同步",
+    "example": "Data synchronization ensures consistency across distributed nodes."
+  },
+  {
+    "word": "syntax",
+    "phonetic": "/ˈsɪntæks/",
+    "definition": "n. 语法",
+    "example": "The compiler reports a syntax error on line 42."
+  },
+  {
+    "word": "TCP",
+    "phonetic": "/ˌtiː siː ˈpiː/",
+    "definition": "n. 传输控制协议",
+    "example": "TCP guarantees reliable, ordered delivery of data packets."
+  },
+  {
+    "word": "telemetry",
+    "phonetic": "/təˈlɛmətri/",
+    "definition": "n. 遥测",
+    "example": "Collect telemetry data to monitor application health in production."
+  },
+  {
+    "word": "throughput",
+    "phonetic": "/ˈθruːpʊt/",
+    "definition": "n. 吞吐量",
+    "example": "The system's throughput doubled after optimizing the database queries."
+  },
+  {
+    "word": "thread",
+    "phonetic": "/θred/",
+    "definition": "n. 线程",
+    "example": "Spawn a new thread to handle the request concurrently."
+  },
+  {
+    "word": "token",
+    "phonetic": "/ˈtoʊkən/",
+    "definition": "n. 令牌",
+    "example": "The JWT token is sent in the Authorization header."
+  },
+  {
+    "word": "tracing",
+    "phonetic": "/ˈtreɪsɪŋ/",
+    "definition": "n. 跟踪",
+    "example": "Distributed tracing helps identify bottlenecks in microservices."
+  },
+  {
+    "word": "tree",
+    "phonetic": "/triː/",
+    "definition": "n. 树",
+    "example": "The DOM is structured as a tree of HTML elements."
+  },
+  {
+    "word": "tuple",
+    "phonetic": "/ˈtjuːpl/",
+    "definition": "n. 元组",
+    "example": "A tuple is an immutable collection of elements in Python."
+  },
+  {
+    "word": "UDP",
+    "phonetic": "/ˌjuː diː ˈpiː/",
+    "definition": "n. 用户数据报协议",
+    "example": "UDP is preferred for real-time applications due to its low latency."
+  },
+  {
+    "word": "unmarshalling",
+    "phonetic": "/ʌnˈmɑːrʃəlɪŋ/",
+    "definition": "n. 解编组",
+    "example": "Unmarshalling parses the received bytes back into an object."
+  },
+  {
+    "word": "availability",
+    "phonetic": "/əˌveɪləˈbɪləti/",
+    "definition": "n. 可用性",
+    "example": "Ensure high availability with redundant servers and automatic failover."
+  },
+  {
+    "word": "variable",
+    "phonetic": "/ˈveriəbl/",
+    "definition": "n. 变量",
+    "example": "Declare a variable to store the user's input."
+  },
+  {
+    "word": "vertical scaling",
+    "phonetic": "/ˈvɜːrtɪkl ˈskeɪlɪŋ/",
+    "definition": "n. 垂直扩展",
+    "example": "Vertical scaling increases the resources of a single machine."
+  },
+  {
+    "word": "version control",
+    "phonetic": "/ˈvɜːrʒn kənˈtroʊl/",
+    "definition": "n. 版本控制",
+    "example": "Git is a widely used version control system for tracking code changes."
+  },
+  {
+    "word": "virtual",
+    "phonetic": "/ˈvɜːrtʃuəl/",
+    "definition": "adj. 虚拟的",
+    "example": "The virtual method can be overridden by derived classes."
+  },
+  {
+    "word": "virtual machine",
+    "phonetic": "/ˈvɜːrtʃuəl məˈʃiːn/",
+    "definition": "n. 虚拟机",
+    "example": "The Java virtual machine executes bytecode on any platform."
+  },
+  {
+    "word": "vulnerability",
+    "phonetic": "/ˌvʌlnərəˈbɪləti/",
+    "definition": "n. 漏洞",
+    "example": "Scan the codebase regularly for security vulnerabilities."
+  },
+  {
+    "word": "webhook",
+    "phonetic": "/ˈwɛbhʊk/",
+    "definition": "n. 网络钩子",
+    "example": "Configure a webhook to receive notifications from the payment service."
+  },
+  {
+    "word": "WebSocket",
+    "phonetic": "/ˈwɛbsɒkɪt/",
+    "definition": "n. WebSocket协议",
+    "example": "Establish a WebSocket connection for real-time updates."
+  },
+  {
+    "word": "white box testing",
+    "phonetic": "/waɪt bɒks ˈtɛstɪŋ/",
+    "definition": "n. 白盒测试",
+    "example": "White box testing examines the internal structure of the application."
+  },
+  {
+    "word": "wildcard",
+    "phonetic": "/ˈwaɪldkɑːrd/",
+    "definition": "n. 通配符",
+    "example": "Use a wildcard character to match multiple file names in a pattern."
+  },
+  {
+    "word": "wrapper",
+    "phonetic": "/ˈræpər/",
+    "definition": "n. 包装器",
+    "example": "The wrapper function adds error handling around the original API call."
+  },
+  {
+    "word": "XML",
+    "phonetic": "/ˌɛks ɛm ˈɛl/",
+    "definition": "n. 可扩展标记语言",
+    "example": "XML is used to structure and store data in a human-readable format."
+  },
+  {
+    "word": "YAML",
+    "phonetic": "/ˈjæməl/",
+    "definition": "n. YAML配置语言",
+    "example": "Define the deployment configuration in a YAML file."
+  },
+  {
+    "word": "yield",
+    "phonetic": "/jiːld/",
+    "definition": "v. 让出；产出",
+    "example": "The generator yields values one at a time on each iteration."
+  },
+  {
+    "word": "zero-day",
+    "phonetic": "/ˈzɪəroʊ deɪ/",
+    "definition": "n. 零日漏洞",
+    "example": "A zero-day vulnerability was discovered in the widely used library."
+  },
+  {
+    "word": "graph",
+    "phonetic": "/ɡrɑːf/",
+    "definition": "n. 图",
+    "example": "Model the social network as a graph of users and connections."
+  },
+  {
+    "word": "queue",
+    "phonetic": "/kjuː/",
+    "definition": "n. 队列",
+    "example": "Messages are placed in a queue for asynchronous processing."
+  },
+  {
+    "word": "CI/CD",
+    "phonetic": "/ˌsiː aɪ siː ˈdiː/",
+    "definition": "n. 持续集成/持续部署",
+    "example": "Set up a CI/CD pipeline to automate the software delivery process."
+  },
+  {
+    "word": "scope",
+    "phonetic": "/skoʊp/",
+    "definition": "n. 作用域",
+    "example": "The variable is only accessible within its declared scope."
+  },
+  {
+    "word": "ORM",
+    "phonetic": "/ˌoʊ ɑːr ˈɛm/",
+    "definition": "n. 对象关系映射",
+    "example": "Use an ORM to interact with the database using object-oriented syntax."
+  },
+  {
+    "word": "DTO",
+    "phonetic": "/ˌdiː tiː ˈoʊ/",
+    "definition": "n. 数据传输对象",
+    "example": "Use a DTO to transfer data between the service and presentation layers."
+  },
+  {
+    "word": "memoization",
+    "phonetic": "/ˌmɛmoʊaɪˈzeɪʃn/",
+    "definition": "n. 记忆化",
+    "example": "Memoization caches the results of expensive function calls."
+  },
+  {
+    "word": "abstraction layer",
+    "phonetic": "/æbˈstrækʃn ˈleɪər/",
+    "definition": "n. 抽象层",
+    "example": "The abstraction layer hides the underlying system complexity."
+  }
+]

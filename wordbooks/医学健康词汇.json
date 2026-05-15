@@ -1,0 +1,590 @@
+[
+  {
+    "word": "diagnosis",
+    "phonetic": "/ˌdaɪəɡˈnoʊsɪs/",
+    "definition": "n. 诊断",
+    "example": "Early diagnosis of cancer improves survival rates."
+  },
+  {
+    "word": "symptom",
+    "phonetic": "/ˈsɪmptəm/",
+    "definition": "n. 症状",
+    "example": "Fever and cough are common symptoms of the flu."
+  },
+  {
+    "word": "chronic",
+    "phonetic": "/ˈkrɑːnɪk/",
+    "definition": "adj. 慢性的；长期的",
+    "example": "Chronic pain requires ongoing management."
+  },
+  {
+    "word": "acute",
+    "phonetic": "/əˈkjuːt/",
+    "definition": "adj. 急性的；严重的",
+    "example": "The patient was admitted with acute appendicitis."
+  },
+  {
+    "word": "prognosis",
+    "phonetic": "/prɑːɡˈnoʊsɪs/",
+    "definition": "n. 预后",
+    "example": "The prognosis for recovery is positive."
+  },
+  {
+    "word": "therapy",
+    "phonetic": "/ˈθɛrəpi/",
+    "definition": "n. 治疗；疗法",
+    "example": "Physical therapy helped restore her mobility."
+  },
+  {
+    "word": "surgery",
+    "phonetic": "/ˈsɜːrdʒəri/",
+    "definition": "n. 手术；外科",
+    "example": "The patient underwent heart surgery."
+  },
+  {
+    "word": "anesthesia",
+    "phonetic": "/ˌænəsˈθiːʒə/",
+    "definition": "n. 麻醉",
+    "example": "General anesthesia was administered before the operation."
+  },
+  {
+    "word": "prescription",
+    "phonetic": "/prɪˈskrɪpʃən/",
+    "definition": "n. 处方；药方",
+    "example": "The doctor wrote a prescription for antibiotics."
+  },
+  {
+    "word": "antibiotic",
+    "phonetic": "/ˌæntɪbaɪˈɑːtɪk/",
+    "definition": "n./adj. 抗生素",
+    "example": "Antibiotics are ineffective against viral infections."
+  },
+  {
+    "word": "dosage",
+    "phonetic": "/ˈdoʊsɪdʒ/",
+    "definition": "n. 剂量",
+    "example": "Follow the recommended dosage on the label."
+  },
+  {
+    "word": "vaccine",
+    "phonetic": "/vækˈsiːn/",
+    "definition": "n. 疫苗",
+    "example": "The flu vaccine is recommended annually."
+  },
+  {
+    "word": "immunity",
+    "phonetic": "/ɪˈmjuːnɪti/",
+    "definition": "n. 免疫力",
+    "example": "Vaccination provides long-term immunity."
+  },
+  {
+    "word": "pathogen",
+    "phonetic": "/ˈpæθədʒən/",
+    "definition": "n. 病原体",
+    "example": "Bacteria and viruses are common pathogens."
+  },
+  {
+    "word": "inflammation",
+    "phonetic": "/ˌɪnfləˈmeɪʃən/",
+    "definition": "n. 炎症",
+    "example": "Inflammation is the body's natural response to injury."
+  },
+  {
+    "word": "metabolism",
+    "phonetic": "/məˈtæbəlɪzəm/",
+    "definition": "n. 新陈代谢",
+    "example": "A fast metabolism helps burn calories quickly."
+  },
+  {
+    "word": "cardiology",
+    "phonetic": "/ˌkɑːrdiˈɑːlədʒi/",
+    "definition": "n. 心脏病学",
+    "example": "She specializes in cardiology at the hospital."
+  },
+  {
+    "word": "oncology",
+    "phonetic": "/ɑːŋˈkɑːlədʒi/",
+    "definition": "n. 肿瘤学",
+    "example": "Oncology research has led to breakthrough cancer treatments."
+  },
+  {
+    "word": "pediatrics",
+    "phonetic": "/ˌpiːdiˈætrɪks/",
+    "definition": "n. 儿科学",
+    "example": "The child was referred to a pediatrics specialist."
+  },
+  {
+    "word": "orthopedics",
+    "phonetic": "/ˌɔːrθəˈpiːdɪks/",
+    "definition": "n. 骨科",
+    "example": "Orthopedics deals with musculoskeletal conditions."
+  },
+  {
+    "word": "neurology",
+    "phonetic": "/nʊˈrɑːlədʒi/",
+    "definition": "n. 神经学",
+    "example": "Neurology studies disorders of the nervous system."
+  },
+  {
+    "word": "dermatology",
+    "phonetic": "/ˌdɜːrməˈtɑːlədʒi/",
+    "definition": "n. 皮肤科",
+    "example": "Dermatology treats conditions affecting the skin."
+  },
+  {
+    "word": "radiology",
+    "phonetic": "/ˌreɪdiˈɑːlədʒi/",
+    "definition": "n. 放射学",
+    "example": "Radiology uses imaging to diagnose diseases."
+  },
+  {
+    "word": "epidemic",
+    "phonetic": "/ˌɛpɪˈdɛmɪk/",
+    "definition": "n./adj. 流行病",
+    "example": "The flu epidemic affected thousands of people."
+  },
+  {
+    "word": "pandemic",
+    "phonetic": "/pænˈdɛmɪk/",
+    "definition": "n./adj. 大流行病",
+    "example": "The COVID-19 pandemic changed healthcare worldwide."
+  },
+  {
+    "word": "quarantine",
+    "phonetic": "/ˈkwɔːrəntiːn/",
+    "definition": "n./v. 隔离",
+    "example": "Travelers were placed in quarantine for 14 days."
+  },
+  {
+    "word": "contagious",
+    "phonetic": "/kənˈteɪdʒəs/",
+    "definition": "adj. 传染性的",
+    "example": "Measles is highly contagious among unvaccinated children."
+  },
+  {
+    "word": "symptomatic",
+    "phonetic": "/ˌsɪmptəˈmætɪk/",
+    "definition": "adj. 有症状的",
+    "example": "Only symptomatic patients require immediate treatment."
+  },
+  {
+    "word": "asymptomatic",
+    "phonetic": "/ˌeɪsɪmptəˈmætɪk/",
+    "definition": "adj. 无症状的",
+    "example": "Asymptomatic carriers can still spread the virus."
+  },
+  {
+    "word": "biopsy",
+    "phonetic": "/ˈbaɪɑːpsi/",
+    "definition": "n. 活检",
+    "example": "A biopsy confirmed the tumor was benign."
+  },
+  {
+    "word": "benign",
+    "phonetic": "/bɪˈnaɪn/",
+    "definition": "adj. 良性的",
+    "example": "The biopsy revealed a benign cyst."
+  },
+  {
+    "word": "malignant",
+    "phonetic": "/məˈlɪɡnənt/",
+    "definition": "adj. 恶性的",
+    "example": "Malignant cells can spread to other parts of the body."
+  },
+  {
+    "word": "metastasis",
+    "phonetic": "/məˈtæstəsɪs/",
+    "definition": "n. 转移",
+    "example": "Cancer metastasis makes treatment more challenging."
+  },
+  {
+    "word": "chemotherapy",
+    "phonetic": "/ˌkiːmoʊˈθɛrəpi/",
+    "definition": "n. 化疗",
+    "example": "Chemotherapy is often used after surgery to prevent recurrence."
+  },
+  {
+    "word": "radiation",
+    "phonetic": "/ˌreɪdiˈeɪʃən/",
+    "definition": "n. 放射；辐射",
+    "example": "Radiation therapy targets cancer cells directly."
+  },
+  {
+    "word": "transplant",
+    "phonetic": "/ˈtrænsplænt/",
+    "definition": "n./v. 移植",
+    "example": "A kidney transplant saved her life."
+  },
+  {
+    "word": "donor",
+    "phonetic": "/ˈdoʊnər/",
+    "definition": "n. 捐赠者；供体",
+    "example": "Organ donors save thousands of lives each year."
+  },
+  {
+    "word": "ambulance",
+    "phonetic": "/ˈæmbjələns/",
+    "definition": "n. 救护车",
+    "example": "Call an ambulance immediately!"
+  },
+  {
+    "word": "outpatient",
+    "phonetic": "/ˈaʊtpeɪʃənt/",
+    "definition": "n. 门诊病人",
+    "example": "The procedure is available for outpatient treatment."
+  },
+  {
+    "word": "inpatient",
+    "phonetic": "/ˈɪnpeɪʃənt/",
+    "definition": "n. 住院病人",
+    "example": "Inpatient care is required for severe conditions."
+  },
+  {
+    "word": "ICU",
+    "phonetic": "/ˌaɪ siː ˈjuː/",
+    "definition": "n. 重症监护室",
+    "example": "The patient was transferred to the ICU."
+  },
+  {
+    "word": "epidemiology",
+    "phonetic": "/ˌɛpɪˌdiːmiˈɑːlədʒi/",
+    "definition": "n. 流行病学",
+    "example": "Epidemiology studies the patterns of disease in populations."
+  },
+  {
+    "word": "etiology",
+    "phonetic": "/ˌiːtiˈɑːlədʒi/",
+    "definition": "n. 病因学",
+    "example": "The etiology of the disease remains unknown."
+  },
+  {
+    "word": "anatomy",
+    "phonetic": "/əˈnætəmi/",
+    "definition": "n. 解剖学",
+    "example": "Knowledge of human anatomy is essential for surgeons."
+  },
+  {
+    "word": "physiology",
+    "phonetic": "/ˌfɪziˈɑːlədʒi/",
+    "definition": "n. 生理学",
+    "example": "Physiology explains how the body's systems function."
+  },
+  {
+    "word": "pathology",
+    "phonetic": "/pəˈθɑːlədʒi/",
+    "definition": "n. 病理学",
+    "example": "Pathology examines the causes of diseases."
+  },
+  {
+    "word": "pharmacology",
+    "phonetic": "/ˌfɑːrməˈkɑːlədʒi/",
+    "definition": "n. 药理学",
+    "example": "Pharmacology studies how drugs interact with the body."
+  },
+  {
+    "word": "hemoglobin",
+    "phonetic": "/ˌhiːməˈɡloʊbɪn/",
+    "definition": "n. 血红蛋白",
+    "example": "Hemoglobin carries oxygen in red blood cells."
+  },
+  {
+    "word": "plasma",
+    "phonetic": "/ˈplæzmə/",
+    "definition": "n. 血浆；等离子体",
+    "example": "Blood plasma is used in many medical treatments."
+  },
+  {
+    "word": "platelet",
+    "phonetic": "/ˈpleɪtlɪt/",
+    "definition": "n. 血小板",
+    "example": "Platelets help blood clot after an injury."
+  },
+  {
+    "word": "artery",
+    "phonetic": "/ˈɑːrtəri/",
+    "definition": "n. 动脉",
+    "example": "Blocked arteries increase the risk of heart attack."
+  },
+  {
+    "word": "vein",
+    "phonetic": "/veɪn/",
+    "definition": "n. 静脉",
+    "example": "Blood is drawn from a vein in the arm."
+  },
+  {
+    "word": "capillary",
+    "phonetic": "/ˈkæpɪlɛri/",
+    "definition": "n. 毛细血管",
+    "example": "Gas exchange occurs in the capillaries."
+  },
+  {
+    "word": "ventilator",
+    "phonetic": "/ˈvɛntɪleɪtər/",
+    "definition": "n. 呼吸机",
+    "example": "The patient was placed on a ventilator."
+  },
+  {
+    "word": "defibrillator",
+    "phonetic": "/diːˈfɪbrɪleɪtər/",
+    "definition": "n. 除颤器",
+    "example": "An automated defibrillator is available in the lobby."
+  },
+  {
+    "word": "stethoscope",
+    "phonetic": "/ˈstɛθəskoʊp/",
+    "definition": "n. 听诊器",
+    "example": "The doctor used a stethoscope to listen to the heart."
+  },
+  {
+    "word": "hypertension",
+    "phonetic": "/ˌhaɪpərˈtɛnʃən/",
+    "definition": "n. 高血压",
+    "example": "Hypertension increases the risk of stroke."
+  },
+  {
+    "word": "hypotension",
+    "phonetic": "/ˌhaɪpoʊˈtɛnʃən/",
+    "definition": "n. 低血压",
+    "example": "Dizziness can be a sign of hypotension."
+  },
+  {
+    "word": "diabetes",
+    "phonetic": "/ˌdaɪəˈbiːtiːz/",
+    "definition": "n. 糖尿病",
+    "example": "Type 2 diabetes is often linked to lifestyle factors."
+  },
+  {
+    "word": "insulin",
+    "phonetic": "/ˈɪnsjʊlɪn/",
+    "definition": "n. 胰岛素",
+    "example": "The patient requires daily insulin injections."
+  },
+  {
+    "word": "cholesterol",
+    "phonetic": "/kəˈlɛstərɔːl/",
+    "definition": "n. 胆固醇",
+    "example": "High cholesterol levels increase heart disease risk."
+  },
+  {
+    "word": "triglyceride",
+    "phonetic": "/traɪˈɡlɪsəraɪd/",
+    "definition": "n. 甘油三酯",
+    "example": "Elevated triglycerides are a risk factor for heart disease."
+  },
+  {
+    "word": "biomarker",
+    "phonetic": "/ˈbaɪoʊˌmɑːrkər/",
+    "definition": "n. 生物标志物",
+    "example": "PSA is a biomarker used to screen for prostate cancer."
+  },
+  {
+    "word": "placebo",
+    "phonetic": "/pləˈsiːboʊ/",
+    "definition": "n. 安慰剂",
+    "example": "The control group received a placebo during the trial."
+  },
+  {
+    "word": "efficacy",
+    "phonetic": "/ˈɛfɪkəsi/",
+    "definition": "n. 疗效；功效",
+    "example": "Clinical trials measured the efficacy of the new drug."
+  },
+  {
+    "word": "contraindication",
+    "phonetic": "/ˌkɑːntrəˌɪndɪˈkeɪʃən/",
+    "definition": "n. 禁忌症",
+    "example": "Pregnancy is a contraindication for this medication."
+  },
+  {
+    "word": "side effect",
+    "phonetic": "/saɪd ɪˈfɛkt/",
+    "definition": "n. 副作用",
+    "example": "Nausea is a common side effect of the medication."
+  },
+  {
+    "word": "rehabilitation",
+    "phonetic": "/ˌriːhəˌbɪlɪˈteɪʃən/",
+    "definition": "n. 康复",
+    "example": "Post-surgery rehabilitation is essential for full recovery."
+  },
+  {
+    "word": "physiotherapy",
+    "phonetic": "/ˌfɪzioʊˈθɛrəpi/",
+    "definition": "n. 物理治疗",
+    "example": "Physiotherapy helped restore movement after the injury."
+  },
+  {
+    "word": "nutrition",
+    "phonetic": "/njuːˈtrɪʃən/",
+    "definition": "n. 营养",
+    "example": "Good nutrition is fundamental to health."
+  },
+  {
+    "word": "calorie",
+    "phonetic": "/ˈkæləri/",
+    "definition": "n. 卡路里",
+    "example": "The daily recommended intake is 2000 calories."
+  },
+  {
+    "word": "obesity",
+    "phonetic": "/oʊˈbiːsɪti/",
+    "definition": "n. 肥胖症",
+    "example": "Childhood obesity is a growing global concern."
+  },
+  {
+    "word": "BMI",
+    "phonetic": "/ˌbiː ɛm ˈaɪ/",
+    "definition": "n. 身体质量指数",
+    "example": "A BMI over 30 is classified as obese."
+  },
+  {
+    "word": "diagnostic",
+    "phonetic": "/ˌdaɪəɡˈnɑːstɪk/",
+    "definition": "adj. 诊断的",
+    "example": "Diagnostic imaging helps detect internal injuries."
+  },
+  {
+    "word": "prognostic",
+    "phonetic": "/prɑːɡˈnɑːstɪk/",
+    "definition": "adj. 预后的",
+    "example": "Prognostic factors determine treatment strategy."
+  },
+  {
+    "word": "postoperative",
+    "phonetic": "/ˌpoʊstˈɑːpərətɪv/",
+    "definition": "adj. 术后的",
+    "example": "Postoperative care is crucial for preventing infection."
+  },
+  {
+    "word": "preoperative",
+    "phonetic": "/ˌpriːˈɑːpərətɪv/",
+    "definition": "adj. 术前的",
+    "example": "Preoperative assessments ensure patient safety."
+  },
+  {
+    "word": "complication",
+    "phonetic": "/ˌkɑːmplɪˈkeɪʃən/",
+    "definition": "n. 并发症",
+    "example": "Infection is a possible complication after surgery."
+  },
+  {
+    "word": "relapse",
+    "phonetic": "/rɪˈlæps/",
+    "definition": "n./v. 复发",
+    "example": "The patient experienced a relapse after treatment."
+  },
+  {
+    "word": "remission",
+    "phonetic": "/rɪˈmɪʃən/",
+    "definition": "n. 缓解；减轻",
+    "example": "The cancer has been in remission for two years."
+  },
+  {
+    "word": "screening",
+    "phonetic": "/ˈskriːnɪŋ/",
+    "definition": "n. 筛查",
+    "example": "Regular screening helps detect diseases early."
+  },
+  {
+    "word": "intake",
+    "phonetic": "/ˈɪnteɪk/",
+    "definition": "n. 摄入量",
+    "example": "Reduce sodium intake to lower blood pressure."
+  },
+  {
+    "word": "hydration",
+    "phonetic": "/haɪˈdreɪʃən/",
+    "definition": "n. 水合；补水",
+    "example": "Proper hydration is important during exercise."
+  },
+  {
+    "word": "infusion",
+    "phonetic": "/ɪnˈfjuːʒən/",
+    "definition": "n. 输液；灌注",
+    "example": "The patient received an IV infusion of saline."
+  },
+  {
+    "word": "sedation",
+    "phonetic": "/sɪˈdeɪʃən/",
+    "definition": "n. 镇静",
+    "example": "Mild sedation was used during the procedure."
+  },
+  {
+    "word": "catheter",
+    "phonetic": "/ˈkæθɪtər/",
+    "definition": "n. 导管",
+    "example": "A catheter was inserted for urinary drainage."
+  },
+  {
+    "word": "suture",
+    "phonetic": "/ˈsuːtʃər/",
+    "definition": "n./v. 缝合",
+    "example": "The wound required ten stitches and careful suturing."
+  },
+  {
+    "word": "biomedical",
+    "phonetic": "/ˌbaɪoʊˈmɛdɪkəl/",
+    "definition": "adj. 生物医学的",
+    "example": "Biomedical research is advancing rapidly."
+  },
+  {
+    "word": "genomics",
+    "phonetic": "/dʒəˈnɑːmɪks/",
+    "definition": "n. 基因组学",
+    "example": "Genomics enables personalized medical treatments."
+  },
+  {
+    "word": "prosthetic",
+    "phonetic": "/prɑːsˈθɛtɪk/",
+    "definition": "adj./n. 假体的；假肢",
+    "example": "The prosthetic limb was designed with advanced materials."
+  },
+  {
+    "word": "triage",
+    "phonetic": "/triˈɑːʒ/",
+    "definition": "n./v. 分诊",
+    "example": "Triage prioritizes patients based on urgency."
+  },
+  {
+    "word": "palliative",
+    "phonetic": "/ˈpæliətɪv/",
+    "definition": "adj. 缓和的；姑息的",
+    "example": "Palliative care focuses on comfort, not cure."
+  },
+  {
+    "word": "prophylaxis",
+    "phonetic": "/ˌproʊfəˈlæksɪs/",
+    "definition": "n. 预防措施",
+    "example": "Antibiotic prophylaxis prevents surgical infections."
+  },
+  {
+    "word": "contraception",
+    "phonetic": "/ˌkɑːntrəˈsɛpʃən/",
+    "definition": "n. 避孕",
+    "example": "Modern contraception offers many safe options."
+  },
+  {
+    "word": "allergen",
+    "phonetic": "/ˈælərdʒən/",
+    "definition": "n. 过敏原",
+    "example": "Pollen is a common allergen in spring."
+  },
+  {
+    "word": "autoimmune",
+    "phonetic": "/ˌɔːtoʊɪˈmjuːn/",
+    "definition": "adj. 自身免疫的",
+    "example": "Lupus is an autoimmune disease."
+  },
+  {
+    "word": "antigen",
+    "phonetic": "/ˈæntɪdʒən/",
+    "definition": "n. 抗原",
+    "example": "The immune system recognizes antigens on pathogens."
+  },
+  {
+    "word": "antibody",
+    "phonetic": "/ˈæntɪbɑːdi/",
+    "definition": "n. 抗体",
+    "example": "Antibodies are produced in response to infections."
+  }
+]

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>预制词本 - VocabFloat</title>
+    <meta name="description" content="下载 VocabFloat 预制词本 JSON 文件">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="navbar-brand">Vocab<span>Float</span></a>
+            <ul class="navbar-links">
+                <li><a href="index.html#features">功能</a></li>
+                <li><a href="index.html#pricing">价格</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html#download">下载</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section min-h-screen" style="padding-top: 100px;">
+        <div class="container text-center">
+            <h1 class="text-4xl font-bold mb-4">预制词本</h1>
+            <p class="text-[--text-secondary] mb-8">下载预制词汇表 JSON 文件，在应用内「导入生词本」即可使用</p>
+            <div id="wordbook-grid" class="flex flex-wrap gap-6 justify-center max-w-5xl mx-auto">
+                <p class="text-[--text-secondary]">加载中…</p>
+            </div>
+            <p class="mt-12">
+                <a href="index.html" class="text-[--accent] hover:underline">← 返回主页</a>
+            </p>
+        </div>
+    </section>
+
+    <footer class="section bg-[--bg-secondary] py-8">
+        <div class="container text-center">
+            <p class="text-[--text-secondary] text-sm">© 2026 Firegod.cn. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+    const wordbooks = [
+        { file: "朗文3000常用词汇.json", label: "朗文 3000 常用词汇", icon: "📚" },
+        { file: "高中词汇.json", label: "高中词汇", icon: "📖" },
+        { file: "计算机行业词汇.json", label: "计算机行业词汇", icon: "💻" },
+        { file: "IT运维词汇.json", label: "IT 运维词汇", icon: "🖥️" },
+        { file: "金融商业词汇.json", label: "金融商业词汇", icon: "💰" },
+        { file: "法律词汇.json", label: "法律词汇", icon: "⚖️" },
+        { file: "医学健康词汇.json", label: "医学健康词汇", icon: "🏥" },
+        { file: "机械工程词汇.json", label: "机械工程词汇", icon: "⚙️" },
+        { file: "餐饮旅游词汇.json", label: "餐饮旅游词汇", icon: "🍽️" },
+        { file: "教育词汇.json", label: "教育词汇", icon: "🎓" },
+    ];
+
+    (async function() {
+        const grid = document.getElementById("wordbook-grid");
+        const cards = await Promise.all(wordbooks.map(async (wb) => {
+            const path = "wordbooks/" + encodeURIComponent(wb.file);
+            let count = "?";
+            try {
+                const res = await fetch(path);
+                if (res.ok) {
+                    const data = await res.json();
+                    count = Array.isArray(data) ? data.length : "?";
+                }
+            } catch (e) {}
+            return '<div class="card flex flex-col items-center min-w-[200px] p-6">' +
+                '<div class="text-4xl mb-3">' + wb.icon + '</div>' +
+                '<h3 class="text-lg font-semibold mb-2">' + wb.label + '</h3>' +
+                '<p class="text-[--text-secondary] text-sm mb-4">共 ' + count + ' 词</p>' +
+                '<a href="' + path + '" download class="btn-primary text-sm">下载 JSON</a>' +
+                '</div>';
+        }));
+        grid.innerHTML = cards.join("");
+    })();
+    </script>
+</body>
+</html>

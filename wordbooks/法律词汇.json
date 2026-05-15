@@ -1,0 +1,518 @@
+[
+  {
+    "word": "jurisdiction",
+    "phonetic": "/ˌdʒʊrɪsˈdɪkʃən/",
+    "definition": "n. 管辖权；司法权",
+    "example": "The case falls under federal jurisdiction."
+  },
+  {
+    "word": "litigation",
+    "phonetic": "/ˌlɪtɪˈɡeɪʃən/",
+    "definition": "n. 诉讼",
+    "example": "The company faces litigation from former employees."
+  },
+  {
+    "word": "plaintiff",
+    "phonetic": "/ˈpleɪntɪf/",
+    "definition": "n. 原告",
+    "example": "The plaintiff filed a lawsuit for damages."
+  },
+  {
+    "word": "defendant",
+    "phonetic": "/dɪˈfɛndənt/",
+    "definition": "n. 被告",
+    "example": "The defendant pleaded not guilty."
+  },
+  {
+    "word": "verdict",
+    "phonetic": "/ˈvɜːrdɪkt/",
+    "definition": "n. 裁决；判决",
+    "example": "The jury reached a unanimous verdict of guilty."
+  },
+  {
+    "word": "testimony",
+    "phonetic": "/ˈtɛstɪmoʊni/",
+    "definition": "n. 证词",
+    "example": "The witness provided testimony under oath."
+  },
+  {
+    "word": "deposition",
+    "phonetic": "/ˌdɛpəˈzɪʃən/",
+    "definition": "n. 证词录取；免职",
+    "example": "The deposition was recorded by a court reporter."
+  },
+  {
+    "word": "subpoena",
+    "phonetic": "/səˈpiːnə/",
+    "definition": "n./v. 传票",
+    "example": "She received a subpoena to appear in court."
+  },
+  {
+    "word": "statute",
+    "phonetic": "/ˈstætʃuːt/",
+    "definition": "n. 法令；法规",
+    "example": "The statute of limitations has expired."
+  },
+  {
+    "word": "statutory",
+    "phonetic": "/ˈstætʃətɔːri/",
+    "definition": "adj. 法定的；依照法规的",
+    "example": "Employers must comply with statutory requirements."
+  },
+  {
+    "word": "legislation",
+    "phonetic": "/ˌlɛdʒɪsˈleɪʃən/",
+    "definition": "n. 立法；法律",
+    "example": "New environmental legislation was enacted."
+  },
+  {
+    "word": "regulation",
+    "phonetic": "/ˌrɛɡjəˈleɪʃən/",
+    "definition": "n. 规章；条例",
+    "example": "Financial regulations were tightened after the crisis."
+  },
+  {
+    "word": "compliance",
+    "phonetic": "/kəmˈplaɪəns/",
+    "definition": "n. 遵守；合规",
+    "example": "The firm ensured compliance with data protection laws."
+  },
+  {
+    "word": "liability",
+    "phonetic": "/ˌlaɪəˈbɪlɪti/",
+    "definition": "n. 法律责任；义务",
+    "example": "The company accepted liability for the accident."
+  },
+  {
+    "word": "negligence",
+    "phonetic": "/ˈnɛɡlɪdʒəns/",
+    "definition": "n. 过失；疏忽",
+    "example": "The lawsuit alleged medical negligence."
+  },
+  {
+    "word": "malpractice",
+    "phonetic": "/mælˈpræktɪs/",
+    "definition": "n. 渎职；不当行为",
+    "example": "The surgeon was sued for medical malpractice."
+  },
+  {
+    "word": "tort",
+    "phonetic": "/tɔːrt/",
+    "definition": "n. 侵权行为",
+    "example": "The tort claim sought compensation for property damage."
+  },
+  {
+    "word": "breach",
+    "phonetic": "/briːtʃ/",
+    "definition": "n./v. 违反；破坏",
+    "example": "The company was sued for breach of contract."
+  },
+  {
+    "word": "indemnify",
+    "phonetic": "/ɪnˈdɛmnɪfaɪ/",
+    "definition": "v. 赔偿；补偿",
+    "example": "The insurer agreed to indemnify the losses."
+  },
+  {
+    "word": "arbitration",
+    "phonetic": "/ˌɑːrbɪˈtreɪʃən/",
+    "definition": "n. 仲裁",
+    "example": "The dispute was resolved through arbitration."
+  },
+  {
+    "word": "mediation",
+    "phonetic": "/ˌmiːdiˈeɪʃən/",
+    "definition": "n. 调解",
+    "example": "Mediation is often faster and cheaper than litigation."
+  },
+  {
+    "word": "litigant",
+    "phonetic": "/ˈlɪtɪɡənt/",
+    "definition": "n. 诉讼当事人",
+    "example": "Both litigants agreed to settle out of court."
+  },
+  {
+    "word": "prosecutor",
+    "phonetic": "/ˈprɑːsɪkjuːtər/",
+    "definition": "n. 检察官；公诉人",
+    "example": "The prosecutor presented strong evidence."
+  },
+  {
+    "word": "attorney",
+    "phonetic": "/əˈtɜːrni/",
+    "definition": "n. 律师；代理人",
+    "example": "She hired an attorney to represent her."
+  },
+  {
+    "word": "counsel",
+    "phonetic": "/ˈkaʊnsəl/",
+    "definition": "n./v. 律师；建议",
+    "example": "The defense counsel argued for a lighter sentence."
+  },
+  {
+    "word": "advocate",
+    "phonetic": "/ˈædvəkət/",
+    "definition": "n./v. 辩护人；倡导",
+    "example": "She advocates for victims' rights."
+  },
+  {
+    "word": "warrant",
+    "phonetic": "/ˈwɔːrənt/",
+    "definition": "n. 搜查令；令状",
+    "example": "The police obtained a search warrant."
+  },
+  {
+    "word": "bail",
+    "phonetic": "/beɪl/",
+    "definition": "n./v. 保释金",
+    "example": "Bail was set at $50,000."
+  },
+  {
+    "word": "plea",
+    "phonetic": "/pliː/",
+    "definition": "n. 抗辩；请求",
+    "example": "The defendant entered a plea of not guilty."
+  },
+  {
+    "word": "sentence",
+    "phonetic": "/ˈsɛntəns/",
+    "definition": "n./v. 判刑",
+    "example": "The judge sentenced him to five years in prison."
+  },
+  {
+    "word": "parole",
+    "phonetic": "/pəˈroʊl/",
+    "definition": "n. 假释",
+    "example": "He was released on parole after serving three years."
+  },
+  {
+    "word": "probation",
+    "phonetic": "/proʊˈbeɪʃən/",
+    "definition": "n. 缓刑；试用期",
+    "example": "The court placed him on probation for two years."
+  },
+  {
+    "word": "acquittal",
+    "phonetic": "/əˈkwɪtəl/",
+    "definition": "n. 无罪释放",
+    "example": "The jury returned a verdict of acquittal."
+  },
+  {
+    "word": "conviction",
+    "phonetic": "/kənˈvɪkʃən/",
+    "definition": "n. 定罪；信念",
+    "example": "His conviction was overturned on appeal."
+  },
+  {
+    "word": "appeal",
+    "phonetic": "/əˈpiːl/",
+    "definition": "n./v. 上诉",
+    "example": "The defense filed an appeal with the higher court."
+  },
+  {
+    "word": "precedent",
+    "phonetic": "/ˈprɛsɪdənt/",
+    "definition": "n. 先例；判例",
+    "example": "The ruling set a legal precedent for future cases."
+  },
+  {
+    "word": "juror",
+    "phonetic": "/ˈdʒʊrər/",
+    "definition": "n. 陪审员",
+    "example": "Twelve jurors were selected for the trial."
+  },
+  {
+    "word": "indictment",
+    "phonetic": "/ɪnˈdaɪtmənt/",
+    "definition": "n. 起诉书；控告",
+    "example": "The grand jury issued a formal indictment."
+  },
+  {
+    "word": "defamation",
+    "phonetic": "/ˌdɛfəˈmeɪʃən/",
+    "definition": "n. 诽谤",
+    "example": "She sued for defamation after the false article."
+  },
+  {
+    "word": "slander",
+    "phonetic": "/ˈslændər/",
+    "definition": "n./v. 口头诽谤",
+    "example": "Spreading false rumors constitutes slander."
+  },
+  {
+    "word": "libel",
+    "phonetic": "/ˈlaɪbəl/",
+    "definition": "n./v. 书面诽谤",
+    "example": "The newspaper was sued for libel."
+  },
+  {
+    "word": "fraud",
+    "phonetic": "/frɔːd/",
+    "definition": "n. 欺诈",
+    "example": "He was convicted of investment fraud."
+  },
+  {
+    "word": "embezzlement",
+    "phonetic": "/ɪmˈbɛzəlmənt/",
+    "definition": "n. 挪用公款",
+    "example": "The CFO was charged with embezzlement."
+  },
+  {
+    "word": "bribery",
+    "phonetic": "/ˈbraɪbəri/",
+    "definition": "n. 贿赂",
+    "example": "The official was arrested for bribery."
+  },
+  {
+    "word": "perjury",
+    "phonetic": "/ˈpɜːrdʒəri/",
+    "definition": "n. 伪证罪",
+    "example": "She was charged with perjury for lying under oath."
+  },
+  {
+    "word": "extortion",
+    "phonetic": "/ɪkˈstɔːrʃən/",
+    "definition": "n. 敲诈勒索",
+    "example": "The gang was involved in extortion."
+  },
+  {
+    "word": "incarceration",
+    "phonetic": "/ɪnˌkɑːrsəˈreɪʃən/",
+    "definition": "n. 监禁",
+    "example": "Incarceration rates have risen in recent years."
+  },
+  {
+    "word": "probate",
+    "phonetic": "/ˈproʊbeɪt/",
+    "definition": "n./v. 遗嘱认证",
+    "example": "The will went through probate court."
+  },
+  {
+    "word": "custody",
+    "phonetic": "/ˈkʌstədi/",
+    "definition": "n. 监护权；拘留",
+    "example": "The court granted joint custody to both parents."
+  },
+  {
+    "word": "alimony",
+    "phonetic": "/ˈælɪmoʊni/",
+    "definition": "n. 赡养费",
+    "example": "He was ordered to pay monthly alimony."
+  },
+  {
+    "word": "patent",
+    "phonetic": "/ˈpætənt/",
+    "definition": "n./v. 专利",
+    "example": "The inventor filed a patent for the new device."
+  },
+  {
+    "word": "copyright",
+    "phonetic": "/ˈkɑːpiraɪt/",
+    "definition": "n./v. 版权",
+    "example": "Copyright protection lasts for the author's lifetime plus 70 years."
+  },
+  {
+    "word": "trademark",
+    "phonetic": "/ˈtreɪdmɑːrk/",
+    "definition": "n. 商标",
+    "example": "The company registered its trademark."
+  },
+  {
+    "word": "affidavit",
+    "phonetic": "/ˌæfɪˈdeɪvɪt/",
+    "definition": "n. 宣誓书",
+    "example": "She signed an affidavit confirming her testimony."
+  },
+  {
+    "word": "allegation",
+    "phonetic": "/ˌæləˈɡeɪʃən/",
+    "definition": "n. 指控；声称",
+    "example": "The allegations were proven to be false."
+  },
+  {
+    "word": "amicus",
+    "phonetic": "/əˈmaɪkəs/",
+    "definition": "n. 法庭之友",
+    "example": "An amicus brief was filed by civil rights organizations."
+  },
+  {
+    "word": "injunction",
+    "phonetic": "/ɪnˈdʒʌŋkʃən/",
+    "definition": "n. 禁令",
+    "example": "The court issued an injunction to halt construction."
+  },
+  {
+    "word": "inherent",
+    "phonetic": "/ɪnˈhɪrənt/",
+    "definition": "adj. 固有的；内在的",
+    "example": "There are inherent risks in any surgery."
+  },
+  {
+    "word": "habeas",
+    "phonetic": "/ˈheɪbiəs/",
+    "definition": "n. 人身保护令",
+    "example": "A writ of habeas corpus was filed."
+  },
+  {
+    "word": "venue",
+    "phonetic": "/ˈvɛnjuː/",
+    "definition": "n. 审判地点；管辖地",
+    "example": "A change of venue was requested due to media coverage."
+  },
+  {
+    "word": "stipulate",
+    "phonetic": "/ˈstɪpjəleɪt/",
+    "definition": "v. 规定；明确要求",
+    "example": "The contract stipulates a 30-day notice period."
+  },
+  {
+    "word": "enact",
+    "phonetic": "/ɪˈnækt/",
+    "definition": "v. 制定；颁布",
+    "example": "Congress enacted new privacy legislation."
+  },
+  {
+    "word": "ratify",
+    "phonetic": "/ˈrætɪfaɪ/",
+    "definition": "v. 批准；认可",
+    "example": "The treaty was ratified by all member states."
+  },
+  {
+    "word": "annul",
+    "phonetic": "/əˈnʌl/",
+    "definition": "v. 废除；宣告无效",
+    "example": "The court annulled the marriage."
+  },
+  {
+    "word": "litigious",
+    "phonetic": "/lɪˈtɪdʒəs/",
+    "definition": "adj. 好诉讼的",
+    "example": "The company has a litigious culture."
+  },
+  {
+    "word": "adjudicate",
+    "phonetic": "/əˈdʒuːdɪkeɪt/",
+    "definition": "v. 裁决；判决",
+    "example": "The panel was appointed to adjudicate the dispute."
+  },
+  {
+    "word": "defraud",
+    "phonetic": "/dɪˈfrɔːd/",
+    "definition": "v. 欺诈；骗取",
+    "example": "He defrauded investors of millions of dollars."
+  },
+  {
+    "word": "prosecution",
+    "phonetic": "/ˌprɑːsɪˈkjuːʃən/",
+    "definition": "n. 起诉；检举",
+    "example": "The prosecution presented its closing arguments."
+  },
+  {
+    "word": "detention",
+    "phonetic": "/dɪˈtɛnʃən/",
+    "definition": "n. 拘留；扣押",
+    "example": "The suspect was held in detention for 48 hours."
+  },
+  {
+    "word": "extradite",
+    "phonetic": "/ˈɛkstrədaɪt/",
+    "definition": "v. 引渡",
+    "example": "The suspect was extradited to face charges."
+  },
+  {
+    "word": "habeas corpus",
+    "phonetic": "/ˈheɪbiəs ˈkɔːrpəs/",
+    "definition": "n. 人身保护令",
+    "example": "Habeas corpus protects against unlawful detention."
+  },
+  {
+    "word": "de jure",
+    "phonetic": "/deɪ ˈdʒʊri/",
+    "definition": "adj./adv. 法律上的",
+    "example": "De jure segregation was ruled unconstitutional."
+  },
+  {
+    "word": "de facto",
+    "phonetic": "/diː ˈfæktoʊ/",
+    "definition": "adj./adv. 事实上的",
+    "example": "The policy created a de facto monopoly."
+  },
+  {
+    "word": "misdemeanor",
+    "phonetic": "/ˌmɪsdɪˈmiːnər/",
+    "definition": "n. 轻罪",
+    "example": "Petty theft is classified as a misdemeanor."
+  },
+  {
+    "word": "felony",
+    "phonetic": "/ˈfɛləni/",
+    "definition": "n. 重罪",
+    "example": "Murder is the most serious felony."
+  },
+  {
+    "word": "homicide",
+    "phonetic": "/ˈhɑːmɪsaɪd/",
+    "definition": "n. 杀人罪",
+    "example": "The case was classified as manslaughter, not homicide."
+  },
+  {
+    "word": "manslaughter",
+    "phonetic": "/ˈmænslɔːtər/",
+    "definition": "n. 过失杀人",
+    "example": "The driver was charged with involuntary manslaughter."
+  },
+  {
+    "word": "duress",
+    "phonetic": "/djʊˈrɛs/",
+    "definition": "n. 胁迫",
+    "example": "The confession was obtained under duress."
+  },
+  {
+    "word": "due process",
+    "phonetic": "/djuː ˈprɑːsɛs/",
+    "definition": "n. 正当程序",
+    "example": "Every citizen is entitled to due process of law."
+  },
+  {
+    "word": "estoppel",
+    "phonetic": "/ɪˈstɑːpəl/",
+    "definition": "n. 禁止反言",
+    "example": "Estoppel prevents the party from denying earlier statements."
+  },
+  {
+    "word": "tortfeasor",
+    "phonetic": "/ˈtɔːrtfiːzər/",
+    "definition": "n. 侵权行为人",
+    "example": "The tortfeasor was held liable for damages."
+  },
+  {
+    "word": "in loco parentis",
+    "phonetic": "/ɪn ˈloʊkoʊ pəˈrɛntɪs/",
+    "definition": "prep. 代行父母职责",
+    "example": "Teachers act in loco parentis during school hours."
+  },
+  {
+    "word": "bona fide",
+    "phonetic": "/ˈboʊnə ˈfaɪdi/",
+    "definition": "adj. 真诚的；善意的",
+    "example": "A bona fide purchaser is protected under the law."
+  },
+  {
+    "word": "prima facie",
+    "phonetic": "/ˌpraɪmə ˈfeɪʃi/",
+    "definition": "adj. 表面成立的；初步的",
+    "example": "The prosecution established a prima facie case."
+  },
+  {
+    "word": "ex parte",
+    "phonetic": "/ɛks ˈpɑːrti/",
+    "definition": "adj./adv. 单方面的",
+    "example": "The court granted an ex parte emergency order."
+  },
+  {
+    "word": "amicus curiae",
+    "phonetic": "/əˈmaɪkəs ˈkjʊriɪ/",
+    "definition": "n. 法庭之友意见书",
+    "example": "Several organizations submitted amicus curiae briefs."
+  }
+]

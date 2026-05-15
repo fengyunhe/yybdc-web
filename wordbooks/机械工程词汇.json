@@ -1,0 +1,548 @@
+[
+  {
+    "word": "torque",
+    "phonetic": "/tɔːrk/",
+    "definition": "n. 扭矩；转矩",
+    "example": "The engine produces 500 Nm of torque."
+  },
+  {
+    "word": "hydraulic",
+    "phonetic": "/haɪˈdrɔːlɪk/",
+    "definition": "adj. 液压的",
+    "example": "The crane uses a hydraulic system to lift heavy loads."
+  },
+  {
+    "word": "pneumatic",
+    "phonetic": "/nuːˈmætɪk/",
+    "definition": "adj. 气动的",
+    "example": "Pneumatic tools are powered by compressed air."
+  },
+  {
+    "word": "blueprint",
+    "phonetic": "/ˈbluːprɪnt/",
+    "definition": "n. 蓝图；方案",
+    "example": "The engineer reviewed the blueprint before construction."
+  },
+  {
+    "word": "tensile",
+    "phonetic": "/ˈtɛnslaɪ/",
+    "definition": "adj. 拉力的；抗张的",
+    "example": "The tensile strength of the steel is very high."
+  },
+  {
+    "word": "compressive",
+    "phonetic": "/kəmˈprɛsɪv/",
+    "definition": "adj. 压缩的",
+    "example": "The compressive strength determines load-bearing capacity."
+  },
+  {
+    "word": "friction",
+    "phonetic": "/ˈfrɪkʃən/",
+    "definition": "n. 摩擦",
+    "example": "Lubricant reduces friction between moving parts."
+  },
+  {
+    "word": "abrasion",
+    "phonetic": "/əˈbreɪʒən/",
+    "definition": "n. 磨损；擦伤",
+    "example": "Abrasion testing simulates real-world wear conditions."
+  },
+  {
+    "word": "turbine",
+    "phonetic": "/ˈtɜːrbaɪn/",
+    "definition": "n. 涡轮；透平",
+    "example": "The wind turbine generates electricity for the grid."
+  },
+  {
+    "word": "gearbox",
+    "phonetic": "/ˈɡɪrbɑːks/",
+    "definition": "n. 变速箱",
+    "example": "The gearbox shifts automatically based on speed."
+  },
+  {
+    "word": "piston",
+    "phonetic": "/ˈpɪstən/",
+    "definition": "n. 活塞",
+    "example": "The piston moves up and down inside the cylinder."
+  },
+  {
+    "word": "crankshaft",
+    "phonetic": "/ˈkræŋkʃæft/",
+    "definition": "n. 曲轴",
+    "example": "The crankshaft converts linear motion to rotational motion."
+  },
+  {
+    "word": "camshaft",
+    "phonetic": "/ˈkæmʃæft/",
+    "definition": "n. 凸轮轴",
+    "example": "The camshaft controls the opening and closing of valves."
+  },
+  {
+    "word": "bearing",
+    "phonetic": "/ˈbɛrɪŋ/",
+    "definition": "n. 轴承",
+    "example": "Ball bearings reduce rotational friction."
+  },
+  {
+    "word": "lubricant",
+    "phonetic": "/ˈluːbrɪkənt/",
+    "definition": "n./adj. 润滑剂",
+    "example": "Apply lubricant to the gears regularly."
+  },
+  {
+    "word": "tolerance",
+    "phonetic": "/ˈtɑːlərəns/",
+    "definition": "n. 公差；容差",
+    "example": "The tolerance for this part is ±0.01mm."
+  },
+  {
+    "word": "calibration",
+    "phonetic": "/ˌkælɪˈbreɪʃən/",
+    "definition": "n. 校准",
+    "example": "Regular calibration ensures measurement accuracy."
+  },
+  {
+    "word": "dimensional",
+    "phonetic": "/daɪˈmɛnʃənəl/",
+    "definition": "adj. 尺寸的；维度的",
+    "example": "Dimensional analysis helps solve engineering problems."
+  },
+  {
+    "word": "metallurgy",
+    "phonetic": "/ˈmɛtəlɜːrdʒi/",
+    "definition": "n. 冶金学",
+    "example": "Metallurgy studies the properties of metals."
+  },
+  {
+    "word": "alloy",
+    "phonetic": "/ˈælɔɪ/",
+    "definition": "n. 合金",
+    "example": "Steel is an alloy of iron and carbon."
+  },
+  {
+    "word": "hardness",
+    "phonetic": "/ˈhɑːrdnəs/",
+    "definition": "n. 硬度",
+    "example": "The Rockwell hardness test measures material resistance."
+  },
+  {
+    "word": "ductility",
+    "phonetic": "/dʌkˈtɪlɪti/",
+    "definition": "n. 延展性",
+    "example": "Copper has excellent ductility for wire drawing."
+  },
+  {
+    "word": "welding",
+    "phonetic": "/ˈwɛldɪŋ/",
+    "definition": "n./v. 焊接",
+    "example": "Arc welding is used for structural steel connections."
+  },
+  {
+    "word": "machining",
+    "phonetic": "/məˈʃiːnɪŋ/",
+    "definition": "n. 机械加工",
+    "example": "CNC machining produces parts with high precision."
+  },
+  {
+    "word": "lathe",
+    "phonetic": "/leɪð/",
+    "definition": "n. 车床",
+    "example": "The lathe shapes metal by rotating it against a cutting tool."
+  },
+  {
+    "word": "milling",
+    "phonetic": "/ˈmɪlɪŋ/",
+    "definition": "n. 铣削",
+    "example": "Milling machines create complex geometries on workpieces."
+  },
+  {
+    "word": "CNC",
+    "phonetic": "/ˌsiː ɛn ˈsiː/",
+    "definition": "n. 数控机床",
+    "example": "CNC machines are programmed for automated production."
+  },
+  {
+    "word": "stamping",
+    "phonetic": "/ˈstæmpɪŋ/",
+    "definition": "n. 冲压",
+    "example": "Metal stamping forms parts from sheet metal."
+  },
+  {
+    "word": "casting",
+    "phonetic": "/ˈkæstɪŋ/",
+    "definition": "n. 铸造",
+    "example": "Sand casting is used for large metal components."
+  },
+  {
+    "word": "forging",
+    "phonetic": "/ˈfɔːrdʒɪŋ/",
+    "definition": "n. 锻造",
+    "example": "Forging produces strong, grain-structured parts."
+  },
+  {
+    "word": "extrusion",
+    "phonetic": "/ɪkˈstruːʒən/",
+    "definition": "n. 挤压",
+    "example": "Aluminum extrusion creates long, uniform profiles."
+  },
+  {
+    "word": "robotics",
+    "phonetic": "/roʊˈbɑːtɪks/",
+    "definition": "n. 机器人学",
+    "example": "Robotics is transforming the manufacturing industry."
+  },
+  {
+    "word": "automation",
+    "phonetic": "/ˌɔːtəˈmeɪʃən/",
+    "definition": "n. 自动化",
+    "example": "Factory automation increases productivity and consistency."
+  },
+  {
+    "word": "sensor",
+    "phonetic": "/ˈsɛnsər/",
+    "definition": "n. 传感器",
+    "example": "The temperature sensor monitors engine performance."
+  },
+  {
+    "word": "actuator",
+    "phonetic": "/ˈæktʃueɪtər/",
+    "definition": "n. 执行器；驱动器",
+    "example": "The actuator converts electrical signals into motion."
+  },
+  {
+    "word": "oscillation",
+    "phonetic": "/ˌɑːsɪˈleɪʃən/",
+    "definition": "n. 振荡；摆动",
+    "example": "Dampers reduce oscillation in mechanical systems."
+  },
+  {
+    "word": "vibration",
+    "phonetic": "/vaɪˈbreɪʃən/",
+    "definition": "n. 振动",
+    "example": "Vibration analysis detects potential equipment failures."
+  },
+  {
+    "word": "resonance",
+    "phonetic": "/ˈrɛzənəns/",
+    "definition": "n. 共振",
+    "example": "Resonance can cause catastrophic structural failure."
+  },
+  {
+    "word": "damping",
+    "phonetic": "/ˈdæmpɪŋ/",
+    "definition": "n. 阻尼",
+    "example": "The shock absorber provides effective damping."
+  },
+  {
+    "word": "momentum",
+    "phonetic": "/moʊˈmɛntəm/",
+    "definition": "n. 动量",
+    "example": "Angular momentum is conserved in a closed system."
+  },
+  {
+    "word": "kinematics",
+    "phonetic": "/ˌkɪnəˈmætɪks/",
+    "definition": "n. 运动学",
+    "example": "Robot kinematics determines joint movements."
+  },
+  {
+    "word": "dynamics",
+    "phonetic": "/daɪˈnæmɪks/",
+    "definition": "n. 动力学",
+    "example": "Vehicle dynamics affect handling and stability."
+  },
+  {
+    "word": "statics",
+    "phonetic": "/ˈstætɪks/",
+    "definition": "n. 静力学",
+    "example": "Statics analyzes forces on objects at rest."
+  },
+  {
+    "word": "thermodynamics",
+    "phonetic": "/ˌθɜːrmoʊdaɪˈnæmɪks/",
+    "definition": "n. 热力学",
+    "example": "Thermodynamics governs heat transfer in engines."
+  },
+  {
+    "word": "entropy",
+    "phonetic": "/ˈɛntrəpi/",
+    "definition": "n. 熵",
+    "example": "Entropy always increases in isolated systems."
+  },
+  {
+    "word": "heat exchanger",
+    "phonetic": "/hiːt ɪksˈtʃeɪndʒər/",
+    "definition": "n. 换热器",
+    "example": "The heat exchanger transfers heat between two fluids."
+  },
+  {
+    "word": "combustion",
+    "phonetic": "/kəmˈbʌstʃən/",
+    "definition": "n. 燃烧",
+    "example": "Internal combustion engines burn fuel to produce power."
+  },
+  {
+    "word": "turbulence",
+    "phonetic": "/ˈtɜːrbjələns/",
+    "definition": "n. 湍流；不稳定",
+    "example": "Airflow turbulence affects aircraft stability."
+  },
+  {
+    "word": "reynolds",
+    "phonetic": "/ˈrɛnəldz/",
+    "definition": "n. 雷诺数",
+    "example": "The Reynolds number predicts flow behavior."
+  },
+  {
+    "word": "strain",
+    "phonetic": "/streɪn/",
+    "definition": "n. 应变",
+    "example": "Strain gauges measure deformation under load."
+  },
+  {
+    "word": "stress",
+    "phonetic": "/strɛs/",
+    "definition": "n. 应力",
+    "example": "Stress analysis ensures structural integrity."
+  },
+  {
+    "word": "fatigue",
+    "phonetic": "/fəˈtiːɡ/",
+    "definition": "n. 疲劳",
+    "example": "Metal fatigue can cause sudden failure."
+  },
+  {
+    "word": "creep",
+    "phonetic": "/kriːp/",
+    "definition": "n. 蠕变",
+    "example": "Creep deformation occurs under sustained high temperature."
+  },
+  {
+    "word": "warp",
+    "phonetic": "/wɔːrp/",
+    "definition": "v./n. 翘曲；变形",
+    "example": "Heat can cause the metal plate to warp."
+  },
+  {
+    "word": "spring",
+    "phonetic": "/sprɪŋ/",
+    "definition": "n. 弹簧",
+    "example": "The spring stores and releases mechanical energy."
+  },
+  {
+    "word": "damper",
+    "phonetic": "/ˈdæmpər/",
+    "definition": "n. 减震器；阻尼器",
+    "example": "The damper absorbs vibrations from the engine."
+  },
+  {
+    "word": "coupling",
+    "phonetic": "/ˈkʌplɪŋ/",
+    "definition": "n. 联轴器；耦合",
+    "example": "The coupling connects two rotating shafts."
+  },
+  {
+    "word": "clutch",
+    "phonetic": "/klʌtʃ/",
+    "definition": "n. 离合器",
+    "example": "The clutch engages and disengages the engine."
+  },
+  {
+    "word": "brake",
+    "phonetic": "/breɪk/",
+    "definition": "n./v. 刹车",
+    "example": "Disc brakes provide reliable stopping power."
+  },
+  {
+    "word": "axle",
+    "phonetic": "/ˈæksəl/",
+    "definition": "n. 车轴",
+    "example": "The rear axle distributes power to the wheels."
+  },
+  {
+    "word": "chassis",
+    "phonetic": "/ˈʃæsi/",
+    "definition": "n. 底盘",
+    "example": "The chassis supports the entire vehicle structure."
+  },
+  {
+    "word": "drivetrain",
+    "phonetic": "/ˈdraɪvtreɪn/",
+    "definition": "n. 传动系统",
+    "example": "The drivetrain transfers power from the engine to the wheels."
+  },
+  {
+    "word": "alternator",
+    "phonetic": "/ˈɔːltərneɪtər/",
+    "definition": "n. 交流发电机",
+    "example": "The alternator charges the battery while driving."
+  },
+  {
+    "word": "manifold",
+    "phonetic": "/ˈmænɪfoʊld/",
+    "definition": "n. 歧管；集合管",
+    "example": "The exhaust manifold collects gases from multiple cylinders."
+  },
+  {
+    "word": "nozzle",
+    "phonetic": "/ˈnɑːzəl/",
+    "definition": "n. 喷嘴",
+    "example": "The fuel nozzle atomizes diesel for efficient combustion."
+  },
+  {
+    "word": "pump",
+    "phonetic": "/pʌmp/",
+    "definition": "n./v. 泵",
+    "example": "The water pump circulates coolant through the engine."
+  },
+  {
+    "word": "valve",
+    "phonetic": "/vælv/",
+    "definition": "n. 阀门",
+    "example": "The intake valve opens to allow air-fuel mixture in."
+  },
+  {
+    "word": "gear ratio",
+    "phonetic": "/ɡɪr ˈreɪʃioʊ/",
+    "definition": "n. 齿轮比",
+    "example": "A higher gear ratio provides more torque."
+  },
+  {
+    "word": "sprocket",
+    "phonetic": "/ˈsprɑːkɪt/",
+    "definition": "n. 链轮",
+    "example": "The sprocket engages with the chain to transfer motion."
+  },
+  {
+    "word": "cam",
+    "phonetic": "/kæm/",
+    "definition": "n. 凸轮",
+    "example": "The cam converts rotary motion to linear motion."
+  },
+  {
+    "word": "flywheel",
+    "phonetic": "/ˈflaɪwiːl/",
+    "definition": "n. 飞轮",
+    "example": "The flywheel smooths out engine power fluctuations."
+  },
+  {
+    "word": "spindle",
+    "phonetic": "/ˈspɪndəl/",
+    "definition": "n. 主轴",
+    "example": "The spindle rotates the workpiece during machining."
+  },
+  {
+    "word": "mandrel",
+    "phonetic": "/ˈmændrəl/",
+    "definition": "n. 芯轴；心棒",
+    "example": "The mandrel supports the workpiece from inside."
+  },
+  {
+    "word": "jig",
+    "phonetic": "/dʒɪɡ/",
+    "definition": "n. 夹具；治具",
+    "example": "The jig ensures consistent part positioning."
+  },
+  {
+    "word": "fixture",
+    "phonetic": "/ˈfɪkstʃər/",
+    "definition": "n. 夹具；固定装置",
+    "example": "The fixture holds the part during welding."
+  },
+  {
+    "word": "gauge",
+    "phonetic": "/ɡeɪdʒ/",
+    "definition": "n. 量具；量规",
+    "example": "A feeler gauge measures gap thickness."
+  },
+  {
+    "word": "micrometer",
+    "phonetic": "/maɪˈkrɑːmɪtər/",
+    "definition": "n. 千分尺",
+    "example": "The micrometer measures dimensions to 0.001mm."
+  },
+  {
+    "word": "caliper",
+    "phonetic": "/ˈkælɪpər/",
+    "definition": "n. 卡尺",
+    "example": "Vernier calipers measure internal and external diameters."
+  },
+  {
+    "word": "specification",
+    "phonetic": "/ˌspɛsɪfɪˈkeɪʃən/",
+    "definition": "n. 规格；规范",
+    "example": "The part must meet the required specification."
+  },
+  {
+    "word": "prototype",
+    "phonetic": "/ˈproʊtətaɪp/",
+    "definition": "n. 原型",
+    "example": "The prototype was tested before mass production."
+  },
+  {
+    "word": "CAD",
+    "phonetic": "/ˌsiː eɪ ˈdiː/",
+    "definition": "n. 计算机辅助设计",
+    "example": "The design was created using CAD software."
+  },
+  {
+    "word": "FEA",
+    "phonetic": "/ˌɛf iː ˈeɪ/",
+    "definition": "n. 有限元分析",
+    "example": "FEA simulates stress distribution in the structure."
+  },
+  {
+    "word": "GD&T",
+    "phonetic": "/ˌdʒiː diː ənd ˈtiː/",
+    "definition": "n. 几何尺寸与公差",
+    "example": "GD&T defines part geometry in engineering drawings."
+  },
+  {
+    "word": "BOM",
+    "phonetic": "/ˌbiː oʊ ˈɛm/",
+    "definition": "n. 物料清单",
+    "example": "The BOM lists all components needed for assembly."
+  },
+  {
+    "word": "OEE",
+    "phonetic": "/ˌoʊ iː ˈiː/",
+    "definition": "n. 设备综合效率",
+    "example": "Improving OEE reduces manufacturing costs."
+  },
+  {
+    "word": "TPM",
+    "phonetic": "/ˌtiː piː ˈɛm/",
+    "definition": "n. 全面生产维护",
+    "example": "TPM increases equipment reliability and uptime."
+  },
+  {
+    "word": "lean",
+    "phonetic": "/liːn/",
+    "definition": "adj. 精益的",
+    "example": "Lean manufacturing eliminates waste in production."
+  },
+  {
+    "word": "six sigma",
+    "phonetic": "/sɪks ˈsɪɡmə/",
+    "definition": "n. 六西格玛",
+    "example": "Six Sigma reduces defects to fewer than 3.4 per million."
+  },
+  {
+    "word": "Kanban",
+    "phonetic": "/ˈkɑːnbɑːn/",
+    "definition": "n. 看板",
+    "example": "Kanban boards visualize workflow and limit work in progress."
+  },
+  {
+    "word": "assembly",
+    "phonetic": "/əˈsɛmbli/",
+    "definition": "n. 装配；组件",
+    "example": "The assembly line produces 500 units per shift."
+  },
+  {
+    "word": "disassembly",
+    "phonetic": "/ˌdɪsəˈsɛmbli/",
+    "definition": "n. 拆卸",
+    "example": "Disassembly is required for maintenance inspection."
+  }
+]

@@ -1,0 +1,1538 @@
+[
+  {
+    "word": "abend",
+    "phonetic": "/ˈæbɛnd/",
+    "definition": "n. 异常终止",
+    "example": "The server process abended due to a memory allocation failure."
+  },
+  {
+    "word": "access control",
+    "phonetic": "/ˈæksɛs kənˈtroʊl/",
+    "definition": "n. 访问控制",
+    "example": "Implement role-based access control to restrict system permissions."
+  },
+  {
+    "word": "active directory",
+    "phonetic": "/ˈæktɪv dɪˈrɛktəri/",
+    "definition": "n. 活动目录",
+    "example": "All domain accounts are managed through Active Directory."
+  },
+  {
+    "word": "alert",
+    "phonetic": "/əˈlɜːrt/",
+    "definition": "n. 告警",
+    "example": "The monitoring system sent an alert when CPU usage exceeded 90%."
+  },
+  {
+    "word": "alias",
+    "phonetic": "/ˈeɪliəs/",
+    "definition": "n. 别名；命令别名",
+    "example": "Set up a shell alias to shorten frequently used commands."
+  },
+  {
+    "word": "appliance",
+    "phonetic": "/əˈplaɪəns/",
+    "definition": "n. 专用设备；应用装置",
+    "example": "The company deployed a network security appliance at the perimeter."
+  },
+  {
+    "word": "archive",
+    "phonetic": "/ˈɑːrkaɪv/",
+    "definition": "v./n. 归档；存档",
+    "example": "Archive old log files to free up disk space on the server."
+  },
+  {
+    "word": "asset management",
+    "phonetic": "/ˈæsɛt ˈmænɪdʒmənt/",
+    "definition": "n. 资产管理",
+    "example": "IT asset management tracks all hardware and software across the organization."
+  },
+  {
+    "word": "attach",
+    "phonetic": "/əˈtætʃ/",
+    "definition": "v. 挂载；附加",
+    "example": "Attach the storage volume to the running virtual machine."
+  },
+  {
+    "word": "audit",
+    "phonetic": "/ˈɔːdɪt/",
+    "definition": "n./v. 审计",
+    "example": "Conduct a security audit to identify potential vulnerabilities."
+  },
+  {
+    "word": "bandwidth throttling",
+    "phonetic": "/ˈbændwɪdθ ˈθrɒtlɪŋ/",
+    "definition": "n. 带宽限制",
+    "example": "Bandwidth throttling prevents any single user from consuming all network resources."
+  },
+  {
+    "word": "baseline",
+    "phonetic": "/ˈbeɪslɪn/",
+    "definition": "n. 基线；基准",
+    "example": "Establish a performance baseline before making infrastructure changes."
+  },
+  {
+    "word": "benchmark",
+    "phonetic": "/ˈbɛntʃmɑːrk/",
+    "definition": "n./v. 基准测试",
+    "example": "Run a benchmark to compare the performance of different storage arrays."
+  },
+  {
+    "word": "bind",
+    "phonetic": "/baɪnd/",
+    "definition": "v. 绑定",
+    "example": "Bind the web server to port 80 on all network interfaces."
+  },
+  {
+    "word": "blue-green deployment",
+    "phonetic": "/bluː ɡriːn dɪˈplɔɪmənt/",
+    "definition": "n. 蓝绿部署",
+    "example": "Blue-green deployment allows zero-downtime releases by switching traffic between environments."
+  },
+  {
+    "word": "boot",
+    "phonetic": "/buːt/",
+    "definition": "v./n. 启动；引导",
+    "example": "The server failed to boot after the kernel update."
+  },
+  {
+    "word": "bootstrapping",
+    "phonetic": "/ˈbuːtstræpɪŋ/",
+    "definition": "n. 引导启动",
+    "example": "Use the bootstrap script to provision new servers automatically."
+  },
+  {
+    "word": "bot",
+    "phonetic": "/bɒt/",
+    "definition": "n. 自动化程序；机器人",
+    "example": "A bot is scanning the network for open ports and vulnerabilities."
+  },
+  {
+    "word": "boundary",
+    "phonetic": "/ˈbaʊndəri/",
+    "definition": "n. 边界",
+    "example": "The firewall enforces the security boundary between the internal and external network."
+  },
+  {
+    "word": "breakfix",
+    "phonetic": "/breɪk fɪks/",
+    "definition": "n. 故障修复",
+    "example": "The team shifted from reactive breakfix to proactive maintenance."
+  },
+  {
+    "word": "bridge",
+    "phonetic": "/brɪdʒ/",
+    "definition": "n./v. 网桥；桥接",
+    "example": "Create a network bridge to connect two separate VLANs."
+  },
+  {
+    "word": "broadcast",
+    "phonetic": "/ˈbrɔːdkæst/",
+    "definition": "v./n. 广播",
+    "example": "Broadcast traffic can saturate the network if not properly controlled."
+  },
+  {
+    "word": "bus",
+    "phonetic": "/bʌs/",
+    "definition": "n. 总线",
+    "example": "The PCI Express bus provides high-speed communication between components."
+  },
+  {
+    "word": "cabinet",
+    "phonetic": "/ˈkæbɪnɪt/",
+    "definition": "n. 机柜",
+    "example": "All production servers are housed in the server cabinet in the data center."
+  },
+  {
+    "word": "capacity planning",
+    "phonetic": "/kəˈpæsəti ˈplænɪŋ/",
+    "definition": "n. 容量规划",
+    "example": "Capacity planning ensures we have enough resources to handle future growth."
+  },
+  {
+    "word": "cascade",
+    "phonetic": "/kæˈskeɪd/",
+    "definition": "v. 级联",
+    "example": "The failure cascaded from the database to the application servers."
+  },
+  {
+    "word": "certificate authority",
+    "phonetic": "/sərˈtɪfɪkət ɔːˈθɒrəti/",
+    "definition": "n. 证书颁发机构",
+    "example": "The internal certificate authority issues TLS certificates for all company domains."
+  },
+  {
+    "word": "checkpoint",
+    "phonetic": "/ˈtʃɛkpɔɪnt/",
+    "definition": "n. 检查点",
+    "example": "The backup system creates a checkpoint every 15 minutes."
+  },
+  {
+    "word": "chroot",
+    "phonetic": "/ˈtʃruːt/",
+    "definition": "v. 更改根目录",
+    "example": "Use chroot to isolate the application environment for security purposes."
+  },
+  {
+    "word": "churn",
+    "phonetic": "/tʃɜːrn/",
+    "definition": "n. 变更频率",
+    "example": "Reducing configuration churn minimizes the risk of service disruptions."
+  },
+  {
+    "word": "CIDR",
+    "phonetic": "/ˈsɪdər/",
+    "definition": "n. 无类别域间路由",
+    "example": "Use CIDR notation to define the network range for the subnet."
+  },
+  {
+    "word": "CLI",
+    "phonetic": "/ˌsiː ɛl ˈaɪ/",
+    "definition": "n. 命令行界面",
+    "example": "Perform system administration tasks efficiently using the CLI."
+  },
+  {
+    "word": "clone",
+    "phonetic": "/kloʊn/",
+    "definition": "v./n. 克隆",
+    "example": "Clone the virtual machine to create a testing environment identical to production."
+  },
+  {
+    "word": "cold standby",
+    "phonetic": "/koʊld ˈstændbeɪ/",
+    "definition": "n. 冷备份",
+    "example": "The disaster recovery site operates as a cold standby with manual failover."
+  },
+  {
+    "word": "configuration management",
+    "phonetic": "/kənˌfɪɡjəˈreɪʃn ˈmænɪdʒmənt/",
+    "definition": "n. 配置管理",
+    "example": "Use Ansible for configuration management across all servers."
+  },
+  {
+    "word": "consumption",
+    "phonetic": "/kənˈsʌmpʃn/",
+    "definition": "n. 消耗",
+    "example": "Monitor disk consumption to prevent the root partition from filling up."
+  },
+  {
+    "word": "container orchestration",
+    "phonetic": "/kənˈteɪnər ˌɔːrkɪˈstreɪʃn/",
+    "definition": "n. 容器编排",
+    "example": "Kubernetes is the industry standard for container orchestration at scale."
+  },
+  {
+    "word": "content delivery network",
+    "phonetic": "/ˈkɒntɛnt dɪˈlɪvəri ˈnɛtwɜːrk/",
+    "definition": "n. 内容分发网络",
+    "example": "Use a content delivery network to serve static assets from edge locations."
+  },
+  {
+    "word": "correlation",
+    "phonetic": "/ˌkɒrəˈleɪʃn/",
+    "definition": "n. 关联",
+    "example": "Log correlation helps identify the root cause across multiple systems."
+  },
+  {
+    "word": "cutover",
+    "phonetic": "/ˈkʌtˌoʊvər/",
+    "definition": "n. 切换",
+    "example": "Schedule the database cutover during the maintenance window."
+  },
+  {
+    "word": "data center",
+    "phonetic": "/ˈdeɪtə ˈsɛntər/",
+    "definition": "n. 数据中心",
+    "example": "The primary data center is located in Tokyo with redundant power supply."
+  },
+  {
+    "word": "data lake",
+    "phonetic": "/ˈdeɪtə leɪk/",
+    "definition": "n. 数据湖",
+    "example": "Raw operational data is stored in the data lake for later analysis."
+  },
+  {
+    "word": "data sovereignty",
+    "phonetic": "/ˈdeɪtə ˈsɒvrənti/",
+    "definition": "n. 数据主权",
+    "example": "Data sovereignty regulations require user data to remain within national borders."
+  },
+  {
+    "word": "deduplication",
+    "phonetic": "/diːˌdjuːplɪˈkeɪʃn/",
+    "definition": "n. 去重",
+    "example": "Storage deduplication reduces backup size by eliminating redundant data blocks."
+  },
+  {
+    "word": "default gateway",
+    "phonetic": "/dɪˈfɔːlt ˈɡeɪtweɪ/",
+    "definition": "n. 默认网关",
+    "example": "Configure the default gateway to route traffic to the internet."
+  },
+  {
+    "word": "delta",
+    "phonetic": "/ˈdɛltə/",
+    "definition": "n. 增量；差异",
+    "example": "Apply only the delta updates instead of reinstalling the entire package."
+  },
+  {
+    "word": "demilitarized zone",
+    "phonetic": "/diːˈmɪlɪtaɪzd zoʊn/",
+    "definition": "n. 非军事区",
+    "example": "The DMZ hosts public-facing web servers isolated from the internal network."
+  },
+  {
+    "word": "denial of service",
+    "phonetic": "/dɪˈnaɪəl ʌv ˈsɜːrvɪs/",
+    "definition": "n. 拒绝服务",
+    "example": "The network was hit by a massive denial of service attack."
+  },
+  {
+    "word": "deprecation",
+    "phonetic": "/ˌdɛprəˈkeɪʃn/",
+    "definition": "n. 弃用",
+    "example": "The vendor announced deprecation of the legacy API by the end of the year."
+  },
+  {
+    "word": "disaster recovery",
+    "phonetic": "/dɪˈzɑːstər rɪˈkʌvəri/",
+    "definition": "n. 灾难恢复",
+    "example": "Test the disaster recovery plan quarterly to ensure readiness."
+  },
+  {
+    "word": "disk I/O",
+    "phonetic": "/dɪsk aɪ ˈoʊ/",
+    "definition": "n. 磁盘输入输出",
+    "example": "High disk I/O latency is causing slow database query performance."
+  },
+  {
+    "word": "DNS",
+    "phonetic": "/ˌdiː ɛn ˈɛs/",
+    "definition": "n. 域名系统",
+    "example": "DNS resolves the domain name to the corresponding IP address."
+  },
+  {
+    "word": "DORA metrics",
+    "phonetic": "/ˈdɔːrə ˈmɛtrɪks/",
+    "definition": "n. DORA指标",
+    "example": "Track DORA metrics to measure the effectiveness of the DevOps team."
+  },
+  {
+    "word": "downtime",
+    "phonetic": "/ˈdaʊntaɪm/",
+    "definition": "n. 停机时间",
+    "example": "Planned downtime for maintenance is scheduled every Sunday at 2 AM."
+  },
+  {
+    "word": "edge computing",
+    "phonetic": "/ɛdʒ kəmˈpjuːtɪŋ/",
+    "definition": "n. 边缘计算",
+    "example": "Edge computing reduces latency by processing data closer to the source."
+  },
+  {
+    "word": "egress",
+    "phonetic": "/ˈiːɡrɛs/",
+    "definition": "n. 出站流量",
+    "example": "Configure the firewall to allow outbound egress traffic on port 443."
+  },
+  {
+    "word": "elastic",
+    "phonetic": "/ɪˈlæstɪk/",
+    "definition": "adj. 弹性的",
+    "example": "The cloud platform provides elastic scaling to match fluctuating demand."
+  },
+  {
+    "word": "escalation",
+    "phonetic": "/ˌɛskəˈleɪʃn/",
+    "definition": "n. 升级",
+    "example": "Follow the escalation procedure when the on-call engineer cannot resolve the issue."
+  },
+  {
+    "word": "evacuation",
+    "phonetic": "/ɪˌvækjuˈeɪʃn/",
+    "definition": "n. 疏散",
+    "example": "The server rack was evacuated before the scheduled fire drill."
+  },
+  {
+    "word": "failback",
+    "phonetic": "/ˈfeɪlbæk/",
+    "definition": "n./v. 故障恢复",
+    "example": "After the primary site was repaired, the team initiated failback to restore normal operations."
+  },
+  {
+    "word": "failover",
+    "phonetic": "/ˈfeɪloʊvər/",
+    "definition": "n. 故障转移",
+    "example": "Automatic failover to the secondary data center ensures continuous service availability."
+  },
+  {
+    "word": "flapping",
+    "phonetic": "/ˈflæpɪŋ/",
+    "definition": "n. 抖动",
+    "example": "Route flapping causes instability in the network and triggers excessive alerts."
+  },
+  {
+    "word": "flush",
+    "phonetic": "/flʌʃ/",
+    "definition": "v. 刷新；清空",
+    "example": "Flush the DNS cache to resolve the updated domain records."
+  },
+  {
+    "word": "footprint",
+    "phonetic": "/ˈfʊtprɪnt/",
+    "definition": "n. 占用空间",
+    "example": "Reduce the virtual machine footprint by right-sizing compute resources."
+  },
+  {
+    "word": "forensics",
+    "phonetic": "/fəˈrɛnsɪks/",
+    "definition": "n. 取证分析",
+    "example": "Perform digital forensics to investigate the security breach."
+  },
+  {
+    "word": "fork",
+    "phonetic": "/fɔːrk/",
+    "definition": "v./n. 分叉；复制",
+    "example": "Fork the repository to create a separate development branch."
+  },
+  {
+    "word": "golden image",
+    "phonetic": "/ˈɡoʊldən ˈɪmɪdʒ/",
+    "definition": "n. 黄金镜像",
+    "example": "Deploy new servers from the golden image to ensure consistent configuration."
+  },
+  {
+    "word": "graceful degradation",
+    "phonetic": "/ˈɡreɪsfəl ˌdɛɡrəˈdeɪʃn/",
+    "definition": "n. 优雅降级",
+    "example": "The system supports graceful degradation when a secondary component fails."
+  },
+  {
+    "word": "greenfield",
+    "phonetic": "/ˈɡriːnfiːld/",
+    "definition": "adj. 全新的",
+    "example": "The greenfield project allows us to build the infrastructure from scratch."
+  },
+  {
+    "word": "hardening",
+    "phonetic": "/ˈhɑːrdənɪŋ/",
+    "definition": "n. 加固",
+    "example": "Perform OS hardening to reduce the attack surface of the server."
+  },
+  {
+    "word": "health check",
+    "phonetic": "/hɛlθ tʃɛk/",
+    "definition": "n. 健康检查",
+    "example": "Configure a health check endpoint for the load balancer to monitor service status."
+  },
+  {
+    "word": "heartbeat",
+    "phonetic": "/ˈhɑːrtbiːt/",
+    "definition": "n. 心跳检测",
+    "example": "The cluster nodes exchange heartbeat messages to detect failures."
+  },
+  {
+    "word": "hotfix",
+    "phonetic": "/ˈhɒtfɪks/",
+    "definition": "n. 热修复",
+    "example": "Deploy an emergency hotfix to address the critical security vulnerability."
+  },
+  {
+    "word": "hot standby",
+    "phonetic": "/hɒt ˈstændbeɪ/",
+    "definition": "n. 热备份",
+    "example": "The secondary database runs in hot standby mode for instant failover."
+  },
+  {
+    "word": "inbound",
+    "phonetic": "/ˈɪnbaʊnd/",
+    "definition": "adj. 入站的",
+    "example": "Allow inbound traffic only on ports 80 and 443."
+  },
+  {
+    "word": "incident",
+    "phonetic": "/ˈɪnsɪdənt/",
+    "definition": "n. 事件",
+    "example": "The on-call team was paged immediately after the incident was detected."
+  },
+  {
+    "word": "incident management",
+    "phonetic": "/ˈɪnsɪdənt ˈmænɪdʒmənt/",
+    "definition": "n. 事件管理",
+    "example": "Effective incident management reduces mean time to resolution."
+  },
+  {
+    "word": "inference",
+    "phonetic": "/ˈɪnfərəns/",
+    "definition": "n. 推理",
+    "example": "The inference engine processes incoming logs to identify patterns."
+  },
+  {
+    "word": "infrastructure as code",
+    "phonetic": "/ˈɪnfrəstrʌktʃər æz koʊd/",
+    "definition": "n. 基础设施即代码",
+    "example": "Terraform enables infrastructure as code for reproducible cloud deployments."
+  },
+  {
+    "word": "inode",
+    "phonetic": "/ˈaɪnoʊd/",
+    "definition": "n. 索引节点",
+    "example": "The disk ran out of inodes even though free space was available."
+  },
+  {
+    "word": "input/output",
+    "phonetic": "/ˈɪnpʊt ˈaʊtpʊt/",
+    "definition": "n. 输入输出",
+    "example": "Monitor the input/output operations per second to detect storage bottlenecks."
+  },
+  {
+    "word": "inventory",
+    "phonetic": "/ˈɪnvəntri/",
+    "definition": "n. 资产清单",
+    "example": "Maintain an accurate inventory of all hardware and software assets."
+  },
+  {
+    "word": "IPAM",
+    "phonetic": "/ˈɪpæm/",
+    "definition": "n. IP地址管理",
+    "example": "Use IPAM to track and manage IP address allocation across the network."
+  },
+  {
+    "word": "isolation",
+    "phonetic": "/ˌaɪsəˈleɪʃn/",
+    "definition": "n. 隔离",
+    "example": "Network isolation prevents compromised systems from spreading lateral movement."
+  },
+  {
+    "word": "keep-alive",
+    "phonetic": "/kiː əˈlaɪv/",
+    "definition": "n. 保活",
+    "example": "The load balancer sends keep-alive probes to detect unresponsive servers."
+  },
+  {
+    "word": "latency spike",
+    "phonetic": "/ˈlætənsi spaɪk/",
+    "definition": "n. 延迟尖峰",
+    "example": "A latency spike during peak hours indicates insufficient capacity."
+  },
+  {
+    "word": "lease",
+    "phonetic": "/liːs/",
+    "definition": "n. 租约",
+    "example": "The DHCP lease expires after 24 hours and must be renewed."
+  },
+  {
+    "word": "least privilege",
+    "phonetic": "/liːst ˈprɪvəlɪdʒ/",
+    "definition": "n. 最小权限",
+    "example": "Apply the principle of least privilege to limit user access to only what is needed."
+  },
+  {
+    "word": "leak",
+    "phonetic": "/liːk/",
+    "definition": "n. 泄漏",
+    "example": "The memory leak caused the server to gradually consume more RAM."
+  },
+  {
+    "word": "lifecycle",
+    "phonetic": "/ˈlaɪfsaɪkl/",
+    "definition": "n. 生命周期",
+    "example": "Manage the full lifecycle of servers from provisioning to decommissioning."
+  },
+  {
+    "word": "log aggregation",
+    "phonetic": "/lɒɡ ˌæɡrɪˈɡeɪʃn/",
+    "definition": "n. 日志聚合",
+    "example": "Centralized log aggregation simplifies troubleshooting across distributed systems."
+  },
+  {
+    "word": "log rotation",
+    "phonetic": "/lɒɡ roʊˈteɪʃn/",
+    "definition": "n. 日志轮转",
+    "example": "Configure log rotation to prevent log files from consuming excessive disk space."
+  },
+  {
+    "word": "MAU",
+    "phonetic": "/mɔː/",
+    "definition": "n. 月活跃用户数",
+    "example": "Track MAU to measure the growth of the platform."
+  },
+  {
+    "word": "mean time between failures",
+    "phonetic": "/miːn taɪm bɪˈtwiːn ˈfeɪljərz/",
+    "definition": "n. 平均故障间隔时间",
+    "example": "The new hardware has a mean time between failures of over 100,000 hours."
+  },
+  {
+    "word": "mean time to recovery",
+    "phonetic": "/miːn taɪm tuː rɪˈkʌvəri/",
+    "definition": "n. 平均恢复时间",
+    "example": "Improve MTTR by automating common remediation procedures."
+  },
+  {
+    "word": "media access control",
+    "phonetic": "/ˈmiːdiə ˈæksɛs kənˈtroʊl/",
+    "definition": "n. 媒体访问控制",
+    "example": "The MAC address uniquely identifies each network interface card."
+  },
+  {
+    "word": "migration",
+    "phonetic": "/maɪˈɡreɪʃn/",
+    "definition": "n. 迁移",
+    "example": "The database migration from MySQL to PostgreSQL took three weekends."
+  },
+  {
+    "word": "NAT",
+    "phonetic": "/næt/",
+    "definition": "n. 网络地址转换",
+    "example": "NAT translates private IP addresses to public addresses for internet access."
+  },
+  {
+    "word": "outage",
+    "phonetic": "/ˈaʊtɪdʒ/",
+    "definition": "n. 中断；停机",
+    "example": "The network outage lasted approximately 45 minutes during peak hours."
+  },
+  {
+    "word": "outbound",
+    "phonetic": "/ˈaʊtbaʊnd/",
+    "definition": "adj. 出站的",
+    "example": "Restrict outbound traffic to only approved destinations."
+  },
+  {
+    "word": "over-provisioning",
+    "phonetic": "/ˌoʊvər prəˈvɪʒənɪŋ/",
+    "definition": "n. 过度配置",
+    "example": "Over-provisioning wastes resources; right-size instances based on actual usage."
+  },
+  {
+    "word": "patch management",
+    "phonetic": "/pætʃ ˈmænɪdʒmənt/",
+    "definition": "n. 补丁管理",
+    "example": "Automated patch management keeps all servers up to date with security fixes."
+  },
+  {
+    "word": "peering",
+    "phonetic": "/ˈpɪərɪŋ/",
+    "definition": "n. 对等连接",
+    "example": "Set up VPC peering to connect two cloud networks privately."
+  },
+  {
+    "word": "piggyback",
+    "phonetic": "/ˈpɪɡibæk/",
+    "definition": "v. 搭载",
+    "example": "The monitoring agent piggybacks on existing network traffic to avoid additional overhead."
+  },
+  {
+    "word": "pod",
+    "phonetic": "/pɒd/",
+    "definition": "n. 容器组",
+    "example": "Each Kubernetes pod runs one or more containers with shared networking."
+  },
+  {
+    "word": "port forwarding",
+    "phonetic": "/pɔːrt ˈfɔːrwərdɪŋ/",
+    "definition": "n. 端口转发",
+    "example": "Configure port forwarding to redirect external requests to the internal server."
+  },
+  {
+    "word": "postmortem",
+    "phonetic": "/ˌpoʊstˈmɔːrtəm/",
+    "definition": "n. 事后复盘",
+    "example": "Conduct a blameless postmortem after every major incident."
+  },
+  {
+    "word": "preemptive",
+    "phonetic": "/priːˈɛmptɪv/",
+    "definition": "adj. 抢占式的",
+    "example": "Preemptive scheduling ensures high-priority processes get CPU time first."
+  },
+  {
+    "word": "pre-production",
+    "phonetic": "/priː prəˈdʌkʃn/",
+    "definition": "n. 预生产环境",
+    "example": "Test all changes in pre-production before deploying to the live environment."
+  },
+  {
+    "word": "private cloud",
+    "phonetic": "/ˈpraɪvət klaʊd/",
+    "definition": "n. 私有云",
+    "example": "Sensitive workloads are hosted on the private cloud for compliance reasons."
+  },
+  {
+    "word": "probe",
+    "phonetic": "/proʊb/",
+    "definition": "n./v. 探针；探测",
+    "example": "The health probe verifies that the application is responding correctly."
+  },
+  {
+    "word": "provisioning",
+    "phonetic": "/prəˈvɪʒənɪŋ/",
+    "definition": "n. 配置；供应",
+    "example": "Automated provisioning reduces the time to deploy new infrastructure."
+  },
+  {
+    "word": "public cloud",
+    "phonetic": "/ˈpʌblɪk klaʊd/",
+    "definition": "n. 公有云",
+    "example": "Deploy non-sensitive services on the public cloud for cost efficiency."
+  },
+  {
+    "word": "QoS",
+    "phonetic": "/ˌkjuː oʊ ˈɛs/",
+    "definition": "n. 服务质量",
+    "example": "Configure QoS policies to prioritize voice traffic over file transfers."
+  },
+  {
+    "word": "RAID",
+    "phonetic": "/reɪd/",
+    "definition": "n. 磁盘阵列",
+    "example": "Configure RAID 10 for a balance of performance and redundancy."
+  },
+  {
+    "word": "ramp-up",
+    "phonetic": "/ræmp ʌp/",
+    "definition": "n. 爬坡；扩容",
+    "example": "The cloud auto-scaling group handles ramp-up during traffic spikes."
+  },
+  {
+    "word": "reboot",
+    "phonetic": "/riːˈbuːt/",
+    "definition": "v./n. 重启",
+    "example": "Reboot the server to apply the kernel security patch."
+  },
+  {
+    "word": "recovery point objective",
+    "phonetic": "/rɪˈkʌvəri pɔɪnt əbˈdʒɛktɪv/",
+    "definition": "n. 恢复点目标",
+    "example": "The RPO of one hour means at most one hour of data can be lost."
+  },
+  {
+    "word": "recovery time objective",
+    "phonetic": "/rɪˈkʌvəri taɪm əbˈdʒɛktɪv/",
+    "definition": "n. 恢复时间目标",
+    "example": "Meet the RTO of 15 minutes by using automated failover."
+  },
+  {
+    "word": "redirect",
+    "phonetic": "/riːˈdɪrɛkt/",
+    "definition": "v./n. 重定向",
+    "example": "Configure the web server to redirect HTTP requests to HTTPS."
+  },
+  {
+    "word": "redundancy",
+    "phonetic": "/rɪˈdʌndənsi/",
+    "definition": "n. 冗余",
+    "example": "Network redundancy ensures service continues even if a link fails."
+  },
+  {
+    "word": "registry",
+    "phonetic": "/ˈrɛdʒɪstri/",
+    "definition": "n. 注册表；镜像仓库",
+    "example": "Store Docker images in the private registry for faster deployment."
+  },
+  {
+    "word": "remediation",
+    "phonetic": "/rɪˌmiːdiˈeɪʃn/",
+    "definition": "n. 修复",
+    "example": "Automated remediation scripts resolve common issues without human intervention."
+  },
+  {
+    "word": "replication",
+    "phonetic": "/ˌrɛplɪˈkeɪʃn/",
+    "definition": "n. 复制",
+    "example": "Configure master-slave replication for the MySQL database."
+  },
+  {
+    "word": "resilience",
+    "phonetic": "/rɪˈzɪliəns/",
+    "definition": "n. 韧性",
+    "example": "Build system resilience through redundancy and graceful degradation."
+  },
+  {
+    "word": "restart",
+    "phonetic": "/riːˈstɑːrt/",
+    "definition": "v./n. 重启",
+    "example": "Restart the web service to load the updated configuration."
+  },
+  {
+    "word": "restore",
+    "phonetic": "/rɪˈstɔːr/",
+    "definition": "v. 恢复",
+    "example": "Restore the database from the latest backup snapshot."
+  },
+  {
+    "word": "retention",
+    "phonetic": "/rɪˈtɛnʃn/",
+    "definition": "n. 保留",
+    "example": "The log retention policy requires keeping data for at least 90 days."
+  },
+  {
+    "word": "role-based access control",
+    "phonetic": "/roʊl beɪst ˈæksɛs kənˈtroʊl/",
+    "definition": "n. 基于角色的访问控制",
+    "example": "Role-based access control ensures users only have permissions for their job function."
+  },
+  {
+    "word": "root cause analysis",
+    "phonetic": "/ruːt kɔːz əˈnæləsɪs/",
+    "definition": "n. 根因分析",
+    "example": "Perform root cause analysis to prevent the same issue from recurring."
+  },
+  {
+    "word": "runbook",
+    "phonetic": "/ˈrʌnbʊk/",
+    "definition": "n. 运维手册",
+    "example": "Follow the runbook to handle the common database failover procedure."
+  },
+  {
+    "word": "scaffold",
+    "phonetic": "/ˈskæfəld/",
+    "definition": "n./v. 脚手架",
+    "example": "Use the scaffold tool to generate the basic project structure."
+  },
+  {
+    "word": "scatter-gather",
+    "phonetic": "/ˈskætər ˈɡæðər/",
+    "definition": "n. 分散收集模式",
+    "example": "Use scatter-gather to query multiple databases in parallel and aggregate results."
+  },
+  {
+    "word": "scheduled task",
+    "phonetic": "/ˈʃɛdjuːld tɑːsk/",
+    "definition": "n. 计划任务",
+    "example": "The scheduled task runs a database backup every night at midnight."
+  },
+  {
+    "word": "security group",
+    "phonetic": "/sɪˈkjʊrəti ɡruːp/",
+    "definition": "n. 安全组",
+    "example": "Define a security group to control inbound and outbound traffic to the EC2 instance."
+  },
+  {
+    "word": "segmentation",
+    "phonetic": "/ˌsɛɡmənˈteɪʃn/",
+    "definition": "n. 分段",
+    "example": "Network segmentation isolates production and development environments."
+  },
+  {
+    "word": "service level agreement",
+    "phonetic": "/ˈsɜːrvɪs ˈlɛvəl əˈɡriːmənt/",
+    "definition": "n. 服务级别协议",
+    "example": "The SLA guarantees 99.9% uptime for the hosted platform."
+  },
+  {
+    "word": "service level objective",
+    "phonetic": "/ˈsɜːrvɪs ˈlɛvəl əbˈdʒɛktɪv/",
+    "definition": "n. 服务级别目标",
+    "example": "The SLO targets a p99 latency of less than 200 milliseconds."
+  },
+  {
+    "word": "service level indicator",
+    "phonetic": "/ˈsɜːrvɪs ˈlɛvəl ˈɪndɪkeɪtər/",
+    "definition": "n. 服务级别指标",
+    "example": "Error rate is used as the SLI to measure service reliability."
+  },
+  {
+    "word": "session",
+    "phonetic": "/ˈsɛʃn/",
+    "definition": "n. 会话",
+    "example": "The load balancer uses sticky sessions to maintain user state."
+  },
+  {
+    "word": "snapshot",
+    "phonetic": "/ˈsnæpʃɒt/",
+    "definition": "n. 快照",
+    "example": "Take a snapshot of the virtual machine before applying the system update."
+  },
+  {
+    "word": "SNMP",
+    "phonetic": "/ˌɛs ɛn ɛm ˈpiː/",
+    "definition": "n. 简单网络管理协议",
+    "example": "Use SNMP to collect performance metrics from network devices."
+  },
+  {
+    "word": "sre",
+    "phonetic": "/ˌɛs ɑːr ˈiː/",
+    "definition": "n. 站点可靠性工程",
+    "example": "The SRE team ensures the platform meets its reliability targets."
+  },
+  {
+    "word": "static IP",
+    "phonetic": "/ˈstætɪk aɪ piː/",
+    "definition": "n. 静态IP地址",
+    "example": "Assign a static IP to the database server for consistent connectivity."
+  },
+  {
+    "word": "sticky session",
+    "phonetic": "/ˈstɪki ˈsɛʃn/",
+    "definition": "n. 粘性会话",
+    "example": "Enable sticky sessions on the load balancer to maintain user state."
+  },
+  {
+    "word": "storage area network",
+    "phonetic": "/ˈstɔːrɪdʒ ˈɛriə ˈnɛtwɜːrk/",
+    "definition": "n. 存储区域网络",
+    "example": "Connect the servers to the storage area network for shared block storage."
+  },
+  {
+    "word": "subsystem",
+    "phonetic": "/ˈsʌbsɪstəm/",
+    "definition": "n. 子系统",
+    "example": "The logging subsystem collects and forwards application logs."
+  },
+  {
+    "word": "TLS",
+    "phonetic": "/ˌtiː ɛl ˈɛs/",
+    "definition": "n. 传输层安全协议",
+    "example": "Enforce TLS 1.3 for all encrypted communications."
+  },
+  {
+    "word": "trunk",
+    "phonetic": "/trʌŋk/",
+    "definition": "n. 主干；中继",
+    "example": "Configure the trunk port to carry traffic for multiple VLANs."
+  },
+  {
+    "word": "uptime",
+    "phonetic": "/ˈʌptaɪm/",
+    "definition": "n. 正常运行时间",
+    "example": "The server has maintained 99.99% uptime over the past year."
+  },
+  {
+    "word": "VLAN",
+    "phonetic": "/ˌviː ɛl ˈeɪn/",
+    "definition": "n. 虚拟局域网",
+    "example": "Segment the network into VLANs for improved security and performance."
+  },
+  {
+    "word": "VM sprawl",
+    "phonetic": "/ˌviː ˈɛm sprɔːl/",
+    "definition": "n. 虚拟机蔓延",
+    "example": "VM sprawl leads to wasted resources; implement lifecycle policies to manage it."
+  },
+  {
+    "word": "volume",
+    "phonetic": "/ˈvɒljuːm/",
+    "definition": "n. 卷；存储卷",
+    "example": "Attach an encrypted storage volume to the database instance."
+  },
+  {
+    "word": "warm standby",
+    "phonetic": "/wɔːrm ˈstændbeɪ/",
+    "definition": "n. 温备份",
+    "example": "The warm standby environment has pre-configured servers ready for activation."
+  },
+  {
+    "word": "watermark",
+    "phonetic": "/ˈwɔːtərmɑːrk/",
+    "definition": "n. 水位线",
+    "example": "Set a memory watermark to trigger alerts before the system runs out of memory."
+  },
+  {
+    "word": "whitelist",
+    "phonetic": "/ˈwaɪtlɪst/",
+    "definition": "n. 白名单",
+    "example": "Add the trusted IP addresses to the whitelist on the firewall."
+  },
+  {
+    "word": "zero trust",
+    "phonetic": "/ˈzɪəroʊ trʌst/",
+    "definition": "n. 零信任",
+    "example": "Implement zero trust architecture to verify every request regardless of origin."
+  },
+  {
+    "word": "acknowledgment",
+    "phonetic": "/əkˈnɒlɪdʒmənt/",
+    "definition": "n. 确认；应答",
+    "example": "The monitoring system requires an acknowledgment for each critical alert."
+  },
+  {
+    "word": "anycast",
+    "phonetic": "/ˈɛnikæst/",
+    "definition": "n. 任播",
+    "example": "Use anycast routing to direct users to the nearest data center."
+  },
+  {
+    "word": "auto-scaling",
+    "phonetic": "/ˌɔːtoʊ ˈskeɪlɪŋ/",
+    "definition": "n. 自动伸缩",
+    "example": "Configure auto-scaling to add instances when CPU utilization exceeds 80%."
+  },
+  {
+    "word": "bare metal",
+    "phonetic": "/bɛər ˈmɛtəl/",
+    "definition": "n. 裸金属服务器",
+    "example": "Database workloads often run on bare metal for maximum I/O performance."
+  },
+  {
+    "word": "block storage",
+    "phonetic": "/blɒk ˈstɔːrɪdʒ/",
+    "definition": "n. 块存储",
+    "example": "Attach block storage volumes for high-performance database storage."
+  },
+  {
+    "word": "canary deployment",
+    "phonetic": "/kəˈnɛri dɪˈplɔɪmənt/",
+    "definition": "n. 金丝雀部署",
+    "example": "Use canary deployment to test new code with a small percentage of users."
+  },
+  {
+    "word": "CDN cache",
+    "phonetic": "/ˌsiː ˌdiː ˈɛn kæʃ/",
+    "definition": "n. CDN缓存",
+    "example": "Invalidate the CDN cache to serve updated content immediately."
+  },
+  {
+    "word": "centralized logging",
+    "phonetic": "/ˈsɛntrəlaɪzd ˈlɒɡɪŋ/",
+    "definition": "n. 集中日志",
+    "example": "Centralized logging aggregates logs from all servers into one searchable system."
+  },
+  {
+    "word": "chassis",
+    "phonetic": "/ˈʃæsi/",
+    "definition": "n. 机箱",
+    "example": "The blade server chassis houses up to 16 server modules."
+  },
+  {
+    "word": "cloud-native",
+    "phonetic": "/klaʊd ˈneɪtɪv/",
+    "definition": "adj. 云原生的",
+    "example": "The cloud-native application leverages containers and microservices architecture."
+  },
+  {
+    "word": "cold storage",
+    "phonetic": "/koʊld ˈstɔːrɪdʒ/",
+    "definition": "n. 冷存储",
+    "example": "Archive infrequently accessed data to cold storage for cost savings."
+  },
+  {
+    "word": "conflict resolution",
+    "phonetic": "/ˈkɒnflɪkt ˌrɛzəˈluːʃn/",
+    "definition": "n. 冲突解决",
+    "example": "Implement conflict resolution strategies for concurrent configuration changes."
+  },
+  {
+    "word": "control plane",
+    "phonetic": "/kənˈtroʊl pleɪn/",
+    "definition": "n. 控制平面",
+    "example": "The Kubernetes control plane manages the cluster state and scheduling."
+  },
+  {
+    "word": "CPU steal",
+    "phonetic": "/ˌsiː ˌpiː ˈjuː stiːl/",
+    "definition": "n. CPU窃取",
+    "example": "High CPU steal time indicates the virtual machine is competing for physical resources."
+  },
+  {
+    "word": "data plane",
+    "phonetic": "/ˈdeɪtə pleɪn/",
+    "definition": "n. 数据平面",
+    "example": "The data plane handles actual request traffic while the control plane manages configuration."
+  },
+  {
+    "word": "dead letter queue",
+    "phonetic": "/dɛd ˈlɛtər kjuː/",
+    "definition": "n. 死信队列",
+    "example": "Messages that fail processing are moved to the dead letter queue for investigation."
+  },
+  {
+    "word": "deploy",
+    "phonetic": "/dɪˈplɔɪ/",
+    "definition": "v. 部署",
+    "example": "Deploy the new application version to the staging environment first."
+  },
+  {
+    "word": "digital signature",
+    "phonetic": "/ˈdɪdʒɪtəl ˈsɪɡnɪtʃər/",
+    "definition": "n. 数字签名",
+    "example": "Verify the software package using its digital signature before installation."
+  },
+  {
+    "word": "directory service",
+    "phonetic": "/dɪˈrɛktəri ˈsɜːrvɪs/",
+    "definition": "n. 目录服务",
+    "example": "LDAP provides a centralized directory service for user authentication."
+  },
+  {
+    "word": "disk array",
+    "phonetic": "/dɪsk əˈreɪ/",
+    "definition": "n. 磁盘阵列",
+    "example": "The disk array provides RAID-protected storage for the database."
+  },
+  {
+    "word": "elastic load balancing",
+    "phonetic": "/ɪˈlæstɪk loʊd ˈbælənsɪŋ/",
+    "definition": "n. 弹性负载均衡",
+    "example": "Elastic load balancing automatically distributes traffic across multiple targets."
+  },
+  {
+    "word": "ephemeral",
+    "phonetic": "/ɪˈfɛmərəl/",
+    "definition": "adj. 临时的",
+    "example": "Use ephemeral storage for temporary processing data that does not need persistence."
+  },
+  {
+    "word": "error budget",
+    "phonetic": "/ˈɛrər ˈbʌdʒɪt/",
+    "definition": "n. 错误预算",
+    "example": "The error budget allows the team to balance reliability with feature velocity."
+  },
+  {
+    "word": "extranet",
+    "phonetic": "/ˈɛkstrənɛt/",
+    "definition": "n. 外联网",
+    "example": "Partners access the extranet through a secure VPN connection."
+  },
+  {
+    "word": "file system",
+    "phonetic": "/faɪl ˈsɪstəm/",
+    "definition": "n. 文件系统",
+    "example": "Choose the appropriate file system based on workload requirements."
+  },
+  {
+    "word": "flow control",
+    "phonetic": "/floʊ kənˈtroʊl/",
+    "definition": "n. 流量控制",
+    "example": "Implement flow control to prevent the sender from overwhelming the receiver."
+  },
+  {
+    "word": "governance",
+    "phonetic": "/ˈɡʌvərnəns/",
+    "definition": "n. 治理",
+    "example": "Cloud governance policies ensure compliance with organizational standards."
+  },
+  {
+    "word": "horizontal pod autoscaler",
+    "phonetic": "/həˈrɪzɒntəl pɒd ˈɔːtoʊskeɪlər/",
+    "definition": "n. 水平Pod自动伸缩",
+    "example": "Configure the horizontal pod autoscaler to scale based on CPU and memory usage."
+  },
+  {
+    "word": "hotfix deployment",
+    "phonetic": "/ˈhɒtfɪks dɪˈplɔɪmənt/",
+    "definition": "n. 热修复部署",
+    "example": "The hotfix deployment was rolled out within one hour of discovering the vulnerability."
+  },
+  {
+    "word": "idempotent operation",
+    "phonetic": "/ˌaɪdɛmˈpoʊtənt ˌɒpəˈreɪʃn/",
+    "definition": "n. 幂等操作",
+    "example": "Every API endpoint must support idempotent operations to prevent duplicate actions."
+  },
+  {
+    "word": "influx",
+    "phonetic": "/ˈɪnflʌks/",
+    "definition": "n. 流入",
+    "example": "The sudden influx of traffic caused the web servers to become overloaded."
+  },
+  {
+    "word": "ingress",
+    "phonetic": "/ˈɪŋɡrɛs/",
+    "definition": "n. 入口",
+    "example": "Configure the Kubernetes ingress controller to route external traffic to services."
+  },
+  {
+    "word": "initialization",
+    "phonetic": "/ɪˌnɪʃəlaɪˈzeɪʃn/",
+    "definition": "n. 初始化",
+    "example": "The system initialization process takes approximately five minutes."
+  },
+  {
+    "word": "intranet",
+    "phonetic": "/ˈɪntrənɛt/",
+    "definition": "n. 内联网",
+    "example": "The company intranet hosts internal documents and communication tools."
+  },
+  {
+    "word": "jitter",
+    "phonetic": "/ˈdʒɪtər/",
+    "definition": "n. 抖动",
+    "example": "High jitter degrades the quality of VoIP calls over the network."
+  },
+  {
+    "word": "jump server",
+    "phonetic": "/dʒʌmp ˈsɜːrvər/",
+    "definition": "n. 跳板机",
+    "example": "Access the production servers through the jump server for security."
+  },
+  {
+    "word": "key-value store",
+    "phonetic": "/kiː ˈvæljuː stɔːr/",
+    "definition": "n. 键值存储",
+    "example": "Use Redis as a key-value store for session caching."
+  },
+  {
+    "word": "kill switch",
+    "phonetic": "/kɪl swɪtʃ/",
+    "definition": "n. 终止开关",
+    "example": "The kill switch allows the operator to immediately stop a faulty deployment."
+  },
+  {
+    "word": "latency budget",
+    "phonetic": "/ˈlætənsi ˈbʌdʒɪt/",
+    "definition": "n. 延迟预算",
+    "example": "Allocate the latency budget across each service to meet the end-to-end SLA."
+  },
+  {
+    "word": "layer 7",
+    "phonetic": "/ˈleɪər ˈsɛvən/",
+    "definition": "n. 应用层",
+    "example": "The layer 7 load balancer inspects HTTP headers for intelligent routing."
+  },
+  {
+    "word": "legacy system",
+    "phonetic": "/ˈlɛɡəsi ˈsɪstəm/",
+    "definition": "n. 遗留系统",
+    "example": "The legacy system requires a phased migration strategy to modernize infrastructure."
+  },
+  {
+    "word": "liveness probe",
+    "phonetic": "/ˈlaɪvnəs proʊb/",
+    "definition": "n. 存活探针",
+    "example": "The liveness probe restarts the container if the application becomes unresponsive."
+  },
+  {
+    "word": "lock-in",
+    "phonetic": "/lɒk ɪn/",
+    "definition": "n. 锁定",
+    "example": "Vendor lock-in can make it difficult and expensive to switch cloud providers."
+  },
+  {
+    "word": "man-in-the-middle attack",
+    "phonetic": "/mæn ɪn ðə ˈmɪdəl əˈtæk/",
+    "definition": "n. 中间人攻击",
+    "example": "TLS encryption prevents man-in-the-middle attacks on network communications."
+  },
+  {
+    "word": "micro-segmentation",
+    "phonetic": "/ˈmaɪkroʊ ˌsɛɡmənˈteɪʃn/",
+    "definition": "n. 微分段",
+    "example": "Micro-segmentation restricts lateral movement within the network."
+  },
+  {
+    "word": "mount",
+    "phonetic": "/maʊnt/",
+    "definition": "v. 挂载",
+    "example": "Mount the NFS share to access shared files across multiple servers."
+  },
+  {
+    "word": "network interface card",
+    "phonetic": "/ˈnɛtwɜːrk ˈɪntərfeɪs kɑːrd/",
+    "definition": "n. 网卡",
+    "example": "Install a 10 Gbps network interface card for high-speed data transfer."
+  },
+  {
+    "word": "network policy",
+    "phonetic": "/ˈnɛtwɜːrk ˈpɒləsi/",
+    "definition": "n. 网络策略",
+    "example": "Define Kubernetes network policies to control pod-to-pod communication."
+  },
+  {
+    "word": "object storage",
+    "phonetic": "/ˈɒbdʒɛkt ˈstɔːrɪdʒ/",
+    "definition": "n. 对象存储",
+    "example": "Store backups in object storage for cost-effective long-term retention."
+  },
+  {
+    "word": "on-call",
+    "phonetic": "/ɒn kɔːl/",
+    "definition": "adj. 值班的",
+    "example": "The on-call engineer responds to production incidents outside business hours."
+  },
+  {
+    "word": "overhead",
+    "phonetic": "/ˈoʊvərhɛd/",
+    "definition": "n. 开销",
+    "example": "The additional logging adds minimal performance overhead to the application."
+  },
+  {
+    "word": "overload",
+    "phonetic": "/ˌoʊvərˈloʊd/",
+    "definition": "v./n. 过载",
+    "example": "The database became overloaded during the flash sale event."
+  },
+  {
+    "word": "packet loss",
+    "phonetic": "/ˈpækɪt lɒs/",
+    "definition": "n. 丢包",
+    "example": "High packet loss indicates network congestion or hardware failure."
+  },
+  {
+    "word": "physical host",
+    "phonetic": "/ˈfɪzɪkəl hoʊst/",
+    "definition": "n. 物理主机",
+    "example": "Each physical host runs multiple virtual machines through the hypervisor."
+  },
+  {
+    "word": "pre-flight check",
+    "phonetic": "/priː flaɪt tʃɛk/",
+    "definition": "n. 预检查",
+    "example": "Run pre-flight checks before deploying to validate the environment is ready."
+  },
+  {
+    "word": "prioritization",
+    "phonetic": "/praɪˌɒrɪtaɪˈzeɪʃn/",
+    "definition": "n. 优先级排序",
+    "example": "Effective incident prioritization ensures critical issues are addressed first."
+  },
+  {
+    "word": "readiness probe",
+    "phonetic": "/ˈrɛdinəs proʊb/",
+    "definition": "n. 就绪探针",
+    "example": "The readiness probe ensures the container does not receive traffic until it is ready."
+  },
+  {
+    "word": "reimage",
+    "phonetic": "/riːˈɪmɪdʒ/",
+    "definition": "v. 重装镜像",
+    "example": "Reimage the compromised server with a clean golden image."
+  },
+  {
+    "word": "release management",
+    "phonetic": "/rɪˈliːs ˈmænɪdʒmənt/",
+    "definition": "n. 发布管理",
+    "example": "Release management coordinates the scheduling and rollout of new software versions."
+  },
+  {
+    "word": "replica",
+    "phonetic": "/rɪˈplɪkə/",
+    "definition": "n. 副本",
+    "example": "Deploy read replicas to distribute database query load."
+  },
+  {
+    "word": "request throttling",
+    "phonetic": "/rɪˈkwɛst ˈθrɒtlɪŋ/",
+    "definition": "n. 请求限流",
+    "example": "Request throttling protects backend services from sudden traffic spikes."
+  },
+  {
+    "word": "rollout",
+    "phonetic": "/ˈroʊlaʊt/",
+    "definition": "n. 上线；推出",
+    "example": "The gradual rollout of the new feature is planned over three weeks."
+  },
+  {
+    "word": "root cause",
+    "phonetic": "/ruːt kɔːz/",
+    "definition": "n. 根因",
+    "example": "Identifying the root cause prevents similar incidents in the future."
+  },
+  {
+    "word": "scaling policy",
+    "phonetic": "/ˈskeɪlɪŋ ˈpɒləsi/",
+    "definition": "n. 伸缩策略",
+    "example": "Define a scaling policy that adds instances when latency exceeds the threshold."
+  },
+  {
+    "word": "secret management",
+    "phonetic": "/ˈsiːkrɪt ˈmænɪdʒmənt/",
+    "definition": "n. 密钥管理",
+    "example": "Use a secret management tool to store and rotate API keys securely."
+  },
+  {
+    "word": "self-healing",
+    "phonetic": "/sɛl ˈhiːlɪŋ/",
+    "definition": "adj. 自愈的",
+    "example": "The self-healing system automatically restarts failed containers."
+  },
+  {
+    "word": "service account",
+    "phonetic": "/ˈsɜːrvɪs əˈkaʊnt/",
+    "definition": "n. 服务账号",
+    "example": "Use a dedicated service account for the application to access cloud resources."
+  },
+  {
+    "word": "service mesh",
+    "phonetic": "/ˈsɜːrvɪs mɛʃ/",
+    "definition": "n. 服务网格",
+    "example": "Istio provides a service mesh for managing microservice communication."
+  },
+  {
+    "word": "service registry",
+    "phonetic": "/ˈsɜːrvɪs ˈrɛdʒɪstri/",
+    "definition": "n. 服务注册中心",
+    "example": "Consul acts as the service registry for discovering available microservices."
+  },
+  {
+    "word": "shell",
+    "phonetic": "/ʃɛl/",
+    "definition": "n. 命令解释器；Shell",
+    "example": "Write a shell script to automate the daily server health check."
+  },
+  {
+    "word": "SIEM",
+    "phonetic": "/siːm/",
+    "definition": "n. 安全信息和事件管理",
+    "example": "The SIEM platform correlates security events across all network devices."
+  },
+  {
+    "word": "skill set",
+    "phonetic": "/skɪl sɛt/",
+    "definition": "n. 技能集",
+    "example": "The SRE role requires a diverse skill set spanning development and operations."
+  },
+  {
+    "word": "SLA violation",
+    "phonetic": "/ˌɛs ɛl ˈeɪ vaɪˈleɪʃn/",
+    "definition": "n. SLA违约",
+    "example": "The SLA violation triggered an automatic penalty clause in the contract."
+  },
+  {
+    "word": "slow query",
+    "phonetic": "/sloʊ kwiːri/",
+    "definition": "n. 慢查询",
+    "example": "Optimize the slow query by adding an appropriate database index."
+  },
+  {
+    "word": "snowflake",
+    "phonetic": "/ˈsnoʊfleɪk/",
+    "definition": "n. 雪花",
+    "example": "Avoid creating snowflake servers that differ from the standard configuration."
+  },
+  {
+    "word": "soft limit",
+    "phonetic": "/sɒft ˈlɪmɪt/",
+    "definition": "n. 软限制",
+    "example": "The operating system soft limit for open files can be temporarily exceeded."
+  },
+  {
+    "word": "sprint",
+    "phonetic": "/sprɪnt/",
+    "definition": "n. 冲刺周期",
+    "example": "The operations team plans infrastructure improvements in two-week sprints."
+  },
+  {
+    "word": "stealth",
+    "phonetic": "/stɛlθ/",
+    "definition": "n. 隐蔽",
+    "example": "The stealth port scan avoids detection by sending packets at slow intervals."
+  },
+  {
+    "word": "storage tier",
+    "phonetic": "/ˈstɔːrɪdʒ tɪər/",
+    "definition": "n. 存储层级",
+    "example": "Move data to a lower storage tier as it becomes less frequently accessed."
+  },
+  {
+    "word": "subdomain",
+    "phonetic": "/ˈsʌbdoʊmeɪn/",
+    "definition": "n. 子域名",
+    "example": "Create a subdomain for each microservice to enable independent DNS management."
+  },
+  {
+    "word": "supply chain security",
+    "phonetic": "/səˈplaɪ tʃeɪn sɪˈkjʊrəti/",
+    "definition": "n. 供应链安全",
+    "example": "Verify the integrity of third-party packages to protect supply chain security."
+  },
+  {
+    "word": "switch",
+    "phonetic": "/swɪtʃ/",
+    "definition": "n. 交换机",
+    "example": "The managed switch provides VLAN support for network segmentation."
+  },
+  {
+    "word": "tag",
+    "phonetic": "/tæɡ/",
+    "definition": "n. 标签",
+    "example": "Tag cloud resources for cost allocation and organizational tracking."
+  },
+  {
+    "word": "TCP/IP",
+    "phonetic": "/ˌtiː ˌsiː ˈpiː aɪ ˈpiː/",
+    "definition": "n. 传输控制协议/互联网协议",
+    "example": "TCP/IP is the foundational communication protocol suite of the internet."
+  },
+  {
+    "word": "template",
+    "phonetic": "/ˈtɛmplɪt/",
+    "definition": "n. 模板",
+    "example": "Use a server template to provision new instances with consistent configuration."
+  },
+  {
+    "word": "tenant",
+    "phonetic": "/ˈtɛnənt/",
+    "definition": "n. 租户",
+    "example": "Each tenant in the multi-tenant platform has isolated data and resources."
+  },
+  {
+    "word": "traffic shaping",
+    "phonetic": "/ˈtræfɪk ˈʃeɪpɪŋ/",
+    "definition": "n. 流量整形",
+    "example": "Traffic shaping smooths out bursty traffic to prevent network congestion."
+  },
+  {
+    "word": "trigger",
+    "phonetic": "/ˈtrɪɡər/",
+    "definition": "n./v. 触发器",
+    "example": "Configure an alert trigger that fires when disk usage exceeds 85%."
+  },
+  {
+    "word": "tuning",
+    "phonetic": "/ˈtjuːnɪŋ/",
+    "definition": "n. 调优",
+    "example": "Performance tuning of the database queries improved response times by 40%."
+  },
+  {
+    "word": "under-provisioning",
+    "phonetic": "/ˌʌndər prəˈvɪʒənɪŋ/",
+    "definition": "n. 不足配置",
+    "example": "Under-provisioning leads to service degradation during peak traffic periods."
+  },
+  {
+    "word": "uniform resource locator",
+    "phonetic": "/ˈjuːnɪfɔːrm rɪˈsɔːrs loʊˈkeɪtər/",
+    "definition": "n. 统一资源定位符",
+    "example": "The uniform resource locator specifies the exact address of the web resource."
+  },
+  {
+    "word": "update",
+    "phonetic": "/ʌpˈdeɪt/",
+    "definition": "v./n. 更新",
+    "example": "Apply the latest security update to the operating system immediately."
+  },
+  {
+    "word": "upgrade",
+    "phonetic": "/ʌpˈɡreɪd/",
+    "definition": "v./n. 升级",
+    "example": "Schedule the hardware upgrade during the next maintenance window."
+  },
+  {
+    "word": "validation",
+    "phonetic": "/ˌvælɪˈdeɪʃn/",
+    "definition": "n. 验证",
+    "example": "Perform input validation to prevent injection attacks on the web application."
+  },
+  {
+    "word": "virtual private cloud",
+    "phonetic": "/ˈvɜːrtʃuəl ˈpraɪvət klaʊd/",
+    "definition": "n. 虚拟私有云",
+    "example": "Deploy the application inside a virtual private cloud for network isolation."
+  },
+  {
+    "word": "virtualization",
+    "phonetic": "/ˌvɜːrtʃuəlaɪˈzeɪʃn/",
+    "definition": "n. 虚拟化",
+    "example": "Server virtualization maximizes hardware utilization by running multiple VMs on one host."
+  },
+  {
+    "word": "VPC peering",
+    "phonetic": "/ˌviː ˌpiː ˈsiː ˈpɪərɪŋ/",
+    "definition": "n. VPC对等连接",
+    "example": "Establish VPC peering to enable private communication between two cloud networks."
+  },
+  {
+    "word": "warm up",
+    "phonetic": "/wɔːrm ʌp/",
+    "definition": "v. 预热",
+    "example": "Warm up the load balancer connections before switching traffic to the new environment."
+  },
+  {
+    "word": "workflow",
+    "phonetic": "/ˈwɜːrkfloʊ/",
+    "definition": "n. 工作流",
+    "example": "Automate the deployment workflow to reduce manual intervention."
+  }
+]

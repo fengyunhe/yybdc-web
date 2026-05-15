@@ -1,0 +1,554 @@
+[
+  {
+    "word": "cuisine",
+    "phonetic": "/kwɪˈziːn/",
+    "definition": "n. 烹饪；菜系",
+    "example": "French cuisine is known for its sauces."
+  },
+  {
+    "word": "itinerary",
+    "phonetic": "/aɪˈtɪnərɛri/",
+    "definition": "n. 行程；旅程计划",
+    "example": "The travel agent prepared a detailed itinerary."
+  },
+  {
+    "word": "reservation",
+    "phonetic": "/ˌrɛzərˈveɪʃən/",
+    "definition": "n. 预订；保留",
+    "example": "I made a reservation at the Italian restaurant."
+  },
+  {
+    "word": "gastronomy",
+    "phonetic": "/ɡæsˈtrɑːnəmi/",
+    "definition": "n. 美食学",
+    "example": "Italian gastronomy emphasizes fresh, simple ingredients."
+  },
+  {
+    "word": "appetizer",
+    "phonetic": "/ˈæpɪtaɪzər/",
+    "definition": "n. 开胃菜",
+    "example": "The bruschetta was an excellent appetizer."
+  },
+  {
+    "word": "entree",
+    "phonetic": "/ˈɑːntreɪ/",
+    "definition": "n. 主菜",
+    "example": "The salmon was the highlight of the entree."
+  },
+  {
+    "word": "dessert",
+    "phonetic": "/dɪˈzɜːrt/",
+    "definition": "n. 甜点",
+    "example": "The chocolate mousse was the perfect dessert."
+  },
+  {
+    "word": "garnish",
+    "phonetic": "/ˈɡɑːrnɪʃ/",
+    "definition": "n./v. 装饰；点缀",
+    "example": "The dish was garnished with fresh herbs."
+  },
+  {
+    "word": "culinary",
+    "phonetic": "/ˈkʌlɪnɛri/",
+    "definition": "adj. 烹饪的",
+    "example": "She enrolled in a culinary arts program."
+  },
+  {
+    "word": "sommelier",
+    "phonetic": "/ˌsɑːməlˈjeɪ/",
+    "definition": "n. 侍酒师",
+    "example": "The sommelier recommended a wine pairing."
+  },
+  {
+    "word": "saute",
+    "phonetic": "/soʊˈteɪ/",
+    "definition": "v. 煎炒",
+    "example": "Saute the vegetables in olive oil until tender."
+  },
+  {
+    "word": "blanch",
+    "phonetic": "/blæntʃ/",
+    "definition": "v. 焯水",
+    "example": "Blanch the broccoli to preserve its color."
+  },
+  {
+    "word": "braise",
+    "phonetic": "/breɪz/",
+    "definition": "v. 炖；焖",
+    "example": "Braise the beef slowly for tender results."
+  },
+  {
+    "word": "flambe",
+    "phonetic": "/flɑːmˈbeɪ/",
+    "definition": "v. 火焰烹饪",
+    "example": "The chef flambeed the crepe with brandy."
+  },
+  {
+    "word": "julienne",
+    "phonetic": "/ˌdʒuːliˈɛn/",
+    "definition": "n./v. 切丝",
+    "example": "Julienne the carrots for the salad."
+  },
+  {
+    "word": "mise en place",
+    "phonetic": "/miːz ɒ̃ plas/",
+    "definition": "n. 备料；准备工作",
+    "example": "Proper mise en place is essential in a professional kitchen."
+  },
+  {
+    "word": "al dente",
+    "phonetic": "/ɑːl ˈdɛnteɪ/",
+    "definition": "adj. 有嚼劲的（意大利面）",
+    "example": "Cook the pasta al dente for the best texture."
+  },
+  {
+    "word": "amuse-bouche",
+    "phonetic": "/əˌmjuːz ˈbuːʃ/",
+    "definition": "n. 开胃小点",
+    "example": "The amuse-bouche showcased the chef's creativity."
+  },
+  {
+    "word": "bechamel",
+    "phonetic": "/beɪʃəˈmɛl/",
+    "definition": "n. 白酱",
+    "example": "Bechamel is one of the five French mother sauces."
+  },
+  {
+    "word": "bearnaise",
+    "phonetic": "/bɛrˈneɪz/",
+    "definition": "n. 贝阿恩酱",
+    "example": "Bearnaise sauce pairs perfectly with steak."
+  },
+  {
+    "word": "roux",
+    "phonetic": "/ruː/",
+    "definition": "n. 面糊",
+    "example": "A roux is used to thicken sauces and soups."
+  },
+  {
+    "word": "consomme",
+    "phonetic": "/ˌkɑːnsəˈmeɪ/",
+    "definition": "n. 清汤",
+    "example": "The consomme was clarified to perfection."
+  },
+  {
+    "word": "hors d'oeuvre",
+    "phonetic": "/ɔːr ˈdɜːrvrə/",
+    "definition": "n. 餐前小食",
+    "example": "Hors d'oeuvres were served during the cocktail hour."
+  },
+  {
+    "word": "charcuterie",
+    "phonetic": "/ʃɑːrˌkjuːtəˈriː/",
+    "definition": "n. 熟食；腌肉",
+    "example": "The charcuterie board featured prosciutto and salami."
+  },
+  {
+    "word": "terroir",
+    "phonetic": "/tɛrˈwɑːr/",
+    "definition": "n. 风土；产地特征",
+    "example": "The terroir gives the wine its unique character."
+  },
+  {
+    "word": "aperitif",
+    "phonetic": "/əˌpɛrɪˈtiːf/",
+    "definition": "n. 开胃酒",
+    "example": "An aperitif stimulates the appetite before dinner."
+  },
+  {
+    "word": "digestif",
+    "phonetic": "/daɪˈdʒɛstɪf/",
+    "definition": "n. 餐后酒",
+    "example": "Brandy is a popular digestif after a heavy meal."
+  },
+  {
+    "word": "boutique",
+    "phonetic": "/buːˈtiːk/",
+    "definition": "n./adj. 精品店；精品的",
+    "example": "They stayed at a boutique hotel in the old town."
+  },
+  {
+    "word": "excursion",
+    "phonetic": "/ɪkˈskɜːrʃən/",
+    "definition": "n. 远足；短途旅行",
+    "example": "An excursion to the volcano was the trip's highlight."
+  },
+  {
+    "word": "sightseeing",
+    "phonetic": "/ˈsaɪtsiːɪŋ/",
+    "definition": "n./adj. 观光",
+    "example": "We spent the morning sightseeing in the old quarter."
+  },
+  {
+    "word": "souvenir",
+    "phonetic": "/ˌsuːvəˈnɪr/",
+    "definition": "n. 纪念品",
+    "example": "She bought a handcrafted souvenir for her friend."
+  },
+  {
+    "word": "concierge",
+    "phonetic": "/ˌkɑːnsiˈɛrʒ/",
+    "definition": "n. 礼宾服务",
+    "example": "The concierge arranged a private city tour."
+  },
+  {
+    "word": "all-inclusive",
+    "phonetic": "/ˌɔːl ɪnˈkluːsɪv/",
+    "definition": "adj. 全包的",
+    "example": "The all-inclusive resort includes meals and activities."
+  },
+  {
+    "word": "hostel",
+    "phonetic": "/ˈhɑːstəl/",
+    "definition": "n. 青年旅舍",
+    "example": "Budget travelers prefer hostels for social experiences."
+  },
+  {
+    "word": "lodge",
+    "phonetic": "/lɑːdʒ/",
+    "definition": "n./v. 小屋；住宿",
+    "example": "The ski lodge offers stunning mountain views."
+  },
+  {
+    "word": "resort",
+    "phonetic": "/rɪˈzɔːrt/",
+    "definition": "n. 度假胜地",
+    "example": "The beach resort is popular with families."
+  },
+  {
+    "word": "layover",
+    "phonetic": "/ˈleɪoʊvər/",
+    "definition": "n. 中途停留",
+    "example": "A short layover in Dubai allowed time for duty-free shopping."
+  },
+  {
+    "word": "boarding pass",
+    "phonetic": "/ˈbɔːrdɪŋ pæs/",
+    "definition": "n. 登机牌",
+    "example": "Please present your boarding pass at the gate."
+  },
+  {
+    "word": "passport",
+    "phonetic": "/ˈpæspɔːrt/",
+    "definition": "n. 护照",
+    "example": "A valid passport is required for international travel."
+  },
+  {
+    "word": "visa",
+    "phonetic": "/ˈviːzə/",
+    "definition": "n. 签证",
+    "example": "She obtained a tourist visa for Japan."
+  },
+  {
+    "word": "customs",
+    "phonetic": "/ˈkʌstəmz/",
+    "definition": "n. 海关",
+    "example": "You must declare goods at customs."
+  },
+  {
+    "word": "embark",
+    "phonetic": "/ɪmˈbɑːrk/",
+    "definition": "v. 登上（船/飞机）",
+    "example": "Passengers began to embark the cruise ship."
+  },
+  {
+    "word": "disembark",
+    "phonetic": "/ˌdɪsɪmˈbɑːrk/",
+    "definition": "v. 下船；登陆",
+    "example": "We disembarked at the port of Naples."
+  },
+  {
+    "word": "cruise",
+    "phonetic": "/kruːz/",
+    "definition": "n./v. 邮轮旅行",
+    "example": "A Mediterranean cruise visits multiple countries."
+  },
+  {
+    "word": "transit",
+    "phonetic": "/ˈtrænzɪt/",
+    "definition": "n./v. 过境；运输",
+    "example": "The layover was a transit through Singapore."
+  },
+  {
+    "word": "banquet",
+    "phonetic": "/ˈbæŋkwɪt/",
+    "definition": "n. 宴会",
+    "example": "The wedding banquet was held at a grand ballroom."
+  },
+  {
+    "word": "buffet",
+    "phonetic": "/bəˈfeɪ/",
+    "definition": "n. 自助餐",
+    "example": "The hotel buffet offers international cuisine."
+  },
+  {
+    "word": "takeout",
+    "phonetic": "/ˈteɪkaʊt/",
+    "definition": "n./adj. 外卖",
+    "example": "We ordered takeout for a cozy dinner at home."
+  },
+  {
+    "word": "dine",
+    "phonetic": "/daɪn/",
+    "definition": "v. 就餐",
+    "example": "We dined at a Michelin-starred restaurant."
+  },
+  {
+    "word": "bistro",
+    "phonetic": "/ˈbiːstroʊ/",
+    "definition": "n. 小酒馆；小餐馆",
+    "example": "The bistro serves classic French dishes."
+  },
+  {
+    "word": "trattoria",
+    "phonetic": "/ˌtrɑːtəˈriːə/",
+    "definition": "n. 意大利餐厅",
+    "example": "The trattoria makes fresh pasta daily."
+  },
+  {
+    "word": "brasserie",
+    "phonetic": "/bræsəˈriː/",
+    "definition": "n. 酒馆餐厅",
+    "example": "The brasserie is open all day for casual dining."
+  },
+  {
+    "word": "patisserie",
+    "phonetic": "/pəˈtɪsəri/",
+    "definition": "n. 糕点店",
+    "example": "The patisserie sells exquisite French pastries."
+  },
+  {
+    "word": "maitre d'",
+    "phonetic": "/ˌmeɪtrə ˈdiː/",
+    "definition": "n. 领班",
+    "example": "The maitre d' seated us by the window."
+  },
+  {
+    "word": "tasting menu",
+    "phonetic": "/ˈteɪstɪŋ ˈmɛnjuː/",
+    "definition": "n. 品鉴菜单",
+    "example": "The 12-course tasting menu was a culinary journey."
+  },
+  {
+    "word": "pairing",
+    "phonetic": "/ˈpɛrɪŋ/",
+    "definition": "n. 搭配",
+    "example": "The wine pairing complemented each course perfectly."
+  },
+  {
+    "word": "seasonal",
+    "phonetic": "/ˈsiːzənəl/",
+    "definition": "adj. 当季的；季节性的",
+    "example": "The menu features seasonal ingredients."
+  },
+  {
+    "word": "locavore",
+    "phonetic": "/ˈloʊkəvɔːr/",
+    "definition": "n. 本地食材食客",
+    "example": "Locavores prefer restaurants sourcing from local farms."
+  },
+  {
+    "word": "farm-to-table",
+    "phonetic": "/fɑːrm tə ˈteɪbəl/",
+    "definition": "adj./n. 农场到餐桌",
+    "example": "Farm-to-table dining emphasizes freshness and sustainability."
+  },
+  {
+    "word": "foodie",
+    "phonetic": "/ˈfuːdi/",
+    "definition": "n. 美食家",
+    "example": "As a foodie, she explores new restaurants weekly."
+  },
+  {
+    "word": "gastronomic",
+    "phonetic": "/ˌɡæstrəˈnɑːmɪk/",
+    "definition": "adj. 美食的",
+    "example": "The city is known for its gastronomic scene."
+  },
+  {
+    "word": "flavor",
+    "phonetic": "/ˈfleɪvər/",
+    "definition": "n. 风味",
+    "example": "The dish has a complex umami flavor."
+  },
+  {
+    "word": "aroma",
+    "phonetic": "/əˈroʊmə/",
+    "definition": "n. 香气",
+    "example": "The aroma of freshly brewed coffee filled the room."
+  },
+  {
+    "word": "palate",
+    "phonetic": "/ˈpælɪt/",
+    "definition": "n. 味觉；上颚",
+    "example": "The wine pleases the palate with its smooth finish."
+  },
+  {
+    "word": "umami",
+    "phonetic": "/uːˈmɑːmi/",
+    "definition": "n. 鲜味",
+    "example": "Soy sauce adds umami to dishes."
+  },
+  {
+    "word": "sustainable",
+    "phonetic": "/səˈsteɪnəbəl/",
+    "definition": "adj. 可持续的",
+    "example": "Sustainable tourism protects local environments."
+  },
+  {
+    "word": "accommodation",
+    "phonetic": "/əˌkɑːməˈdeɪʃən/",
+    "definition": "n. 住宿",
+    "example": "The tour package includes hotel accommodation."
+  },
+  {
+    "word": "farewell",
+    "phonetic": "/ˌfɛrˈwɛl/",
+    "definition": "n./adj. 告别",
+    "example": "The farewell dinner was held at the hotel rooftop."
+  },
+  {
+    "word": "gourmet",
+    "phonetic": "/ˈɡʊrmeɪ/",
+    "definition": "n./adj. 美食家；精致的",
+    "example": "The gourmet restaurant offers a refined dining experience."
+  },
+  {
+    "word": "connoisseur",
+    "phonetic": "/ˌkɑːnəˈsɜːr/",
+    "definition": "n. 鉴赏家",
+    "example": "He is a connoisseur of fine wines."
+  },
+  {
+    "word": "prosciutto",
+    "phonetic": "/proʊˈʃuːtoʊ/",
+    "definition": "n. 意大利熏火腿",
+    "example": "The prosciutto was sliced paper-thin."
+  },
+  {
+    "word": "bruschetta",
+    "phonetic": "/bruːˈskɛtə/",
+    "definition": "n. 意式烤面包片",
+    "example": "Tomato bruschetta is a classic Italian appetizer."
+  },
+  {
+    "word": "risotto",
+    "phonetic": "/rɪˈzoʊtoʊ/",
+    "definition": "n. 意大利炖饭",
+    "example": "The mushroom risotto was creamy and flavorful."
+  },
+  {
+    "word": "crepe",
+    "phonetic": "/krɛp/",
+    "definition": "n. 法式薄饼",
+    "example": "Nutella crepes are a popular street food in Paris."
+  },
+  {
+    "word": "croissant",
+    "phonetic": "/krwɑːˈsɑːn/",
+    "definition": "n. 羊角面包",
+    "example": "A freshly baked croissant pairs well with coffee."
+  },
+  {
+    "word": "tapas",
+    "phonetic": "/ˈtɑːpɑːz/",
+    "definition": "n. 西班牙小吃",
+    "example": "We ordered a variety of tapas to share."
+  },
+  {
+    "word": "fondue",
+    "phonetic": "/fɑːnˈduː/",
+    "definition": "n. 芝士火锅",
+    "example": "Swiss fondue is made with melted cheese."
+  },
+  {
+    "word": "wok",
+    "phonetic": "/wɑːk/",
+    "definition": "n. 炒锅",
+    "example": "Stir-fry vegetables quickly in a hot wok."
+  },
+  {
+    "word": "dim sum",
+    "phonetic": "/dɪm ˈsʌm/",
+    "definition": "n. 点心",
+    "example": "We enjoyed dim sum at a traditional Cantonese restaurant."
+  },
+  {
+    "word": "sushi",
+    "phonetic": "/ˈsuːʃi/",
+    "definition": "n. 寿司",
+    "example": "The sushi chef prepared fresh nigiri."
+  },
+  {
+    "word": "sashimi",
+    "phonetic": "/səˈʃiːmi/",
+    "definition": "n. 生鱼片",
+    "example": "The sashimi was cut from the freshest tuna."
+  },
+  {
+    "word": "tempura",
+    "phonetic": "/tɛmˈpʊrə/",
+    "definition": "n. 天妇罗",
+    "example": "The shrimp tempura was light and crispy."
+  },
+  {
+    "word": "ramen",
+    "phonetic": "/ˈrɑːmɛn/",
+    "definition": "n. 拉面",
+    "example": "Tonkotsu ramen features a rich pork broth."
+  },
+  {
+    "word": "tandoori",
+    "phonetic": "/ˌtændəˈriː/",
+    "definition": "n. 印度烤炉菜",
+    "example": "Tandoori chicken is marinated in yogurt and spices."
+  },
+  {
+    "word": "curry",
+    "phonetic": "/ˈkɜːri/",
+    "definition": "n. 咖喱",
+    "example": "Thai curry balances sweet, sour, and spicy flavors."
+  },
+  {
+    "word": "paella",
+    "phonetic": "/paɪˈɛjə/",
+    "definition": "n. 西班牙海鲜饭",
+    "example": "Valencian paella includes rabbit, chicken, and beans."
+  },
+  {
+    "word": "souvlaki",
+    "phonetic": "/suːˈvlɑːki/",
+    "definition": "n. 希腊烤肉串",
+    "example": "Souvlaki is a popular Greek street food."
+  },
+  {
+    "word": "gyro",
+    "phonetic": "/ˈjɪroʊ/",
+    "definition": "n. 希腊旋转烤肉",
+    "example": "A gyro wrap with tzatziki sauce is delicious."
+  },
+  {
+    "word": "brunch",
+    "phonetic": "/brʌntʃ/",
+    "definition": "n. 早午餐",
+    "example": "Sunday brunch is a popular weekend tradition."
+  },
+  {
+    "word": "takeaway",
+    "phonetic": "/ˈteɪkəweɪ/",
+    "definition": "n./adj. 外卖",
+    "example": "We ordered takeaway from the Chinese restaurant."
+  },
+  {
+    "word": "pintxos",
+    "phonetic": "/ˈpɪntʃoʊz/",
+    "definition": "n. 巴斯克小吃",
+    "example": "Pintxos bars in San Sebastian are a food lover's paradise."
+  },
+  {
+    "word": "sustainability",
+    "phonetic": "/səˌsteɪnəˈbɪlɪti/",
+    "definition": "n. 可持续性",
+    "example": "Sustainability is a growing trend in the hospitality industry."
+  }
+]

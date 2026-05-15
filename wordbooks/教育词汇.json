@@ -1,0 +1,476 @@
+[
+  {
+    "word": "curriculum",
+    "phonetic": "/kəˈrɪkjələm/",
+    "definition": "n. 课程体系",
+    "example": "The curriculum was updated to include coding classes."
+  },
+  {
+    "word": "pedagogy",
+    "phonetic": "/ˈpɛdəɡɑːdʒi/",
+    "definition": "n. 教学法；教育学",
+    "example": "Modern pedagogy emphasizes student-centered learning."
+  },
+  {
+    "word": "enrollment",
+    "phonetic": "/ɪnˈroʊlmənt/",
+    "definition": "n. 注册；入学",
+    "example": "Enrollment increased by 15% this semester."
+  },
+  {
+    "word": "matriculation",
+    "phonetic": "/məˌtrɪkjəˈleɪʃən/",
+    "definition": "n. 入学考试；录取",
+    "example": "Matriculation rates have improved nationwide."
+  },
+  {
+    "word": "syllabus",
+    "phonetic": "/ˈsɪləbəs/",
+    "definition": "n. 教学大纲",
+    "example": "The syllabus outlines the topics covered in each week."
+  },
+  {
+    "word": "prerequisite",
+    "phonetic": "/priːˈrɛkwɪzɪt/",
+    "definition": "n./adj. 先决条件；必修课",
+    "example": "Calculus is a prerequisite for the advanced physics course."
+  },
+  {
+    "word": "scholarship",
+    "phonetic": "/ˈskɑːlərʃɪp/",
+    "definition": "n. 奖学金",
+    "example": "She received a full scholarship to study abroad."
+  },
+  {
+    "word": "tuition",
+    "phonetic": "/tuːˈɪʃən/",
+    "definition": "n. 学费；教学",
+    "example": "University tuition has risen significantly."
+  },
+  {
+    "word": "semester",
+    "phonetic": "/sɪˈmɛstər/",
+    "definition": "n. 学期",
+    "example": "The fall semester begins in September."
+  },
+  {
+    "word": "faculty",
+    "phonetic": "/ˈfækəlti/",
+    "definition": "n. 教职员工；院系",
+    "example": "The faculty includes renowned researchers."
+  },
+  {
+    "word": "dean",
+    "phonetic": "/diːn/",
+    "definition": "n. 院长；系主任",
+    "example": "The dean of the school addressed the students."
+  },
+  {
+    "word": "thesis",
+    "phonetic": "/ˈθiːsɪs/",
+    "definition": "n. 论文；学位论文",
+    "example": "She submitted her master's thesis last week."
+  },
+  {
+    "word": "dissertation",
+    "phonetic": "/ˌdɪsərˈteɪʃən/",
+    "definition": "n. 博士论文；专题论述",
+    "example": "His dissertation on climate change was published."
+  },
+  {
+    "word": "plagiarism",
+    "phonetic": "/ˈpleɪdʒərɪzəm/",
+    "definition": "n. 剽窃；抄袭",
+    "example": "Plagiarism is a serious academic offense."
+  },
+  {
+    "word": "alumni",
+    "phonetic": "/əˈlʌmnaɪ/",
+    "definition": "n. 校友",
+    "example": "The alumni association organized a fundraising event."
+  },
+  {
+    "word": "endowment",
+    "phonetic": "/ɪnˈdaʊmənt/",
+    "definition": "n. 捐赠基金；资助",
+    "example": "The university's endowment supports research programs."
+  },
+  {
+    "word": "accreditation",
+    "phonetic": "/əˌkrɛdɪˈteɪʃən/",
+    "definition": "n. 认证；资格认可",
+    "example": "The program received national accreditation."
+  },
+  {
+    "word": "mentor",
+    "phonetic": "/ˈmɛntɔːr/",
+    "definition": "n./v. 导师；指导",
+    "example": "A good mentor can shape a student's career."
+  },
+  {
+    "word": "extracurricular",
+    "phonetic": "/ˌɛkstrəkəˈrɪkjələr/",
+    "definition": "adj./n. 课外的",
+    "example": "Extracurricular activities develop leadership skills."
+  },
+  {
+    "word": "vocational",
+    "phonetic": "/voʊˈkeɪʃənəl/",
+    "definition": "adj. 职业的；职业技术的",
+    "example": "Vocational training prepares students for specific careers."
+  },
+  {
+    "word": "pedagogical",
+    "phonetic": "/ˌpɛdəˈɡɑːdʒɪkəl/",
+    "definition": "adj. 教学法的",
+    "example": "Pedagogical research improves teaching effectiveness."
+  },
+  {
+    "word": "cognitive",
+    "phonetic": "/ˈkɑːɡnɪtɪv/",
+    "definition": "adj. 认知的",
+    "example": "Cognitive development is crucial in early childhood."
+  },
+  {
+    "word": "didactic",
+    "phonetic": "/daɪˈdæktɪk/",
+    "definition": "adj. 教诲的；说教的",
+    "example": "The lecture was informative but overly didactic."
+  },
+  {
+    "word": "roster",
+    "phonetic": "/ˈrɑːstər/",
+    "definition": "n. 名册；花名册",
+    "example": "The class roster includes 30 students."
+  },
+  {
+    "word": "discipline",
+    "phonetic": "/ˈdɪsəplɪn/",
+    "definition": "n. 学科；纪律",
+    "example": "Physics is a rigorous scientific discipline."
+  },
+  {
+    "word": "elective",
+    "phonetic": "/ɪˈlɛktɪv/",
+    "definition": "n./adj. 选修课；可选的",
+    "example": "Art history is offered as an elective."
+  },
+  {
+    "word": "auditorium",
+    "phonetic": "/ˌɔːdɪˈtɔːriəm/",
+    "definition": "n. 礼堂；观众厅",
+    "example": "The graduation ceremony was held in the auditorium."
+  },
+  {
+    "word": "tutorial",
+    "phonetic": "/tuːˈtɔːriəl/",
+    "definition": "n./adj. 辅导课；教程",
+    "example": "The tutorial session helped clarify difficult concepts."
+  },
+  {
+    "word": "lecture",
+    "phonetic": "/ˈlɛktʃər/",
+    "definition": "n./v. 演讲；讲座",
+    "example": "The professor gave a lecture on quantum mechanics."
+  },
+  {
+    "word": "seminar",
+    "phonetic": "/ˈsɛmɪnɑːr/",
+    "definition": "n. 研讨会；研讨课",
+    "example": "The seminar featured discussions on AI ethics."
+  },
+  {
+    "word": "coursework",
+    "phonetic": "/ˈkɔːrswɜːrk/",
+    "definition": "n. 课程作业",
+    "example": "Coursework accounts for 40% of the final grade."
+  },
+  {
+    "word": "assessment",
+    "phonetic": "/əˈsɛsmənt/",
+    "definition": "n. 评估；考核",
+    "example": "Continuous assessment replaces final exams."
+  },
+  {
+    "word": "rubric",
+    "phonetic": "/ˈruːbrɪk/",
+    "definition": "n. 评分标准",
+    "example": "The rubric clearly defines grading criteria."
+  },
+  {
+    "word": "benchmark",
+    "phonetic": "/ˈbɛntʃmɑːrk/",
+    "definition": "n. 基准；标准",
+    "example": "Standardized tests serve as educational benchmarks."
+  },
+  {
+    "word": "counseling",
+    "phonetic": "/ˈkaʊnsəlɪŋ/",
+    "definition": "n. 咨询；辅导",
+    "example": "The school provides career counseling for seniors."
+  },
+  {
+    "word": "literacy",
+    "phonetic": "/ˈlɪtərəsi/",
+    "definition": "n. 读写能力；素养",
+    "example": "Digital literacy is essential in the modern world."
+  },
+  {
+    "word": "proficiency",
+    "phonetic": "/prəˈfɪʃənsi/",
+    "definition": "n. 熟练；精通",
+    "example": "Language proficiency is required for admission."
+  },
+  {
+    "word": "diploma",
+    "phonetic": "/dɪˈploʊmə/",
+    "definition": "n. 毕业文凭；证书",
+    "example": "She received her diploma at the graduation ceremony."
+  },
+  {
+    "word": "undergraduate",
+    "phonetic": "/ˌʌndərˈɡrædʒuət/",
+    "definition": "n./adj. 本科生",
+    "example": "The undergraduate program lasts four years."
+  },
+  {
+    "word": "postgraduate",
+    "phonetic": "/ˌpoʊstˈɡrædʒuət/",
+    "definition": "n./adj. 研究生",
+    "example": "Postgraduate research focuses on specialized topics."
+  },
+  {
+    "word": "sabbatical",
+    "phonetic": "/səˈbætɪkəl/",
+    "definition": "n./adj. 学术休假",
+    "example": "Professors can take a sabbatical for research."
+  },
+  {
+    "word": "tenure",
+    "phonetic": "/ˈtɛnjər/",
+    "definition": "n. 终身教职；任期",
+    "example": "She was granted tenure after six years."
+  },
+  {
+    "word": "gpa",
+    "phonetic": "/ˌdʒiː piː ˈeɪ/",
+    "definition": "n. 平均绩点",
+    "example": "A high GPA is important for graduate school."
+  },
+  {
+    "word": "fraternity",
+    "phonetic": "/frəˈtɜːrnɪti/",
+    "definition": "n. 兄弟会；友爱",
+    "example": "The fraternity organized a charity event."
+  },
+  {
+    "word": "sorority",
+    "phonetic": "/səˈrɔːrɪti/",
+    "definition": "n. 姐妹会",
+    "example": "The sorority hosted a networking event for members."
+  },
+  {
+    "word": "dormitory",
+    "phonetic": "/ˈdɔːrmɪtɔːri/",
+    "definition": "n. 宿舍",
+    "example": "Freshmen are required to live in the dormitory."
+  },
+  {
+    "word": "campus",
+    "phonetic": "/ˈkæmpəs/",
+    "definition": "n. 校园",
+    "example": "The campus spans over 200 acres."
+  },
+  {
+    "word": "matriculate",
+    "phonetic": "/məˈtrɪkjəleɪt/",
+    "definition": "v. 入学；录取",
+    "example": "She matriculated at the University of Cambridge."
+  },
+  {
+    "word": "graduate",
+    "phonetic": "/ˈɡrædʒuət/",
+    "definition": "v./n. 毕业；毕业生",
+    "example": "He graduated with honors in computer science."
+  },
+  {
+    "word": "commencement",
+    "phonetic": "/kəˈmɛnsmənt/",
+    "definition": "n. 毕业典礼；开始",
+    "example": "The commencement speech was inspiring."
+  },
+  {
+    "word": "eminent",
+    "phonetic": "/ˈɛmɪnənt/",
+    "definition": "adj. 杰出的；著名的",
+    "example": "An eminent scholar will deliver the keynote address."
+  },
+  {
+    "word": "scholar",
+    "phonetic": "/ˈskɑːlər/",
+    "definition": "n. 学者；奖学金获得者",
+    "example": "She is a distinguished scholar in linguistics."
+  },
+  {
+    "word": "deem",
+    "phonetic": "/diːm/",
+    "definition": "v. 认为；视为",
+    "example": "The institution deemed the proposal acceptable."
+  },
+  {
+    "word": "emulate",
+    "phonetic": "/ˈɛmjəleɪt/",
+    "definition": "v. 效仿；仿真",
+    "example": "Students should emulate the work ethic of great scientists."
+  },
+  {
+    "word": "instill",
+    "phonetic": "/ɪnˈstɪl/",
+    "definition": "v. 灌输；逐步培养",
+    "example": "Good teachers instill a love of learning."
+  },
+  {
+    "word": "inculcate",
+    "phonetic": "/ˈɪnkʌlkeɪt/",
+    "definition": "v. 反复灌输",
+    "example": "The school inculcates values of integrity and respect."
+  },
+  {
+    "word": "aptitude",
+    "phonetic": "/ˈæptɪtuːd/",
+    "definition": "n. 天资；才能",
+    "example": "An aptitude test helps identify student strengths."
+  },
+  {
+    "word": "caliber",
+    "phonetic": "/ˈkælɪbər/",
+    "definition": "n. 才能；素质",
+    "example": "The program attracts students of high caliber."
+  },
+  {
+    "word": "rigor",
+    "phonetic": "/ˈrɪɡər/",
+    "definition": "n. 严格；严谨",
+    "example": "Academic rigor is a hallmark of top universities."
+  },
+  {
+    "word": "scholastic",
+    "phonetic": "/skəˈlæstɪk/",
+    "definition": "adj. 学术的；学校的",
+    "example": "Her scholastic achievements earned her a scholarship."
+  },
+  {
+    "word": "enumerate",
+    "phonetic": "/ɪˈnuːməreɪt/",
+    "definition": "v. 列举；枚举",
+    "example": "The professor enumerated the key principles."
+  },
+  {
+    "word": "articulate",
+    "phonetic": "/ɑːrˈtɪkjəleɪt/",
+    "definition": "v./adj. 表达；口齿清晰的",
+    "example": "She articulated the research findings clearly."
+  },
+  {
+    "word": "exemplary",
+    "phonetic": "/ɪɡˈzɛmpləri/",
+    "definition": "adj. 模范的；典型的",
+    "example": "The student demonstrated exemplary conduct."
+  },
+  {
+    "word": "annotate",
+    "phonetic": "/ˈænəteɪt/",
+    "definition": "v. 注释；评注",
+    "example": "Students were asked to annotate the text."
+  },
+  {
+    "word": "delineate",
+    "phonetic": "/dɪˈlɪnieɪt/",
+    "definition": "v. 描绘；勾画",
+    "example": "The report delineates the program's objectives."
+  },
+  {
+    "word": "synthesis",
+    "phonetic": "/ˈsɪnθəsɪs/",
+    "definition": "n. 综合；合成",
+    "example": "The essay requires a synthesis of multiple sources."
+  },
+  {
+    "word": "rhetoric",
+    "phonetic": "/ˈrɛtərɪk/",
+    "definition": "n. 修辞学；华而不实",
+    "example": "The speech was criticized as empty rhetoric."
+  },
+  {
+    "word": "empirical",
+    "phonetic": "/ɪmˈpɪrɪkəl/",
+    "definition": "adj. 经验的；实证的",
+    "example": "The study provides empirical evidence for the theory."
+  },
+  {
+    "word": "hypothesis",
+    "phonetic": "/haɪˈpɑːθəsɪs/",
+    "definition": "n. 假说；假设",
+    "example": "The hypothesis was tested through experiments."
+  },
+  {
+    "word": "methodology",
+    "phonetic": "/ˌmɛθəˈdɑːlədʒi/",
+    "definition": "n. 方法论",
+    "example": "The research methodology was carefully designed."
+  },
+  {
+    "word": "praxis",
+    "phonetic": "/ˈpræksɪs/",
+    "definition": "n. 实践；应用",
+    "example": "The course bridges theory and praxis."
+  },
+  {
+    "word": "acumen",
+    "phonetic": "/ˈækjəmən/",
+    "definition": "n. 敏锐；聪明",
+    "example": "Business acumen is developed through experience."
+  },
+  {
+    "word": "erudite",
+    "phonetic": "/ˈɛrʊdaɪt/",
+    "definition": "adj. 博学的",
+    "example": "The professor is known for being erudite."
+  },
+  {
+    "word": "pedagogic",
+    "phonetic": "/ˌpɛdəˈɡɑːdʒɪk/",
+    "definition": "adj. 教学的；教育学的",
+    "example": "The pedagogic approach focuses on critical thinking."
+  },
+  {
+    "word": "cohort",
+    "phonetic": "/ˈkoʊhɔːrt/",
+    "definition": "n. 队列；同期",
+    "example": "The 2025 cohort consists of 150 students."
+  },
+  {
+    "word": "remedial",
+    "phonetic": "/rɪˈmiːdiəl/",
+    "definition": "adj. 补习的；矫正的",
+    "example": "Remedial classes help struggling students catch up."
+  },
+  {
+    "word": "disseminate",
+    "phonetic": "/dɪˈsɛmɪneɪt/",
+    "definition": "v. 传播；散布",
+    "example": "The university disseminates research findings globally."
+  },
+  {
+    "word": "inaugurate",
+    "phonetic": "/ɪˈnɔːɡjəreɪt/",
+    "definition": "v. 开创；举行就职典礼",
+    "example": "The university inaugurated a new research center."
+  },
+  {
+    "word": "alma mater",
+    "phonetic": "/ˌɑːlmə ˈmeɪtər/",
+    "definition": "n. 母校",
+    "example": "He donated generously to his alma mater."
+  }
+]
