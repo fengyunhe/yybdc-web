@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>FPS Angry Birds - 高清版</title>
+  <style>
+    body { margin: 0; overflow: hidden; background: #1a1a2e; font-family: 'Courier New', monospace; }
+    canvas { display: block; width: 100vw; height: 100vh; image-rendering: auto; }
+    #ui { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    
+    /* 开始界面 */
+    #startScreen { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; pointer-events: auto; cursor: pointer; z-index: 10; transition: opacity 0.3s ease; }
+    #startScreen h1 { font-size: 2.5rem; text-shadow: 0 0 10px #e94560, 2px 2px 0 #e94560; margin-bottom: 15px; animation: pulse 2s ease-in-out infinite; }
+    #startScreen p { font-size: 1.1rem; color: #aaa; animation: blink 1.5s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    
+    /* 准星 - 动态颜色 + 多层光环 */
+    #crosshair {
+      position: absolute; top: 50%; left: 50%; width: 24px; height: 24px;
+      transform: translate(-50%, -50%);
+      border: 2px solid var(--ch-color, #fff);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--ch-shadow, rgba(255,255,255,0.5)),
+                  0 0 0 4px var(--ch-ring, transparent),
+                  0 0 0 8px var(--ch-ring2, transparent);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      pointer-events: none;
+    }
+    #crosshair::before, #crosshair::after {
+      content: ''; position: absolute;
+      background: var(--ch-color, #fff);
+      transition: background 0.2s;
+    }
+    #crosshair::before { top: 50%; left: 2px; right: 2px; height: 2px; transform: translateY(-50%); }
+    #crosshair::after  { left: 50%; top: 2px; bottom: 2px; width: 2px; transform: translateX(-50%); }
+    /* 蓄力中 */
+    #crosshair.charging {
+      --ch-color: #ffaa00; --ch-shadow: rgba(255,170,0,0.8);
+      --ch-ring: rgba(255,170,0,0.2); --ch-ring2: transparent;
+      animation: chPulse 0.8s ease-in-out infinite;
+    }
+    /* 满蓄力 */
+    #crosshair.maxCharge {
+      --ch-color: #ff2222; --ch-shadow: rgba(255,34,34,1);
+      --ch-ring: rgba(255,34,34,0.4); --ch-ring2: rgba(255,34,34,0.15);
+      animation: chMaxPulse 0.3s ease-in-out infinite;
+    }
+    @keyframes chPulse {
+      0%,100% { transform: translate(-50%,-50%) scale(1); }
+      50%     { transform: translate(-50%,-50%) scale(1.08); }
+    }
+    @keyframes chMaxPulse {
+      0%,100% { transform: translate(-50%,-50%) scale(1); }
+      50%     { transform: translate(-50%,-50%) scale(1.15); }
+    }
+    
+    /* 蓄力条 - 更丰富的渐变 + 脉冲发光 */
+    #powerBar {
+      position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+      width: 320px; height: 24px;
+      border: 2px solid rgba(255,255,255,0.8); border-radius: 12px;
+      background: rgba(0,0,0,0.7); backdrop-filter: blur(6px);
+      overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    #powerFill {
+      width: 0%; height: 100%;
+      background: linear-gradient(90deg, #00ff88 0%, #88ff00 25%, #ffff00 50%, #ff8800 75%, #ff0000 100%);
+      transition: width 0.05s linear; border-radius: 10px; position: relative;
+      box-shadow: inset 0 2px 4px rgba(255,255,255,0.3);
+    }
+    #powerFill::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(180deg, rgba(255,255,255,0.4) 0%, transparent 50%, rgba(0,0,0,0.2) 100%);
+      border-radius: 10px;
+    }
+    #powerFill::after {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      animation: shimmer 1.2s infinite;
+    }
+    #powerFill.high::after  { animation-duration: 0.6s; }
+    #powerFill.max::after   { animation-duration: 0.3s; }
+    @keyframes shimmer { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
+    /* HUD 面板 - 玻璃拟态风格 */
+    .hud-panel { position: absolute; color: #fff; background: rgba(0,0,0,0.6); padding: 10px 16px; border-radius: 8px; font-size: 14px; backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+    #info { top: 15px; left: 15px; }
+    #score { top: 15px; right: 15px; }
+    
+    /* 分数弹出动画 */
+    .score-popup { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #ffff00; font-size: 2rem; font-weight: bold; text-shadow: 0 0 10px rgba(255,255,0,0.8); pointer-events: none; animation: scoreFloat 1s ease-out forwards; }
+    @keyframes scoreFloat { 0% { opacity: 1; transform: translate(-50%, -50%) scale(1); } 100% { opacity: 0; transform: translate(-50%, -150%) scale(1.5); } }
+    
+    /* 关卡完成模态框 */
+    #levelComplete { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: none; flex-direction: column; align-items: center; justify-content: center; color: #fff; pointer-events: auto; z-index: 20; }
+    #levelComplete.show { display: flex; animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .modal-content { background: rgba(20,20,40,0.95); padding: 40px 60px; border-radius: 16px; border: 2px solid rgba(255,255,255,0.2); box-shadow: 0 0 40px rgba(233,69,96,0.5); text-align: center; backdrop-filter: blur(10px); }
+    .modal-content h2 { font-size: 2rem; margin-bottom: 20px; text-shadow: 0 0 10px #e94560; }
+    .stars { font-size: 3rem; margin: 20px 0; }
+    .stars .star { display: inline-block; animation: starPop 0.3s ease-out forwards; opacity: 0; transform: scale(0); }
+    .stars .star:nth-child(1) { animation-delay: 0.2s; }
+    .stars .star:nth-child(2) { animation-delay: 0.4s; }
+    .stars .star:nth-child(3) { animation-delay: 0.6s; }
+    @keyframes starPop { 0% { opacity: 0; transform: scale(0) rotate(-180deg); } 100% { opacity: 1; transform: scale(1) rotate(0deg); } }
+    .stats { margin: 20px 0; font-size: 1.1rem; line-height: 1.8; }
+    .stats span { color: #ffff00; font-weight: bold; }
+    .btn { background: linear-gradient(135deg, #e94560, #ff6b6b); color: white; border: none; padding: 12px 32px; font-size: 1.1rem; border-radius: 8px; cursor: pointer; margin: 10px; transition: all 0.2s ease; font-family: 'Courier New', monospace; box-shadow: 0 4px 12px rgba(233,69,96,0.4); }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(233,69,96,0.6); }
+    .btn:active { transform: translateY(0); }
+  </style>
+</head>
+<body>
+  <div id="ui">
+    <div id="crosshair"></div>
+    <div id="powerBar"><div id="powerFill"></div></div>
+    <div id="info" class="hud-panel">🖱️ 移动瞄准 | 按住发射 | 松开发射</div>
+    <div id="score" class="hud-panel">🐷 剩余: <span id="pigCount">0</span> | ⭐ 得分: <span id="scoreDisplay">0</span></div>
+  </div>
+  <div id="startScreen">
+    <h1>🐦 FPS 像素愤怒小鸟</h1>
+    <p>点击屏幕开始游戏</p>
+  </div>
+  <div id="levelComplete">
+    <div class="modal-content">
+      <h2>🎉 关卡完成！</h2>
+      <div class="stars" id="starDisplay">
+        <span class="star">⭐</span>
+        <span class="star">⭐</span>
+        <span class="star">⭐</span>
+      </div>
+      <div class="stats" id="statsDisplay"></div>
+      <button class="btn" onclick="location.reload()">🔄 再来一次</button>
+    </div>
+  </div>
+
+  <script type="module">
+    import * as THREE from 'https://unpkg.com/three@0.132.2/build/three.module.js';
+
+    // ================= 场景初始化 =================
+    const scene = new THREE.Scene();
+
+    // 渐变天空背景
+    const skyGeo = new THREE.SphereGeometry(50, 32, 32);
+    const skyMat = new THREE.ShaderMaterial({
+      uniforms: {
+        topColor: { value: new THREE.Color(0x0077ff) },
+        bottomColor: { value: new THREE.Color(0xffffff) },
+        offset: { value: 20 },
+        exponent: { value: 0.6 }
+      },
+      vertexShader: `
+        varying vec3 vWorldPosition;
+        void main() {
+          vec4 worldPosition = modelMatrix * vec4( position, 1.0 );
+          vWorldPosition = worldPosition.xyz;
+          gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+        }
+      `,
+      fragmentShader: `
+        varying vec3 vWorldPosition;
+        uniform vec3 topColor;
+        uniform vec3 bottomColor;
+        uniform float offset;
+        uniform float exponent;
+        void main() {
+          float h = normalize( vWorldPosition + offset ).y;
+          gl_FragColor = vec4( mix( bottomColor, topColor, max( pow( max( h , 0.0), exponent ), 0.0 ) ), 1.0 );
+        }
+      `,
+      side: THREE.BackSide
+    });
+    scene.add(new THREE.Mesh(skyGeo, skyMat));
+    scene.fog = new THREE.FogExp2(0x87CEEB, 0.015);
+
+    // ================= 云朵系统 =================
+    const clouds = [];
+    function createCloud(x, y, z, scale = 1) {
+      const group = new THREE.Group();
+      const cloudMat = new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.8 });
+      for (let i = 0; i < 5; i++) {
+        const geo = new THREE.SphereGeometry(0.8 + Math.random() * 0.6, 8, 6);
+        const mesh = new THREE.Mesh(geo, cloudMat);
+        mesh.position.set((Math.random()-0.5)*2, (Math.random()-0.5)*0.5, (Math.random()-0.5)*1.5);
+        mesh.scale.set(1, 0.6, 1);
+        group.add(mesh);
+      }
+      group.position.set(x, y, z);
+      group.scale.setScalar(scale);
+      scene.add(group);
+      clouds.push({ mesh: group, speed: 0.02 + Math.random() * 0.03 });
+    }
+    // 创建多朵云
+    createCloud(-15, 12, -20, 1.5);
+    createCloud(10, 15, -25, 1.2);
+    createCloud(25, 10, -18, 1.8);
+    createCloud(-5, 18, -30, 1.0);
+    createCloud(35, 13, -22, 1.4);
+
+    // ================= 粒子系统 =================
+    const particles = [];
+    function createParticle(position, color, size = 0.1, velocity = null, life = 1.0) {
+      const geo = new THREE.BoxGeometry(size, size, size);
+      const mat = new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 1 });
+      const mesh = new THREE.Mesh(geo, mat);
+      mesh.position.copy(position);
+      scene.add(mesh);
+      const vel = velocity || new THREE.Vector3((Math.random()-0.5)*5, Math.random()*5, (Math.random()-0.5)*5);
+      particles.push({ mesh, vel, life, maxLife: life, rotSpeed: new THREE.Vector3(Math.random()*10, Math.random()*10, Math.random()*10) });
+      return mesh;
+    }
+    function createExplosion(position, color = 0xff6600, count = 20, size = 0.12) {
+      for (let i = 0; i < count; i++) {
+        createParticle(position, color, size * (0.5 + Math.random()));
+      }
+      // 添加闪光效果
+      const flashGeo = new THREE.SphereGeometry(0.5, 8, 8);
+      const flashMat = new THREE.MeshBasicMaterial({ color: 0xffff00, transparent: true, opacity: 0.8 });
+      const flash = new THREE.Mesh(flashGeo, flashMat);
+      flash.position.copy(position);
+      scene.add(flash);
+      particles.push({ mesh: flash, vel: new THREE.Vector3(), life: 0.3, maxLife: 0.3, isFlash: true });
+    }
+    function createSmokeTrail(position) {
+      const geo = new THREE.SphereGeometry(0.08, 4, 4);
+      const mat = new THREE.MeshBasicMaterial({ color: 0xcccccc, transparent: true, opacity: 0.6 });
+      const mesh = new THREE.Mesh(geo, mat);
+      mesh.position.copy(position);
+      scene.add(mesh);
+      particles.push({ mesh, vel: new THREE.Vector3((Math.random()-0.5)*0.5, (Math.random()-0.5)*0.5, (Math.random()-0.5)*0.5), life: 0.5, maxLife: 0.5 });
+    }
+    // 创建火焰拖尾
+    function createFireTrail(position) {
+      const colors = [0xff0000, 0xff4400, 0xff8800, 0xffcc00];
+      const color = colors[Math.floor(Math.random() * colors.length)];
+      createParticle(position, color, 0.06, new THREE.Vector3((Math.random()-0.5)*2, (Math.random()-0.5)*2, (Math.random()-0.5)*2), 0.4);
+    }
+
+    // 高清分辨率
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 100);
+    camera.position.set(0, 1.2, 6); // 发射架高度
+
+    // 启用抗锯齿和阴影
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(width, height, false);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.2;
+    document.body.appendChild(renderer.domElement);
+
+    // ================= 改进的光照系统 =================
+    // 环境光（基础照明）
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
+    scene.add(ambientLight);
+
+    // 半球光（天空和地面的颜色混合）
+    const hemiLight = new THREE.HemisphereLight(0x87CEEB, 0x228B22, 0.6);
+    scene.add(hemiLight);
+
+    // 主方向光（模拟太阳）
+    const dirLight = new THREE.DirectionalLight(0xffffff, 1.2);
+    dirLight.position.set(10, 20, 10);
+    dirLight.castShadow = true;
+    dirLight.shadow.mapSize.width = 2048;
+    dirLight.shadow.mapSize.height = 2048;
+    dirLight.shadow.camera.near = 0.5;
+    dirLight.shadow.camera.far = 50;
+    dirLight.shadow.camera.left = -20;
+    dirLight.shadow.camera.right = 20;
+    dirLight.shadow.camera.top = 20;
+    dirLight.shadow.camera.bottom = -20;
+    dirLight.shadow.bias = -0.001;
+    scene.add(dirLight);
+
+    // 补光（照亮暗部）
+    const fillLight = new THREE.DirectionalLight(0xffe4c4, 0.3);
+    fillLight.position.set(-10, 5, -10);
+    scene.add(fillLight);
+
+    // ================= 游戏状态 =================
+    let isLocked = false;
+    let yaw = 0, pitch = 0;
+    let charging = false;
+    let chargeTime = 0;
+    const MAX_CHARGE = 1.5;
+    const MAX_POWER = 25;
+    let birds = [];
+    let blocks = [];
+    let pigs = [];
+    let score = 0;
+    let startTime = 0;
+    let recoilAmount = 0;
+    let shakeAmount = 0;
+    const GRAVITY = 12;
+    const BIRD_RADIUS = 0.25;
+    const BLOCK_SIZE = 0.8;
+
+    // ================= 材质与几何体 =================
+    // 使用 MeshStandardMaterial 响应光照
+    const birdMat = new THREE.MeshStandardMaterial({ 
+      color: 0xff3333, 
+      roughness: 0.3, 
+      metalness: 0.1 
+    });
+    const woodMat = new THREE.MeshStandardMaterial({ 
+      color: 0x8B4513, 
+      roughness: 0.8, 
+      metalness: 0.0 
+    });
+    const stoneMat = new THREE.MeshStandardMaterial({ 
+      color: 0x777777, 
+      roughness: 0.6, 
+      metalness: 0.2 
+    });
+    const pigMat = new THREE.MeshStandardMaterial({ 
+      color: 0x33cc33, 
+      roughness: 0.4, 
+      metalness: 0.0 
+    });
+    const groundMat = new THREE.MeshStandardMaterial({ 
+      color: 0x228B22, 
+      roughness: 0.9, 
+      metalness: 0.0 
+    });
+
+    // 地面（增加细节）
+    const ground = new THREE.Mesh(new THREE.BoxGeometry(40, 0.5, 40), groundMat);
+    ground.position.y = -0.25;
+    ground.receiveShadow = true;
+    scene.add(ground);
+
+    // ================= 场景装饰 =================
+    const treeTrunkMat = new THREE.MeshStandardMaterial({ color: 0x8B6914, roughness: 0.9 });
+    const treeLeafMat = new THREE.MeshStandardMaterial({ color: 0x228B22, roughness: 0.8 });
+    const rockMat = new THREE.MeshStandardMaterial({ color: 0x888888, roughness: 0.7 });
+    
+    function createTree(x, z, scale = 1) {
+      const group = new THREE.Group();
+      // 树干
+      const trunkGeo = new THREE.CylinderGeometry(0.15 * scale, 0.2 * scale, 1.5 * scale, 8);
+      const trunk = new THREE.Mesh(trunkGeo, treeTrunkMat);
+      trunk.position.y = 0.75 * scale;
+      trunk.castShadow = true;
+      group.add(trunk);
+      // 树冠 - 多层
+      for (let i = 0; i < 3; i++) {
+        const leafGeo = new THREE.SphereGeometry((0.8 - i * 0.15) * scale, 8, 6);
+        const leaf = new THREE.Mesh(leafGeo, treeLeafMat);
+        leaf.position.y = (1.5 + i * 0.5) * scale;
+        leaf.castShadow = true;
+        group.add(leaf);
+      }
+      group.position.set(x, 0, z);
+      scene.add(group);
+      return group;
+    }
+    
+    function createRock(x, z, scale = 1) {
+      const geo = new THREE.DodecahedronGeometry(0.3 * scale, 1);
+      const rock = new THREE.Mesh(geo, rockMat);
+      rock.position.set(x, 0.15 * scale, z);
+      rock.rotation.set(Math.random(), Math.random(), Math.random());
+      rock.scale.set(1, 0.6, 0.8);
+      rock.castShadow = true;
+      rock.receiveShadow = true;
+      scene.add(rock);
+      return rock;
+    }
+    
+    // 创建树木
+    createTree(-8, -5, 1.2);
+    createTree(8, -8, 1.0);
+    createTree(-12, -12, 1.5);
+    createTree(15, -6, 1.1);
+    createTree(-6, 5, 0.9);
+    createTree(10, 8, 1.3);
+    createTree(-20, -15, 1.8);
+    createTree(22, -10, 1.4);
+    
+    // 创建石头
+    createRock(-3, -3, 0.8);
+    createRock(5, -4, 1.0);
+    createRock(-7, 2, 0.6);
+    createRock(12, 1, 0.9);
+    createRock(-15, -8, 1.2);
+    createRock(18, -3, 0.7);
+
+    // ================= 生成关卡 =================
+    function createBlock(x, y, z, type = 'wood') {
+      const mat = type === 'stone' ? stoneMat.clone() : woodMat.clone();
+      // 使用圆角盒子增加细节
+      const mesh = new THREE.Mesh(new THREE.BoxGeometry(BLOCK_SIZE, BLOCK_SIZE, BLOCK_SIZE, 2, 2, 2), mat);
+      mesh.position.set(x, y, z);
+      mesh.castShadow = true;
+      mesh.receiveShadow = true;
+      scene.add(mesh);
+      blocks.push({ mesh, pos: new THREE.Vector3(x,y,z), vel: new THREE.Vector3(), active: true, type, health: type==='stone'?3:1 });
+    }
+
+    function createPig(x, y, z) {
+      const group = new THREE.Group();
+      
+      // 身体
+      const bodyGeo = new THREE.SphereGeometry(0.3, 16, 16);
+      const body = new THREE.Mesh(bodyGeo, pigMat.clone());
+      body.scale.set(1, 0.9, 0.95);
+      body.castShadow = true;
+      body.receiveShadow = true;
+      group.add(body);
+      
+      // 耳朵
+      const earGeo = new THREE.ConeGeometry(0.06, 0.12, 4);
+      const earMat = new THREE.MeshStandardMaterial({ color: 0x2bb32b, roughness: 0.5 });
+      const leftEar = new THREE.Mesh(earGeo, earMat);
+      leftEar.position.set(-0.22, 0.22, 0);
+      leftEar.rotation.z = 0.5;
+      group.add(leftEar);
+      const rightEar = new THREE.Mesh(earGeo, earMat);
+      rightEar.position.set(0.22, 0.22, 0);
+      rightEar.rotation.z = -0.5;
+      group.add(rightEar);
+      
+      // 眼睛
+      const eyeWhiteMat = new THREE.MeshBasicMaterial({ color: 0xffffff });
+      const eyeGeo = new THREE.SphereGeometry(0.07, 8, 8);
+      const leftEye = new THREE.Mesh(eyeGeo, eyeWhiteMat);
+      leftEye.position.set(-0.1, 0.08, 0.22);
+      group.add(leftEye);
+      const rightEye = new THREE.Mesh(eyeGeo, eyeWhiteMat);
+      rightEye.position.set(0.1, 0.08, 0.22);
+      group.add(rightEye);
+      
+      // 瞳孔
+      const pupilMat = new THREE.MeshBasicMaterial({ color: 0x000000 });
+      const pupilGeo = new THREE.SphereGeometry(0.035, 8, 8);
+      const leftPupil = new THREE.Mesh(pupilGeo, pupilMat);
+      leftPupil.position.set(-0.1, 0.08, 0.27);
+      group.add(leftPupil);
+      const rightPupil = new THREE.Mesh(pupilGeo, pupilMat);
+      rightPupil.position.set(0.1, 0.08, 0.27);
+      group.add(rightPupil);
+      
+      // 鼻子 - 椭圆形
+      const noseGeo = new THREE.SphereGeometry(0.08, 8, 8);
+      const noseMat = new THREE.MeshStandardMaterial({ color: 0x1a9c1a, roughness: 0.4 });
+      const nose = new THREE.Mesh(noseGeo, noseMat);
+      nose.scale.set(1.2, 0.8, 0.7);
+      nose.position.set(0, -0.02, 0.26);
+      group.add(nose);
+      
+      // 鼻孔
+      const nostrilGeo = new THREE.SphereGeometry(0.02, 6, 6);
+      const nostrilMat = new THREE.MeshBasicMaterial({ color: 0x0a5c0a });
+      const leftNostril = new THREE.Mesh(nostrilGeo, nostrilMat);
+      leftNostril.position.set(-0.03, -0.02, 0.31);
+      group.add(leftNostril);
+      const rightNostril = new THREE.Mesh(nostrilGeo, nostrilMat);
+      rightNostril.position.set(0.03, -0.02, 0.31);
+      group.add(rightNostril);
+      
+      // 牙齿
+      const toothGeo = new THREE.BoxGeometry(0.05, 0.06, 0.03);
+      const toothMat = new THREE.MeshBasicMaterial({ color: 0xffffff });
+      const tooth = new THREE.Mesh(toothGeo, toothMat);
+      tooth.position.set(0, -0.12, 0.25);
+      group.add(tooth);
+      
+      group.position.set(x, y, z);
+      scene.add(group);
+      pigs.push({ mesh: group, pos: new THREE.Vector3(x,y,z), active: true });
+      updatePigCount();
+    }
+
+    function buildLevel() {
+      // 简单金字塔结构
+      const baseX = 0, baseZ = -10;
+      for(let i=0; i<3; i++) {
+        for(let j=0; j<3-i; j++) {
+          createBlock(baseX + (j-1)*BLOCK_SIZE*1.1, 0.4 + i*BLOCK_SIZE, baseZ, i%2===0?'stone':'wood');
+        }
+      }
+      createPig(baseX, 1.2, baseZ);
+      createPig(baseX + 1.5, 0.8, baseZ - 1.5);
+    }
+    buildLevel();
+
+    function updatePigCount() {
+      document.getElementById('pigCount').innerText = pigs.filter(p => p.active).length;
+    }
+    
+    function updateScore(points) {
+      score += points;
+      document.getElementById('scoreDisplay').innerText = score;
+      // 分数弹出动画
+      const popup = document.createElement('div');
+      popup.className = 'score-popup';
+      popup.textContent = '+' + points;
+      document.getElementById('ui').appendChild(popup);
+      setTimeout(() => popup.remove(), 1000);
+    }
+    
+    function showLevelComplete() {
+      const remainingPigs = pigs.filter(p => p.active).length;
+      const totalPigs = pigs.length;
+      const elapsed = ((performance.now() - startTime) / 1000).toFixed(1);
+      const usedBirds = birds.filter(b => !b.active || b.life <= 0).length;
+      
+      // 计算星级
+      let stars = 1;
+      if (remainingPigs === 0) stars = 3;
+      else if (remainingPigs <= Math.ceil(totalPigs * 0.3)) stars = 2;
+      
+      // 设置星级显示
+      const starElements = document.querySelectorAll('#starDisplay .star');
+      starElements.forEach((star, i) => {
+        star.textContent = i < stars ? '⭐' : '☆';
+        star.style.animation = 'none';
+        setTimeout(() => { star.style.animation = ''; }, 10);
+      });
+      
+      // 设置统计信息
+      document.getElementById('statsDisplay').innerHTML = `
+        剩余小鸟: <span>${Math.max(0, 3 - usedBirds)}</span><br>
+        命中猪: <span>${totalPigs - remainingPigs}/${totalPigs}</span><br>
+        用时: <span>${elapsed}s</span><br>
+        总分: <span>${score}</span>
+      `;
+      
+      // 显示模态框
+      document.getElementById('levelComplete').classList.add('show');
+    }
+    
+    function hideLevelComplete() {
+      document.getElementById('levelComplete').classList.remove('show');
+    }
+
+    // ================= 第一人称控制 =================
+    const startScreen = document.getElementById('startScreen');
+    const powerFill = document.getElementById('powerFill');
+    const crosshair = document.getElementById('crosshair');
+
+    startScreen.addEventListener('click', () => {
+      startTime = performance.now();
+      renderer.domElement.requestPointerLock();
+    });
+
+    document.addEventListener('pointerlockchange', () => {
+      isLocked = document.pointerLockElement === renderer.domElement;
+      startScreen.style.display = isLocked ? 'none' : 'flex';
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isLocked) return;
+      yaw -= e.movementX * 0.002;
+      pitch -= e.movementY * 0.002;
+      pitch = Math.max(-Math.PI/2.5, Math.min(Math.PI/2.5, pitch));
+      camera.rotation.order = 'YXZ';
+      camera.rotation.y = yaw;
+      camera.rotation.x = pitch;
+    });
+
+    document.addEventListener('mousedown', (e) => {
+      if (!isLocked || e.button !== 0) return;
+      charging = true;
+      chargeTime = 0;
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      if (!isLocked || e.button !== 0 || !charging) return;
+      charging = false;
+      if (chargeTime > 0.2) fireBird();
+      chargeTime = 0;
+      powerFill.style.width = '0%';
+      powerFill.classList.remove('high', 'max');
+      crosshair.classList.remove('charging', 'maxCharge');
+      crosshair.style.cssText = '';
+      crosshair.style.animation = 'none';
+      setTimeout(() => { crosshair.style.animation = ''; }, 10);
+    });
+
+    // ================= 发射小鸟 =================
+    function createBirdMesh() {
+      const group = new THREE.Group();
+      // 身体 - 更精致的球体
+      const bodyGeo = new THREE.SphereGeometry(BIRD_RADIUS, 16, 16);
+      const body = new THREE.Mesh(bodyGeo, birdMat.clone());
+      body.castShadow = true;
+      body.receiveShadow = true;
+      group.add(body);
+      
+      // 眼睛 - 白色部分
+      const eyeWhiteMat = new THREE.MeshBasicMaterial({ color: 0xffffff });
+      const eyeGeo = new THREE.SphereGeometry(0.08, 8, 8);
+      const leftEye = new THREE.Mesh(eyeGeo, eyeWhiteMat);
+      leftEye.position.set(-0.1, 0.08, 0.2);
+      group.add(leftEye);
+      const rightEye = new THREE.Mesh(eyeGeo, eyeWhiteMat);
+      rightEye.position.set(0.1, 0.08, 0.2);
+      group.add(rightEye);
+      
+      // 眼睛 - 瞳孔
+      const pupilMat = new THREE.MeshBasicMaterial({ color: 0x000000 });
+      const pupilGeo = new THREE.SphereGeometry(0.04, 8, 8);
+      const leftPupil = new THREE.Mesh(pupilGeo, pupilMat);
+      leftPupil.position.set(-0.1, 0.08, 0.26);
+      group.add(leftPupil);
+      const rightPupil = new THREE.Mesh(pupilGeo, pupilMat);
+      rightPupil.position.set(0.1, 0.08, 0.26);
+      group.add(rightPupil);
+      
+      // 嘴巴 - 黄色三角形
+      const beakGeo = new THREE.ConeGeometry(0.06, 0.15, 4);
+      const beakMat = new THREE.MeshStandardMaterial({ color: 0xffaa00, roughness: 0.5 });
+      const beak = new THREE.Mesh(beakGeo, beakMat);
+      beak.rotation.x = Math.PI / 2;
+      beak.position.set(0, -0.05, 0.28);
+      group.add(beak);
+      
+      // 眉毛 - 愤怒的表情
+      const browGeo = new THREE.BoxGeometry(0.12, 0.03, 0.03);
+      const browMat = new THREE.MeshBasicMaterial({ color: 0x000000 });
+      const leftBrow = new THREE.Mesh(browGeo, browMat);
+      leftBrow.position.set(-0.1, 0.16, 0.22);
+      leftBrow.rotation.z = 0.3;
+      group.add(leftBrow);
+      const rightBrow = new THREE.Mesh(browGeo, browMat);
+      rightBrow.position.set(0.1, 0.16, 0.22);
+      rightBrow.rotation.z = -0.3;
+      group.add(rightBrow);
+      
+      // 头顶羽毛
+      const featherGeo = new THREE.ConeGeometry(0.03, 0.15, 4);
+      const featherMat = new THREE.MeshStandardMaterial({ color: 0xff2222, roughness: 0.6 });
+      for (let i = 0; i < 3; i++) {
+        const feather = new THREE.Mesh(featherGeo, featherMat);
+        feather.position.set((i-1)*0.04, 0.25, 0);
+        feather.rotation.z = (i-1) * 0.3;
+        group.add(feather);
+      }
+      
+      return group;
+    }
+    
+    function fireBird() {
+      const dir = new THREE.Vector3(0, 0, -1).applyQuaternion(camera.quaternion);
+      const power = (chargeTime / MAX_CHARGE) * MAX_POWER;
+      const bird = {
+        mesh: createBirdMesh(),
+        pos: camera.position.clone(),
+        vel: dir.multiplyScalar(power),
+        active: true,
+        life: 3.0,
+        trailTimer: 0
+      };
+      bird.mesh.position.copy(bird.pos);
+      scene.add(bird.mesh);
+      birds.push(bird);
+      
+      // 后坐力效果 - 摄像机短暂上抬
+      recoilAmount = 0.4;
+    }
+
+    // ================= 物理与碰撞 =================
+    function updatePhysics(dt) {
+      // 更新小鸟
+      for (let i = birds.length - 1; i >= 0; i--) {
+        const b = birds[i];
+        if (!b.active) { scene.remove(b.mesh); birds.splice(i, 1); continue; }
+
+        b.vel.y -= GRAVITY * dt;
+        b.pos.add(b.vel.clone().multiplyScalar(dt));
+        b.mesh.position.copy(b.pos);
+        b.life -= dt;
+
+        // 地面碰撞
+        if (b.pos.y < BIRD_RADIUS) {
+          b.pos.y = BIRD_RADIUS;
+          b.vel.y *= -0.4;
+          b.vel.x *= 0.8;
+          b.vel.z *= 0.8;
+          if (Math.abs(b.vel.y) < 0.5) b.active = false;
+        }
+
+        // 超时移除
+        if (b.life <= 0) b.active = false;
+
+        // 碰撞检测（小鸟 vs 方块/猪）
+        for (let block of blocks) {
+          if (!block.active) continue;
+          const dist = b.pos.distanceTo(block.pos);
+          if (dist < BIRD_RADIUS + BLOCK_SIZE/2) {
+            // 破坏方块
+            shakeAmount = 0.3; // 命中方块时轻微震动
+            createExplosion(block.pos.clone(), block.type === 'stone' ? 0x888888 : 0x8B4513, 15);
+            block.health--;
+            if (block.health <= 0) {
+              block.active = false;
+              scene.remove(block.mesh);
+              block.vel.set((Math.random()-0.5)*5, Math.random()*5, (Math.random()-0.5)*5);
+              // 简单物理：被击中后获得初速度
+            } else {
+              block.vel.add(b.vel.clone().multiplyScalar(0.3));
+            }
+            b.vel.multiplyScalar(0.3); // 小鸟减速
+            if (b.vel.length() < 1) b.active = false;
+          }
+        }
+
+        for (let pig of pigs) {
+          if (!pig.active) continue;
+          const dist = b.pos.distanceTo(pig.pos);
+          if (dist < BIRD_RADIUS + 0.3) {
+            pig.active = false;
+            scene.remove(pig.mesh);
+            shakeAmount = 0.6; // 命中猪时屏幕震动
+            createExplosion(pig.pos.clone(), 0x33cc33, 25, 0.15); // 绿色爆炸
+            updateScore(100);
+            updatePigCount();
+            b.active = false;
+            if (pigs.filter(p=>p.active).length === 0) {
+              setTimeout(() => {
+                showLevelComplete();
+              }, 500);
+            }
+          }
+        }
+      }
+
+      // 更新方块物理（简易重力+碰撞）
+      for (let block of blocks) {
+        if (!block.active) continue;
+        block.vel.y -= GRAVITY * dt * 0.8;
+        block.pos.add(block.vel.clone().multiplyScalar(dt));
+        block.mesh.position.copy(block.pos);
+
+        // 地面碰撞
+        if (block.pos.y < BLOCK_SIZE/2) {
+          block.pos.y = BLOCK_SIZE/2;
+          block.vel.y *= -0.3;
+          block.vel.x *= 0.9;
+          block.vel.z *= 0.9;
+        }
+      }
+    }
+
+    // ================= 渲染循环 =================
+    let lastTime = performance.now();
+
+    // 处理窗口大小变化
+    window.addEventListener('resize', () => {
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+      renderer.setSize(w, h, false);
+    });
+
+    function animate() {
+      requestAnimationFrame(animate);
+      const now = performance.now();
+      const dt = Math.min((now - lastTime) / 1000, 0.05);
+      lastTime = now;
+
+      // 蓄力衰减
+      if (recoilAmount > 0) recoilAmount = Math.max(0, recoilAmount - dt * 4);
+      if (shakeAmount > 0)   shakeAmount   = Math.max(0, shakeAmount   - dt * 8);
+
+      // 蓄力逻辑
+      if (charging) {
+        chargeTime = Math.min(chargeTime + dt, MAX_CHARGE);
+        const pct = (chargeTime / MAX_CHARGE) * 100;
+        powerFill.style.width = pct + '%';
+        
+        // 准星颜色随蓄力变化 (绿→黄→橙→红)
+        const t = chargeTime / MAX_CHARGE;
+        let r, g, b;
+        if (t < 0.5) { r = 255; g = Math.floor(170 + t * 340); b = 0; }
+        else          { r = 255; g = Math.floor(340 - (t - 0.5) * 680); b = Math.floor((t - 0.5) * 680); }
+        const color = `rgb(${r},${g},${b})`;
+        crosshair.style.setProperty('--ch-color', color);
+        crosshair.style.setProperty('--ch-shadow', `rgba(${r},${g},${b},0.9)`);
+        crosshair.style.setProperty('--ch-ring', `rgba(${r},${g},${b},0.25)`);
+        
+        // 准星轻微扩散
+        const scale = 1 + chargeTime * 0.15;
+        crosshair.style.transform = `translate(-50%, -50%) scale(${scale})`;
+        
+        // 蓄力条脉冲效果
+        if (t > 0.8) powerFill.classList.add('max');
+        else powerFill.classList.remove('max');
+        if (t > 0.3) powerFill.classList.add('high');
+        else powerFill.classList.remove('high');
+        
+        if (chargeTime > MAX_CHARGE * 0.8) {
+          if (!crosshair.classList.contains('maxCharge')) crosshair.classList.add('maxCharge');
+          crosshair.classList.add('charging');
+        } else if (chargeTime > 0.1) {
+          crosshair.classList.add('charging');
+          crosshair.classList.remove('maxCharge');
+        } else {
+          crosshair.classList.remove('charging', 'maxCharge');
+        }
+      }
+
+      // 应用摄像机效果
+      if (recoilAmount > 0) camera.rotation.x += recoilAmount * 0.025;
+      if (shakeAmount > 0) {
+        camera.rotation.x += (Math.random() - 0.5) * shakeAmount * 0.025;
+        camera.rotation.y += (Math.random() - 0.5) * shakeAmount * 0.025;
+      }
+
+      // 更新云朵
+      for (let cloud of clouds) {
+        cloud.mesh.position.x += cloud.speed;
+        if (cloud.mesh.position.x > 50) cloud.mesh.position.x = -50;
+      }
+
+      // 更新粒子
+      for (let i = particles.length - 1; i >= 0; i--) {
+        const p = particles[i];
+        p.life -= dt;
+        if (p.life <= 0) {
+          scene.remove(p.mesh);
+          particles.splice(i, 1);
+          continue;
+        }
+        // 更新位置
+        p.mesh.position.add(p.vel.clone().multiplyScalar(dt));
+        // 重力影响
+        if (!p.isFlash) p.vel.y -= 8 * dt;
+        // 旋转效果
+        if (p.rotSpeed) {
+          p.mesh.rotation.x += p.rotSpeed.x * dt;
+          p.mesh.rotation.y += p.rotSpeed.y * dt;
+          p.mesh.rotation.z += p.rotSpeed.z * dt;
+        }
+        // 透明度衰减
+        const fadeRatio = p.life / p.maxLife;
+        p.mesh.material.opacity = fadeRatio;
+        // 闪光效果缩放
+        if (p.isFlash) {
+          const scale = 1 + (1 - fadeRatio) * 2;
+          p.mesh.scale.setScalar(scale);
+        }
+      }
+
+      // 小鸟飞行火焰拖尾
+      for (const b of birds) {
+        if (!b.active || !b.mesh) continue;
+        b.trailTimer = (b.trailTimer || 0) + dt;
+        if (b.trailTimer > 0.02) {
+          createFireTrail(b.pos.clone());
+          b.trailTimer = 0;
+        }
+      }
+
+      updatePhysics(dt);
+      renderer.render(scene, camera);
+    }
+
+    animate();
+  </script>
+</body>
+</html>
