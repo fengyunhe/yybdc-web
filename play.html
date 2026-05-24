@@ -130,7 +130,7 @@
         <span class="star">⭐</span>
       </div>
       <div class="stats" id="statsDisplay"></div>
-      <button class="btn" onclick="location.reload()">🔄 再来一次</button>
+      <button class="btn" onclick="resetGame()">🔄 再来一次</button>
     </div>
   </div>
 
@@ -344,6 +344,9 @@
     const treeTrunkMat = new THREE.MeshStandardMaterial({ color: 0x8B6914, roughness: 0.9 });
     const treeLeafMat = new THREE.MeshStandardMaterial({ color: 0x228B22, roughness: 0.8 });
     const rockMat = new THREE.MeshStandardMaterial({ color: 0x888888, roughness: 0.7 });
+    const sheepBodyMat = new THREE.MeshStandardMaterial({ color: 0xF5F5DC, roughness: 0.9 });
+    const sheepLegMat = new THREE.MeshStandardMaterial({ color: 0x4A4A4A, roughness: 0.8 });
+    const sheepFaceMat = new THREE.MeshStandardMaterial({ color: 0x2A2A2A, roughness: 0.7 });
     
     function createTree(x, z, scale = 1) {
       const group = new THREE.Group();
@@ -377,6 +380,347 @@
       scene.add(rock);
       return rock;
     }
+    
+    // ================= 绵羊系统 =================
+    const sheep = [];
+    
+    // 创建羊毛球（用于身体蓬松效果）
+    function createWoolBall(radius, position, parent) {
+      const geo = new THREE.SphereGeometry(radius, 12, 12);
+      const mesh = new THREE.Mesh(geo, sheepBodyMat);
+      mesh.position.copy(position);
+      mesh.castShadow = true;
+      mesh.receiveShadow = true;
+      parent.add(mesh);
+      return mesh;
+    }
+    
+    function createSheep(x, z, scale = 1) {
+      const group = new THREE.Group();
+      
+      // ===== 身体（蓬松羊毛） =====
+      // 主身体 - 多个重叠球体模拟羊毛
+      const mainWoolGroup = new THREE.Group();
+      mainWoolGroup.position.set(0, 0.45 * scale, 0);
+      
+      // 主体部分
+      createWoolBall(0.32 * scale, new THREE.Vector3(0, 0, 0), mainWoolGroup);
+      // 前部
+      createWoolBall(0.28 * scale, new THREE.Vector3(0.25 * scale, 0.05 * scale, 0), mainWoolGroup);
+      // 后部
+      createWoolBall(0.30 * scale, new THREE.Vector3(-0.25 * scale, 0.02 * scale, 0), mainWoolGroup);
+      // 顶部
+      createWoolBall(0.26 * scale, new THREE.Vector3(0, 0.18 * scale, 0), mainWoolGroup);
+      // 左前
+      createWoolBall(0.24 * scale, new THREE.Vector3(0.20 * scale, 0.08 * scale, 0.22 * scale), mainWoolGroup);
+      // 右前
+      createWoolBall(0.24 * scale, new THREE.Vector3(0.20 * scale, 0.08 * scale, -0.22 * scale), mainWoolGroup);
+      // 左后
+      createWoolBall(0.25 * scale, new THREE.Vector3(-0.22 * scale, 0.05 * scale, 0.20 * scale), mainWoolGroup);
+      // 右后
+      createWoolBall(0.25 * scale, new THREE.Vector3(-0.22 * scale, 0.05 * scale, -0.20 * scale), mainWoolGroup);
+      
+      group.add(mainWoolGroup);
+      
+      // ===== 头部 =====
+      const headGroup = new THREE.Group();
+      headGroup.position.set(0.52 * scale, 0.58 * scale, 0);
+      
+      // 头部主体
+      const headGeo = new THREE.SphereGeometry(0.20 * scale, 16, 16);
+      const head = new THREE.Mesh(headGeo, sheepFaceMat);
+      head.scale.set(1.2, 1.0, 0.9);
+      head.castShadow = true;
+      head.receiveShadow = true;
+      headGroup.add(head);
+      
+      // ===== 耳朵 =====
+      const earMat = new THREE.MeshStandardMaterial({ color: 0x3A3A3A, roughness: 0.8 });
+      const earInnerMat = new THREE.MeshStandardMaterial({ color: 0xFFB6C1, roughness: 0.6 });
+      
+      // 左耳
+      const leftEarGroup = new THREE.Group();
+      const leftEarOuter = new THREE.Mesh(new THREE.ConeGeometry(0.06 * scale, 0.18 * scale, 4), earMat);
+      leftEarOuter.rotation.z = 0.4;
+      leftEarOuter.position.set(-0.15 * scale, 0.15 * scale, 0.12 * scale);
+      leftEarGroup.add(leftEarOuter);
+      const leftEarInner = new THREE.Mesh(new THREE.ConeGeometry(0.035 * scale, 0.12 * scale, 4), earInnerMat);
+      leftEarInner.rotation.z = 0.4;
+      leftEarInner.position.set(-0.14 * scale, 0.14 * scale, 0.13 * scale);
+      leftEarGroup.add(leftEarInner);
+      headGroup.add(leftEarGroup);
+      
+      // 右耳
+      const rightEarGroup = new THREE.Group();
+      const rightEarOuter = new THREE.Mesh(new THREE.ConeGeometry(0.06 * scale, 0.18 * scale, 4), earMat);
+      rightEarOuter.rotation.z = 0.4;
+      rightEarOuter.position.set(-0.15 * scale, 0.15 * scale, -0.12 * scale);
+      rightEarGroup.add(rightEarOuter);
+      const rightEarInner = new THREE.Mesh(new THREE.ConeGeometry(0.035 * scale, 0.12 * scale, 4), earInnerMat);
+      rightEarInner.rotation.z = 0.4;
+      rightEarInner.position.set(-0.14 * scale, 0.14 * scale, -0.13 * scale);
+      rightEarGroup.add(rightEarInner);
+      headGroup.add(rightEarGroup);
+      
+      // ===== 眼睛 =====
+      const eyeWhiteGeo = new THREE.SphereGeometry(0.055 * scale, 12, 12);
+      const eyeWhiteMat = new THREE.MeshBasicMaterial({ color: 0xFFFFFF });
+      const pupilGeo = new THREE.SphereGeometry(0.032 * scale, 10, 10);
+      const pupilMat = new THREE.MeshBasicMaterial({ color: 0x1A1A1A });
+      const highlightGeo = new THREE.SphereGeometry(0.015 * scale, 8, 8);
+      const highlightMat = new THREE.MeshBasicMaterial({ color: 0xFFFFFF });
+      
+      // 左眼
+      const leftEyeWhite = new THREE.Mesh(eyeWhiteGeo, eyeWhiteMat);
+      leftEyeWhite.position.set(0.08 * scale, 0.04 * scale, 0.14 * scale);
+      headGroup.add(leftEyeWhite);
+      const leftPupil = new THREE.Mesh(pupilGeo, pupilMat);
+      leftPupil.position.set(0.11 * scale, 0.04 * scale, 0.16 * scale);
+      headGroup.add(leftPupil);
+      const leftHighlight = new THREE.Mesh(highlightGeo, highlightMat);
+      leftHighlight.position.set(0.12 * scale, 0.06 * scale, 0.17 * scale);
+      headGroup.add(leftHighlight);
+      
+      // 右眼
+      const rightEyeWhite = new THREE.Mesh(eyeWhiteGeo, eyeWhiteMat);
+      rightEyeWhite.position.set(0.08 * scale, 0.04 * scale, -0.14 * scale);
+      headGroup.add(rightEyeWhite);
+      const rightPupil = new THREE.Mesh(pupilGeo, pupilMat);
+      rightPupil.position.set(0.11 * scale, 0.04 * scale, -0.16 * scale);
+      headGroup.add(rightPupil);
+      const rightHighlight = new THREE.Mesh(highlightGeo, highlightMat);
+      rightHighlight.position.set(0.12 * scale, 0.06 * scale, -0.17 * scale);
+      headGroup.add(rightHighlight);
+      
+      // ===== 鼻子/嘴巴 =====
+      const noseGroup = new THREE.Group();
+      const noseGeo = new THREE.SphereGeometry(0.045 * scale, 10, 10);
+      const noseMat = new THREE.MeshStandardMaterial({ color: 0x2A2A2A, roughness: 0.6 });
+      const nose = new THREE.Mesh(noseGeo, noseMat);
+      nose.scale.set(1.3, 0.8, 0.9);
+      nose.position.set(0.12 * scale, -0.04 * scale, 0);
+      noseGroup.add(nose);
+      
+      // 鼻孔
+      const nostrilGeo = new THREE.SphereGeometry(0.012 * scale, 6, 6);
+      const leftNostril = new THREE.Mesh(nostrilGeo, noseMat);
+      leftNostril.position.set(0.14 * scale, -0.04 * scale, 0.02 * scale);
+      noseGroup.add(leftNostril);
+      const rightNostril = new THREE.Mesh(nostrilGeo, noseMat);
+      rightNostril.position.set(0.14 * scale, -0.04 * scale, -0.02 * scale);
+      noseGroup.add(rightNostril);
+      
+      // 嘴巴线
+      const mouthGeo = new THREE.TorusGeometry(0.025 * scale, 0.004 * scale, 6, 8, Math.PI);
+      const mouthMat = new THREE.MeshBasicMaterial({ color: 0x1A1A1A });
+      const mouth = new THREE.Mesh(mouthGeo, mouthMat);
+      mouth.position.set(0.12 * scale, -0.07 * scale, 0);
+      mouth.rotation.y = Math.PI / 2;
+      noseGroup.add(mouth);
+      
+      headGroup.add(noseGroup);
+      
+      // ===== 角 =====
+      const hornMat = new THREE.MeshStandardMaterial({ color: 0xF5DEB3, roughness: 0.7 });
+      
+      // 左角
+      const leftHorn = new THREE.Mesh(new THREE.ConeGeometry(0.03 * scale, 0.12 * scale, 8), hornMat);
+      leftHorn.position.set(-0.05 * scale, 0.18 * scale, 0.08 * scale);
+      leftHorn.rotation.z = -0.3;
+      leftHorn.rotation.x = -0.2;
+      headGroup.add(leftHorn);
+      
+      // 右角
+      const rightHorn = new THREE.Mesh(new THREE.ConeGeometry(0.03 * scale, 0.12 * scale, 8), hornMat);
+      rightHorn.position.set(-0.05 * scale, 0.18 * scale, -0.08 * scale);
+      rightHorn.rotation.z = -0.3;
+      rightHorn.rotation.x = -0.2;
+      headGroup.add(rightHorn);
+      
+      group.add(headGroup);
+      
+      // ===== 腿（4条） =====
+      const legMat = new THREE.MeshStandardMaterial({ color: 0x3A3A3A, roughness: 0.8 });
+      const hoofMat = new THREE.MeshStandardMaterial({ color: 0x1A1A1A, roughness: 0.6 });
+      const legPositions = [
+        { x: 0.20, z: 0.15 },
+        { x: 0.20, z: -0.15 },
+        { x: -0.20, z: 0.15 },
+        { x: -0.20, z: -0.15 }
+      ];
+      
+      legPositions.forEach((pos, idx) => {
+        const legGroup = new THREE.Group();
+        
+        // 腿部
+        const legGeo = new THREE.CylinderGeometry(0.035 * scale, 0.030 * scale, 0.38 * scale, 8);
+        const leg = new THREE.Mesh(legGeo, legMat);
+        leg.position.y = -0.19 * scale;
+        leg.castShadow = true;
+        legGroup.add(leg);
+        
+        // 蹄子
+        const hoofGeo = new THREE.CylinderGeometry(0.038 * scale, 0.035 * scale, 0.05 * scale, 8);
+        const hoof = new THREE.Mesh(hoofGeo, hoofMat);
+        hoof.position.y = -0.40 * scale;
+        hoof.castShadow = true;
+        legGroup.add(hoof);
+        
+        legGroup.position.set(pos.x * scale, 0.42 * scale, pos.z * scale);
+        group.add(legGroup);
+      });
+      
+      // ===== 尾巴 =====
+      const tailGroup = new THREE.Group();
+      tailGroup.position.set(-0.42 * scale, 0.55 * scale, 0);
+      
+      const tailBase = new THREE.Mesh(new THREE.SphereGeometry(0.08 * scale, 10, 10), sheepBodyMat);
+      tailBase.castShadow = true;
+      tailGroup.add(tailBase);
+      
+      const tailTip = new THREE.Mesh(new THREE.SphereGeometry(0.06 * scale, 10, 10), sheepBodyMat);
+      tailTip.position.set(-0.06 * scale, -0.02 * scale, 0);
+      tailTip.castShadow = true;
+      tailGroup.add(tailTip);
+      
+      group.add(tailGroup);
+      
+      // 设置初始位置
+      group.position.set(x, 0, z);
+      scene.add(group);
+      
+      return {
+        mesh: group,
+        headGroup: headGroup,
+        tailGroup: tailGroup,
+        mainWoolGroup: mainWoolGroup,
+        pos: new THREE.Vector3(x, 0, z),
+        targetPos: new THREE.Vector3(x, 0, z),
+        speed: 0.3 + Math.random() * 0.4,
+        state: 'idle',
+        stateTimer: 2 + Math.random() * 3,
+        phase: Math.random() * Math.PI * 2,
+        scale: scale
+      };
+    }
+    
+    // 更新绵羊AI和动画
+    function updateSheep(dt) {
+      for (const s of sheep) {
+        s.stateTimer -= dt;
+        s.phase += dt;
+        
+        // 随机改变状态
+        if (s.stateTimer <= 0) {
+          const rand = Math.random();
+          if (rand < 0.4) {
+            s.state = 'idle';
+            s.stateTimer = 1 + Math.random() * 2;
+          } else if (rand < 0.7) {
+            s.state = 'grazing';
+            s.stateTimer = 2 + Math.random() * 3;
+          } else {
+            s.state = 'walking';
+            // 随机目标位置
+            const angle = Math.random() * Math.PI * 2;
+            const distance = 2 + Math.random() * 3;
+            s.targetPos.set(
+              s.pos.x + Math.cos(angle) * distance,
+              0,
+              s.pos.z + Math.sin(angle) * distance
+            );
+            // 确保不超出边界
+            s.targetPos.x = Math.max(-15, Math.min(15, s.targetPos.x));
+            s.targetPos.z = Math.max(-15, Math.min(15, s.targetPos.z));
+            s.stateTimer = 2 + Math.random() * 2;
+          }
+        }
+        
+        // 根据状态更新动画
+        if (s.state === 'walking') {
+          const dir = new THREE.Vector3().subVectors(s.targetPos, s.pos);
+          dir.y = 0;
+          if (dir.lengthSq() > 0.01) {
+            dir.normalize();
+            // 移动
+            s.pos.x += dir.x * s.speed * dt;
+            s.pos.z += dir.z * s.speed * dt;
+            // 朝向移动方向
+            s.mesh.position.copy(s.pos);
+            s.mesh.rotation.y = Math.atan2(dir.x, dir.z);
+            
+            // 走路动画
+            const walkBob = Math.sin(s.phase * 5) * 0.015 * s.scale;
+            s.mesh.position.y = walkBob;
+            
+            // 头部微动
+            if (s.headGroup) {
+              s.headGroup.position.y = 0.58 * s.scale + Math.sin(s.phase * 5) * 0.01 * s.scale;
+              s.headGroup.rotation.z = Math.sin(s.phase * 5) * 0.05;
+            }
+            
+            // 尾巴摇摆
+            if (s.tailGroup) {
+              s.tailGroup.rotation.y = Math.sin(s.phase * 4) * 0.3;
+            }
+            
+            // 羊毛弹性
+            if (s.mainWoolGroup) {
+              const woolScale = 1 + Math.sin(s.phase * 5) * 0.02;
+              s.mainWoolGroup.scale.setScalar(woolScale);
+            }
+          }
+        } else if (s.state === 'grazing') {
+          // 吃草动画 - 头部上下摆动
+          if (s.headGroup) {
+            s.headGroup.rotation.x = Math.sin(s.phase * 2) * 0.4 - 0.2;
+            s.headGroup.position.y = 0.58 * s.scale + Math.sin(s.phase * 2) * 0.02 * s.scale;
+          }
+          
+          // 身体轻微晃动
+          if (s.mainWoolGroup) {
+            s.mesh.position.y = Math.sin(s.phase * 2) * 0.01 * s.scale;
+          }
+          
+          // 尾巴偶尔摇摆
+          if (s.tailGroup) {
+            s.tailGroup.rotation.y = Math.sin(s.phase * 1.5) * 0.2;
+          }
+        } else {
+          // 闲置状态 - 呼吸动画
+          const breathe = Math.sin(s.phase * 1.5);
+          
+          // 身体呼吸
+          if (s.mainWoolGroup) {
+            const breatheScale = 1 + breathe * 0.015;
+            s.mainWoolGroup.scale.setScalar(breatheScale);
+          }
+          
+          // 头部轻微晃动
+          if (s.headGroup) {
+            s.headGroup.rotation.z = Math.sin(s.phase * 0.8) * 0.03;
+            s.headGroup.rotation.x = Math.sin(s.phase * 0.5) * 0.02;
+            s.headGroup.position.y = 0.58 * s.scale + breathe * 0.005 * s.scale;
+          }
+          
+          // 尾巴自然摆动
+          if (s.tailGroup) {
+            s.tailGroup.rotation.y = Math.sin(s.phase * 1.2) * 0.15;
+            s.tailGroup.rotation.x = Math.sin(s.phase * 0.8) * 0.05;
+          }
+        }
+      }
+    }
+    
+    // 创建绵羊
+    createSheep(-5, -7, 1.0);
+    createSheep(6, -6, 0.9);
+    createSheep(-8, 3, 1.1);
+    createSheep(9, 4, 0.8);
+    createSheep(-3, 8, 1.0);
+    createSheep(12, -2, 0.95);
+    createSheep(-10, -10, 1.15);
+    createSheep(15, 6, 0.85);
     
     // 创建树木
     createTree(-8, -5, 1.2);
@@ -545,7 +889,69 @@
       document.getElementById('levelComplete').classList.remove('show');
     }
 
-    // ================= 第一人称控制 =================
+    // ================= 重置游戏 =================
+    function resetGame() {
+      // 隐藏完成界面
+      hideLevelComplete();
+      
+      // 重置分数
+      score = 0;
+      document.getElementById('scoreDisplay').innerText = score;
+      
+      // 移除所有小鸟
+      for (const b of birds) {
+        if (b.mesh && scene.children.includes(b.mesh)) {
+          scene.remove(b.mesh);
+        }
+      }
+      birds = [];
+      
+      // 移除所有方块
+      for (const block of blocks) {
+        if (block.mesh && scene.children.includes(block.mesh)) {
+          scene.remove(block.mesh);
+        }
+      }
+      blocks = [];
+      
+      // 移除所有猪
+      for (const pig of pigs) {
+        if (pig.mesh && scene.children.includes(pig.mesh)) {
+          scene.remove(pig.mesh);
+        }
+      }
+      pigs = [];
+      
+      // 移除所有粒子
+      for (const p of particles) {
+        if (p.mesh && scene.children.includes(p.mesh)) {
+          scene.remove(p.mesh);
+        }
+      }
+      particles = [];
+      
+      // 重置游戏状态
+      charging = false;
+      chargeTime = 0;
+      recoilAmount = 0;
+      shakeAmount = 0;
+      startTime = performance.now();
+      
+      // 重置蓄力条
+      powerFill.style.width = '0%';
+      powerFill.classList.remove('high', 'max');
+      crosshair.classList.remove('charging', 'maxCharge');
+      
+      // 重新构建关卡
+      buildLevel();
+      
+      // 重新获取指针锁定
+      renderer.domElement.requestPointerLock();
+    }
+    // 挂载到全局作用域，供 HTML onclick 使用
+    window.resetGame = resetGame;
+
+    // ================= 第一人称控制 ===========
     const startScreen = document.getElementById('startScreen');
     const powerFill = document.getElementById('powerFill');
     const crosshair = document.getElementById('crosshair');
@@ -705,10 +1111,9 @@
             createExplosion(block.pos.clone(), block.type === 'stone' ? 0x888888 : 0x8B4513, 15);
             block.health--;
             if (block.health <= 0) {
+              block.vel.set((Math.random()-0.5)*5, Math.random()*5, (Math.random()-0.5)*5);
               block.active = false;
               scene.remove(block.mesh);
-              block.vel.set((Math.random()-0.5)*5, Math.random()*5, (Math.random()-0.5)*5);
-              // 简单物理：被击中后获得初速度
             } else {
               block.vel.add(b.vel.clone().multiplyScalar(0.3));
             }
@@ -747,9 +1152,13 @@
         // 地面碰撞
         if (block.pos.y < BLOCK_SIZE/2) {
           block.pos.y = BLOCK_SIZE/2;
-          block.vel.y *= -0.3;
-          block.vel.x *= 0.9;
-          block.vel.z *= 0.9;
+          block.vel.y = 0; // 落地后不再弹跳
+          block.vel.x *= 0.7; // 增强摩擦减速
+          block.vel.z *= 0.7;
+          // 速度足够小时完全停止
+          if (block.vel.lengthSq() < 0.01) {
+            block.vel.set(0, 0, 0);
+          }
         }
       }
     }
@@ -785,8 +1194,8 @@
         // 准星颜色随蓄力变化 (绿→黄→橙→红)
         const t = chargeTime / MAX_CHARGE;
         let r, g, b;
-        if (t < 0.5) { r = 255; g = Math.floor(170 + t * 340); b = 0; }
-        else          { r = 255; g = Math.floor(340 - (t - 0.5) * 680); b = Math.floor((t - 0.5) * 680); }
+        if (t < 0.5) { r = 255; g = Math.min(255, Math.floor(170 + t * 340)); b = 0; }
+        else          { r = 255; g = Math.max(0, Math.min(255, Math.floor(340 - (t - 0.5) * 680))); b = Math.min(255, Math.floor((t - 0.5) * 680)); }
         const color = `rgb(${r},${g},${b})`;
         crosshair.style.setProperty('--ch-color', color);
         crosshair.style.setProperty('--ch-shadow', `rgba(${r},${g},${b},0.9)`);
@@ -865,6 +1274,7 @@
         }
       }
 
+      updateSheep(dt);
       updatePhysics(dt);
       renderer.render(scene, camera);
     }
