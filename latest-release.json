@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.83",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.83/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.83/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.83/vocab-float_amd64.deb",
+  "version": "v1.0.84",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.84/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.84/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.84/vocab-float_amd64.deb",
   "release_notes": "Automated release",
-  "updated_at": "2026-06-05T07:09:07Z"
+  "updated_at": "2026-06-05T20:47:23Z"
 }
