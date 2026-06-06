@@ -7,347 +7,331 @@
     <meta name="description" content="macOS 桌面悬浮单词学习工具，置顶显示单词卡片，帮助高效记忆英语词汇">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- 导航栏 -->
+    <!-- Floating Particles Background -->
+    <div class="particles-bg" id="particles"></div>
+
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="navbar-inner">
-            <a href="#" class="navbar-brand">Vocab<span>Float</span></a>
+            <a href="#" class="navbar-brand">
+                <i class="fa-solid fa-cube brand-icon"></i>
+                Vocab<span>Float</span>
+            </a>
             <ul class="navbar-links">
                 <li><a href="#features">功能</a></li>
+                <li><a href="#screenshots">界面</a></li>
                 <li><a href="#pricing">价格</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#download">下载</a></li>
                 <li><a href="wordbooks.html">预制词本</a></li>
                 <li><a href="play.html">小游戏</a></li>
             </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="section min-h-screen flex items-center hero-bg">
-        <div class="container text-center">
-            <h1 class="text-6xl font-bold mb-4 animate-fade">VocabFloat</h1>
-            <p class="text-2xl text-[--accent] mb-6 animate-fade-delay">置顶悬浮，背词更轻松</p>
-            <p class="text-[--text-secondary] max-w-2xl mx-auto mb-6 text-lg animate-fade-delay">
+    <section class="section min-h-screen flex items-center relative overflow-hidden hero-section">
+        <!-- Animated Background Gradient -->
+        <div class="hero-gradient"></div>
+
+        <div class="container text-center relative z-10">
+            <h1 class="hero-title animate-reveal">
+                <span class="title-line">Vocab</span>
+                <span class="title-line accent">Float</span>
+            </h1>
+            <p class="hero-tagline animate-reveal-delay">
+                置顶悬浮，背词更轻松
+            </p>
+            <p class="hero-description animate-reveal-delay">
                 跨平台桌面悬浮单词学习工具，置顶显示单词卡片，帮助高效记忆英语词汇
             </p>
-            <p class="text-[--text-secondary] max-w-2xl mx-auto mb-10 text-sm animate-fade-delay">
-                支持 macOS 12+（含老系统）/ Windows 10+ / Linux 多平台运行
+            <p class="hero-platforms animate-reveal-delay">
+                <i class="fa-solid fa-check-circle"></i> macOS 12+（含老系统）
+                &nbsp;&nbsp;
+                <i class="fa-solid fa-check-circle"></i> Windows 10+
+                &nbsp;&nbsp;
+                <i class="fa-solid fa-check-circle"></i> Linux
             </p>
-            <div class="flex gap-4 justify-center flex-wrap animate-fade-delay">
-                <a href="#download" class="btn-primary">立即下载</a>
-                <a href="#features" class="btn-secondary">查看功能</a>
+            <div class="hero-cta animate-reveal-delay">
+                <a href="#download" class="btn-hero-primary">
+                    <span>立即下载</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="#features" class="btn-hero-secondary">查看功能</a>
             </div>
-            <!-- 模拟悬浮窗卡片 -->
-            <div class="mt-16 max-w-md mx-auto mock-card animate-float">
-                <div class="text-sm text-[--text-secondary] text-left mb-1">Vocabulary</div>
-                <div class="text-3xl font-bold text-left my-2 text-white">persistent</div>
-                <div class="text-lg text-[--accent] text-left">/pərˈsɪstənt/</div>
-                <div class="text-[--text-secondary] text-left mt-2">adj. 坚持的；持续的</div>
+
+            <!-- Floating App Preview -->
+            <div class="hero-preview animate-float">
+                <div class="preview-frame">
+                    <img src="images/单词卡片界面.png" alt="VocabFloat 单词卡片界面" class="preview-image">
+                    <div class="preview-glow"></div>
+                </div>
             </div>
         </div>
+
+        <!-- Decorative Elements -->
+        <div class="hero-decoration decoration-1"></div>
+        <div class="hero-decoration decoration-2"></div>
+        <div class="hero-decoration decoration-3"></div>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="section">
+    <section id="features" class="section features-section">
         <div class="container">
-            <h2 class="section-title scroll-animate">核心功能</h2>
+            <h2 class="section-title scroll-animate">
+                <i class="fa-solid fa-star title-accent"></i> 核心功能
+            </h2>
             <p class="section-subtitle scroll-animate">为高效背词而设计的每一个细节</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="features-grid">
                 <!-- Feature 1 -->
-                <div class="card scroll-animate">
-                    <div class="feature-icon">📌</div>
-                    <h3 class="text-xl font-semibold mb-2">悬浮单词卡片</h3>
-                    <p class="text-[--text-secondary]">macOS 置顶窗口，不干扰日常操作</p>
+                <div class="feature-card scroll-animate">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-thumb-tack feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">悬浮单词卡片</h3>
+                    <p class="feature-description">macOS 置顶窗口，不干扰日常操作</p>
                 </div>
                 <!-- Feature 2 -->
-                <div class="card scroll-animate">
-                    <div class="feature-icon">🔄</div>
-                    <h3 class="text-xl font-semibold mb-2">自动轮播</h3>
-                    <p class="text-[--text-secondary]">可配置间隔时间，循环随机展示单词</p>
+                <div class="feature-card scroll-animate">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-sync-alt feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">自动轮播</h3>
+                    <p class="feature-description">可配置间隔时间，循环随机展示单词</p>
                 </div>
                 <!-- Feature 3 -->
-                <div class="card scroll-animate">
-                    <div class="feature-icon">🎨</div>
-                    <h3 class="text-xl font-semibold mb-2">主题管理</h3>
-                    <p class="text-[--text-secondary]">内置多套主题，支持自定义颜色与背景图片</p>
+                <div class="feature-card scroll-animate">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-palette feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">主题管理</h3>
+                    <p class="feature-description">内置多套主题，支持自定义颜色与背景图片</p>
                 </div>
                 <!-- Feature 4 -->
-                <div class="card scroll-animate">
-                    <div class="feature-icon">🔊</div>
-                    <h3 class="text-xl font-semibold mb-2">语音朗读</h3>
-                    <p class="text-[--text-secondary]">macOS TTS 发音，支持连续点击排队播放</p>
+                <div class="feature-card scroll-animate">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-volume-up feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">语音朗读</h3>
+                    <p class="feature-description">macOS TTS 发音，支持连续点击排队播放</p>
                 </div>
                 <!-- Feature 5 -->
-                <div class="card scroll-animate">
-                    <div class="feature-icon">📚</div>
-                    <h3 class="text-xl font-semibold mb-2">生词本管理</h3>
-                    <p class="text-[--text-secondary]">添加/删除单词，输入自动补全翻译、音标、例句</p>
+                <div class="feature-card scroll-animate">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-book feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">生词本管理</h3>
+                    <p class="feature-description">添加/删除单词，输入自动补全翻译、音标、例句</p>
                 </div>
                 <!-- Feature 6 -->
-                <div class="card scroll-animate">
-                    <div class="feature-icon">📊</div>
-                    <h3 class="text-xl font-semibold mb-2">学习统计</h3>
-                    <p class="text-[--text-secondary]">每日新记单词数、记忆日期记录</p>
+                <div class="feature-card scroll-animate">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-compress-alt feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">迷你模式</h3>
+                    <p class="feature-description">紧凑的单词展示，最小化占用屏幕空间</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Theme Section -->
-    <section class="section">
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="section screenshots-section">
         <div class="container">
-            <h2 class="text-3xl font-bold text-center mb-4">主题展示</h2>
-            <p class="text-[--text-secondary] text-center mb-6">多种主题随心切换，更支持自定义创作</p>
-            <p class="text-[--text-secondary] text-center mb-12 text-sm">内置 3 套基础主题 + 5 套背景主题，还可在主题编辑器中自定义颜色、背景图片和透明度</p>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-                <div class="card text-center">
-                    <div class="bg-[#1E1E2E] rounded-lg p-6 mb-4">
-                        <span class="text-[#CDD6F4] text-lg">暗色主题</span>
+            <h2 class="section-title scroll-animate">
+                <i class="fa-solid fa-images title-accent"></i> 界面展示
+            </h2>
+            <p class="section-subtitle scroll-animate">精心打磨的每一个细节</p>
+
+            <!-- Screenshot Gallery -->
+            <div class="screenshot-gallery scroll-animate" id="screenshotGallery">
+                <!-- Navigation Arrows -->
+                <button class="gallery-nav gallery-nav-prev" id="galleryPrev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="gallery-nav gallery-nav-next" id="galleryNext">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+                <!-- Main Image Display -->
+                <div class="gallery-main">
+                    <div class="gallery-image-container" id="galleryContainer">
+                        <img src="images/单词卡片界面.png" alt="VocabFloat 界面截图" class="gallery-image" id="galleryImage">
                     </div>
-                    <p class="text-[--text-secondary]">Catppuccin Mocha</p>
+                    <div class="gallery-info" id="galleryInfo">
+                        <h3 class="gallery-title">单词卡片界面</h3>
+                        <p class="gallery-description">直观清晰的单词展示，支持音标、释义和例句</p>
+                    </div>
                 </div>
-                <div class="card text-center">
-                    <div class="bg-[#EFF1F5] rounded-lg p-6 mb-4">
-                        <span class="text-[#4C4F69] text-lg">浅色主题</span>
-                    </div>
-                    <p class="text-[--text-secondary]">Catppuccin Latte</p>
+
+                <!-- Thumbnail Navigation -->
+                <div class="gallery-thumbnails" id="galleryThumbnails">
+                    <button class="gallery-thumb active" data-index="0" data-title="单词卡片界面" data-desc="直观清晰的单词展示，支持音标、释义和例句">
+                        <img src="images/单词卡片界面.png" alt="单词卡片界面">
+                        <div class="thumb-overlay"></div>
+                    </button>
+                    <button class="gallery-thumb" data-index="1" data-title="设置主界面" data-desc="调整切换间隔、显示选项、播放设置等参数，让学习体验完全符合你的习惯">
+                        <img src="images/设置主界面.png" alt="设置主界面">
+                        <div class="thumb-overlay"></div>
+                    </button>
+                    <button class="gallery-thumb" data-index="2" data-title="主题编辑器" data-desc="自由定制颜色、背景图片、透明度，创建专属学习主题">
+                        <img src="images/主题编辑器.png" alt="主题编辑器">
+                        <div class="thumb-overlay"></div>
+                    </button>
+                    <button class="gallery-thumb" data-index="3" data-title="迷你模式" data-desc="紧凑的单词展示，最小化占用屏幕空间">
+                        <img src="images/迷你界面.png" alt="迷你模式">
+                        <div class="thumb-overlay"></div>
+                    </button>
+                    <button class="gallery-thumb" data-index="4" data-title="单词卡片界面" data-desc="完整的单词卡片展示，包含音标、释义、例句和控制按钮">
+                        <img src="images/单词卡片界面.png" alt="单词卡片界面">
+                        <div class="thumb-overlay"></div>
+                    </button>
+                    <button class="gallery-thumb" data-index="5" data-title="快捷右键菜单" data-desc="一键切换主题、词本，操作便捷高效">
+                        <img src="images/右键菜单-切换主题.png" alt="快捷右键菜单">
+                        <div class="thumb-overlay"></div>
+                    </button>
                 </div>
-                <div class="card text-center">
-                    <div class="bg-gradient-to-r from-[#1E1E2E] to-[#EFF1F5] rounded-lg p-6 mb-4">
-                        <span class="text-white text-lg">跟随系统</span>
-                    </div>
-                    <p class="text-[--text-secondary]">自动适配系统主题</p>
-                </div>
-                <div class="card text-center">
-                    <div class="bg-[#1a1a2e] rounded-lg p-6 mb-4">
-                        <span class="text-[#ffffff] text-lg">🌌 星空夜景</span>
-                    </div>
-                    <p class="text-[--text-secondary]">深邃星空，宁静背词</p>
-                </div>
-                <div class="card text-center">
-                    <div class="bg-[#0f2818] rounded-lg p-6 mb-4">
-                        <span class="text-[#e0f2fe] text-lg">🌿 森林晨曦</span>
-                    </div>
-                    <p class="text-[--text-secondary]">清新绿意，活力满满</p>
-                </div>
-                <div class="card text-center">
-                    <div class="bg-[#0c1821] rounded-lg p-6 mb-4">
-                        <span class="text-[#e0f2fe] text-lg">🌊 海洋深处</span>
-                    </div>
-                    <p class="text-[--text-secondary]">沉浸海洋，静心学习</p>
-                </div>
-                <div class="card text-center">
-                    <div class="bg-[#2c1810] rounded-lg p-6 mb-4">
-                        <span class="text-[#fff7ed] text-lg">🌅 落日余晖</span>
-                    </div>
-                    <p class="text-[--text-secondary]">暖色调，舒适体验</p>
-                </div>
-                <div class="card text-center">
-                    <div class="bg-[#1a2735] rounded-lg p-6 mb-4">
-                        <span class="text-[#f1f5f9] text-lg">🏔 山间云雾</span>
-                    </div>
-                    <p class="text-[--text-secondary]">淡雅素净，专注高效</p>
-                </div>
-                <div class="card text-center">
-                    <div class="bg-gradient-to-br from-[#89DCEB] to-[#CBA6F7] rounded-lg p-6 mb-4">
-                        <span class="text-[#1E1E2E] text-lg">✏️ 自定义主题</span>
-                    </div>
-                    <p class="text-[--text-secondary]">编辑器中自由创作你的专属主题</p>
+
+                <!-- Dots Indicator -->
+                <div class="gallery-dots" id="galleryDots">
+                    <button class="gallery-dot active" data-index="0"></button>
+                    <button class="gallery-dot" data-index="1"></button>
+                    <button class="gallery-dot" data-index="2"></button>
+                    <button class="gallery-dot" data-index="3"></button>
+                    <button class="gallery-dot" data-index="4"></button>
+                    <button class="gallery-dot" data-index="5"></button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="section bg-[--bg-secondary]">
-        <div class="container text-center">
-            <h2 class="text-3xl font-bold mb-4">价格与试用</h2>
-            <div class="max-w-md mx-auto card mt-8">
-                <p class="text-3xl font-bold text-[--accent] mb-2">¥10/年 或 ¥99 永久</p>
-                <p class="text-[--text-secondary] mb-4">灵活选择，一次付费终身使用</p>
-                <p class="text-sm text-[--text-secondary] mb-6">免费试用 7 天，不满意退款</p>
-                <a href="#download" class="btn-primary block w-full">立即下载试用</a>
-                <a href="https://item.taobao.com/item.htm?id=1048232594374" target="_blank" class="btn-secondary block w-full mt-3">🛒 淘宝购买</a>
+    <section id="pricing" class="section pricing-section">
+        <div class="container">
+            <h2 class="section-title scroll-animate">
+                <i class="fa-solid fa-tags title-accent"></i> 价格与试用
+            </h2>
+            <div class="pricing-grid">
+                <div class="pricing-card scroll-animate">
+                    <div class="pricing-badge">推荐</div>
+                    <div class="pricing-price">¥99</div>
+                    <div class="pricing-period">永久使用</div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> 一次付费终身使用</li>
+                        <li><i class="fa-solid fa-check"></i> 所有平台支持</li>
+                        <li><i class="fa-solid fa-check"></i> 所有功能解锁</li>
+                        <li><i class="fa-solid fa-check"></i> 免费更新</li>
+                    </ul>
+                    <a href="#download" class="btn-pricing">立即购买</a>
+                </div>
+                <div class="pricing-card pricing-card-alt scroll-animate">
+                    <div class="pricing-price">¥10/年</div>
+                    <div class="pricing-period">按年订阅</div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> 灵活的年度订阅</li>
+                        <li><i class="fa-solid fa-check"></i> 所有功能解锁</li>
+                        <li><i class="fa-solid fa-check"></i> 免费更新</li>
+                        <li><i class="fa-solid fa-check"></i> 不满意可退款</li>
+                    </ul>
+                    <a href="https://item.taobao.com/item.htm?id=1048232594374" target="_blank" class="btn-pricing-alt">淘宝购买</a>
+                </div>
+                <div class="pricing-card scroll-animate">
+                    <div class="pricing-price">免费</div>
+                    <div class="pricing-period">7 天试用</div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> 7 天免费试用</li>
+                        <li><i class="fa-solid fa-check"></i> 所有功能体验</li>
+                        <li><i class="fa-solid fa-check"></i> 无需支付信息</li>
+                        <li><i class="fa-solid fa-check"></i> 不满意退款保证</li>
+                    </ul>
+                    <a href="#download" class="btn-pricing">立即下载试用</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="section">
+    <section id="faq" class="section faq-section">
         <div class="container">
-            <h2 class="text-3xl font-bold text-center mb-4">常见问题</h2>
-            <p class="text-[--text-secondary] text-center mb-12">如有其他疑问，请联系 <a href="mailto:vocab_float@firegod.cn" class="text-[--accent] hover:underline">vocab_float@firegod.cn</a></p>
-            <div class="max-w-2xl mx-auto card" id="faq-list">
-                <p class="text-[--text-secondary] text-center py-4">加载中…</p>
+            <h2 class="section-title scroll-animate">
+                <i class="fa-solid fa-question-circle title-accent"></i> 常见问题
+            </h2>
+            <p class="section-subtitle scroll-animate">
+                如有其他疑问，请联系 <a href="mailto:vocab_float@firegod.cn" class="contact-link">vocab_float@firegod.cn</a>
+            </p>
+            <div class="faq-list" id="faq-list">
+                <p class="loading-text">加载中…</p>
             </div>
         </div>
     </section>
 
     <!-- Download Section -->
-    <section id="download" class="section">
+    <section id="download" class="section download-section">
         <div class="container text-center">
-            <h2 class="text-3xl font-bold mb-4">下载</h2>
-            <p id="version-display" class="text-[--text-secondary] mb-6"></p>
-            <p class="text-[--text-secondary] mb-8 text-sm">💡 如果 GitHub 下载速度较慢或无法访问，请使用下方「备用下载」链接</p>
-            <div class="flex flex-wrap gap-6 justify-center">
-                <div class="card flex flex-col items-center min-w-[200px]">
-                    <h3 class="text-xl font-semibold">macOS</h3>
-                    <p class="text-[--text-secondary] text-sm">支持 macOS 12+</p>
-                    <p class="text-[--text-secondary] text-sm mb-4">Apple Silicon / Intel</p>
-                    <a id="macos-link" href="#" class="btn-primary">下载 DMG</a>
-                    <a id="macos-backup-link" href="#" class="text-sm text-[--text-secondary] hover:text-[--accent] mt-2 transition-colors" style="display:none">备用下载</a>
+            <h2 class="section-title scroll-animate">
+                <i class="fa-solid fa-download title-accent"></i> 下载
+            </h2>
+            <p id="version-display" class="version-display scroll-animate"></p>
+            <p class="download-note scroll-animate">
+                <i class="fa-solid fa-info-circle"></i> 如果 GitHub 下载速度较慢或无法访问，请使用下方「备用下载」链接
+            </p>
+            <div class="download-grid">
+                <div class="download-card scroll-animate">
+                    <div class="download-platform">
+                        <i class="fa-brands fa-apple"></i>
+                    </div>
+                    <h3 class="download-title">macOS</h3>
+                    <p class="download-info">支持 macOS 12+<br>Apple Silicon / Intel</p>
+                    <a id="macos-link" href="#" class="btn-download">下载 DMG</a>
+                    <a id="macos-backup-link" href="#" class="backup-link" style="display:none">备用下载</a>
                 </div>
-                <div class="card flex flex-col items-center min-w-[200px]">
-                    <h3 class="text-xl font-semibold">Windows</h3>
-                    <p class="text-[--text-secondary] text-sm mb-4">支持 Windows 10+</p>
-                    <a id="windows-link" href="#" class="btn-primary">下载 EXE</a>
-                    <a id="windows-backup-link" href="#" class="text-sm text-[--text-secondary] hover:text-[--accent] mt-2 transition-colors" style="display:none">备用下载</a>
+                <div class="download-card scroll-animate">
+                    <div class="download-platform">
+                        <i class="fa-brands fa-windows"></i>
+                    </div>
+                    <h3 class="download-title">Windows</h3>
+                    <p class="download-info">支持 Windows 10+</p>
+                    <a id="windows-link" href="#" class="btn-download">下载 EXE</a>
+                    <a id="windows-backup-link" href="#" class="backup-link" style="display:none">备用下载</a>
                 </div>
-                <div class="card flex flex-col items-center min-w-[200px]">
-                    <h3 class="text-xl font-semibold">Linux</h3>
-                    <p class="text-[--text-secondary] text-sm mb-4">支持 Ubuntu / Debian</p>
-                    <a id="linux-link" href="#" class="btn-primary">下载 DEB</a>
-                    <a id="linux-backup-link" href="#" class="text-sm text-[--text-secondary] hover:text-[--accent] mt-2 transition-colors" style="display:none">备用下载</a>
+                <div class="download-card scroll-animate">
+                    <div class="download-platform">
+                        <i class="fa-brands fa-linux"></i>
+                    </div>
+                    <h3 class="download-title">Linux</h3>
+                    <p class="download-info">支持 Ubuntu / Debian</p>
+                    <a id="linux-link" href="#" class="btn-download">下载 DEB</a>
+                    <a id="linux-backup-link" href="#" class="backup-link" style="display:none">备用下载</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="section bg-[--bg-secondary] py-8">
-        <div class="container text-center">
-            <p class="text-[--text-secondary] mb-4">
-                联系反馈：
-                <a href="mailto:vocab_float@firegod.cn" class="text-[--accent] hover:underline">vocab_float@firegod.cn</a>
-            </p>
-            <p id="footer-version" class="text-[--text-secondary] text-sm">VocabFloat</p>
-            <p class="text-[--text-secondary] text-sm">© 2026 Firegod.cn. All rights reserved.</p>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-contact">
+                    联系反馈：
+                    <a href="mailto:vocab_float@firegod.cn" class="contact-link">vocab_float@firegod.cn</a>
+                </p>
+                <p id="footer-version" class="footer-version">VocabFloat</p>
+                <p class="footer-copyright">© 2026 Firegod.cn. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script>
-    (async function() {
-        try {
-            const res = await fetch("latest-release.json");
-            if (!res.ok) return;
-            const data = await res.json();
-
-            const versionDisplay = document.getElementById("version-display");
-            if (versionDisplay) versionDisplay.textContent = "最新版本: " + data.version;
-
-            const footerVersion = document.getElementById("footer-version");
-            if (footerVersion) footerVersion.textContent = "VocabFloat " + data.version;
-
-            const macosLink = document.getElementById("macos-link");
-            if (macosLink && data.macos_url) macosLink.href = data.macos_url;
-
-            const windowsLink = document.getElementById("windows-link");
-            if (windowsLink && data.windows_url) windowsLink.href = data.windows_url;
-
-            // 备用下载链接
-            function getBackupUrl(url) {
-                return "https://0.z1z.link/https/" + url.replace(/^https?:\/\//, "");
-            }
-
-            const macosBackupLink = document.getElementById("macos-backup-link");
-            if (macosBackupLink && data.macos_url) {
-                macosBackupLink.href = getBackupUrl(data.macos_url);
-                macosBackupLink.style.display = "";
-            }
-
-            const windowsBackupLink = document.getElementById("windows-backup-link");
-            if (windowsBackupLink && data.windows_url) {
-                windowsBackupLink.href = getBackupUrl(data.windows_url);
-                windowsBackupLink.style.display = "";
-            }
-
-            const linuxLink = document.getElementById("linux-link");
-            if (linuxLink && data.linux_url) linuxLink.href = data.linux_url;
-
-            const linuxBackupLink = document.getElementById("linux-backup-link");
-            if (linuxBackupLink && data.linux_url) {
-                linuxBackupLink.href = getBackupUrl(data.linux_url);
-                linuxBackupLink.style.display = "";
-            }
-        } catch (e) {
-            console.error("Failed to load release info:", e);
-        }
-    })();
-
-    // 加载 FAQ 数据并渲染手风琴
-    (async function() {
-        const faqList = document.getElementById("faq-list");
-        if (!faqList) return;
-
-        try {
-            const res = await fetch("faq.json");
-            if (!res.ok) throw new Error("Failed to load faq.json");
-            const faqData = await res.json();
-
-            if (!faqData || faqData.length === 0) {
-                faqList.innerHTML = '<p class="text-[--text-secondary] text-center py-4">暂无常见问题</p>';
-                return;
-            }
-
-            faqList.innerHTML = faqData.map((item) => 
-                '<div class="faq-item">' +
-                    '<div class="faq-question" onclick="toggleFaq(this)">' +
-                        '<span class="font-medium">' + item.question + '</span>' +
-                        '<span class="faq-icon">+</span>' +
-                    '</div>' +
-                    '<div class="faq-answer">' +
-                        '<p>' + item.answer + '</p>' +
-                    '</div>' +
-                '</div>'
-            ).join("");
-        } catch (e) {
-            console.error("Failed to load FAQ:", e);
-            faqList.innerHTML = '<p class="text-[--text-secondary] text-center py-4">加载失败，请刷新重试</p>';
-        }
-    })();
-
-    function toggleFaq(el) {
-        const faqItem = el.parentElement;
-        const wasActive = faqItem.classList.contains("active");
-
-        // 关闭所有其他项
-        document.querySelectorAll(".faq-item.active").forEach(function(item) {
-            item.classList.remove("active");
-        });
-
-        // 切换当前项
-        if (!wasActive) {
-            faqItem.classList.add("active");
-        }
-    }
-
-    // 导航栏滚动效果
-    window.addEventListener("scroll", function() {
-        var navbar = document.getElementById("navbar");
-        if (navbar) {
-            if (window.scrollY > 50) {
-                navbar.classList.add("scrolled");
-            } else {
-                navbar.classList.remove("scrolled");
-            }
-        }
-    });
-
-    // 滚动动画：元素进入视口时添加 visible 类
-    var scrollObserver = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-                scrollObserver.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll(".scroll-animate").forEach(function(el) {
-        scrollObserver.observe(el);
-    });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
