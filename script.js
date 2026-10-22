@@ -104,29 +104,6 @@ async function loadReleaseInfo() {
         if (linuxLink && data.linux_url) {
             linuxLink.href = data.linux_url;
         }
-
-        // 备用下载链接
-        function getBackupUrl(url) {
-            return "https://0.z1z.link/https/" + url.replace(/^https?:\/\//, "");
-        }
-
-        const macosBackupLink = document.getElementById("macos-backup-link");
-        if (macosBackupLink && data.macos_url) {
-            macosBackupLink.href = getBackupUrl(data.macos_url);
-            macosBackupLink.style.display = "";
-        }
-
-        const windowsBackupLink = document.getElementById("windows-backup-link");
-        if (windowsBackupLink && data.windows_url) {
-            windowsBackupLink.href = getBackupUrl(data.windows_url);
-            windowsBackupLink.style.display = "";
-        }
-
-        const linuxBackupLink = document.getElementById("linux-backup-link");
-        if (linuxBackupLink && data.linux_url) {
-            linuxBackupLink.href = getBackupUrl(data.linux_url);
-            linuxBackupLink.style.display = "";
-        }
     } catch (e) {
         console.error("Failed to load release info:", e);
     }
