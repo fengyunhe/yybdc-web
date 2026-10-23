@@ -1,17 +1,14 @@
 {
-  "version": "v1.0.134",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.134/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.134/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.134/vocab-float_amd64.deb",
+  "version": "v1.0.135",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.135/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.135/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.135/vocab-float_amd64.deb",
   "release_notes": "
-### 🐛 Bug Fixes
-- fix(tray): 绕过 Qt macOS 原生托盘菜单弹出崩溃
-- fix(tray): macOS 菜单栏图标提供 @1x/@2x 双尺寸并改空心环设计
-- fix(entry): 移除打包入口 vocab_float.py 对已删除 check_trial_reminder 的引用
-- fix(auto_tag): 发布时将生成的 changelog 写入 CHANGELOG.md
-### ⚡ Performance
-- perf(startup): 延迟非核心初始化到 UI 显示后，缩短启动阻塞
-### 📦 Other Changes
-- ci: 仅 auto_tag.sh 打 tag 时触发流水线；新增本地发布脚本 release_local.sh",
-  "updated_at": "2026-10-22T10:08:27Z"
+### ♻️ Refactor
+- refactor(code): 拆分超长UI方法、收敛app.__init__、去lambda元组hack，并修复lint发现的bug
+### 🔧 Chores
+- chore(tooling): 落地ruff与覆盖率门槛，同步版本元数据
+- chore(web): 更新子模块指针至下载修复提交 90568cc
+- chore(web): 更新 web 子模块到下载地址修复版",
+  "updated_at": "2026-10-23T23:25:14Z"
 }
