@@ -1,14 +1,8 @@
 {
-  "version": "v1.0.135",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.135/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.135/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.135/vocab-float_amd64.deb",
-  "release_notes": "
-### ♻️ Refactor
-- refactor(code): 拆分超长UI方法、收敛app.__init__、去lambda元组hack，并修复lint发现的bug
-### 🔧 Chores
-- chore(tooling): 落地ruff与覆盖率门槛，同步版本元数据
-- chore(web): 更新子模块指针至下载修复提交 90568cc
-- chore(web): 更新 web 子模块到下载地址修复版",
-  "updated_at": "2026-10-23T23:25:14Z"
+  "version": "v1.0.138",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.138/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.138/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.138/vocab-float_amd64.deb",
+  "release_notes": "\n### 🐛 Bug Fixes\n- fix(publish): 用 YYBDC_TOKEN 创建 release，解决 GITHUB_TOKEN 权限只读报 403",
+  "updated_at": "2026-10-24T00:28:17Z"
 }
