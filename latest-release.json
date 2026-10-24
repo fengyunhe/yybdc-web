@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.146",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.146/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.146/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.146/vocab-float_amd64.deb",
-  "release_notes": "\n### 🚀 Features\n- feat(subtitle): 字幕模式支持单行/多行两种布局\n- feat(card): 字幕/mini 模式右键菜单增加「锁定卡片」入口\n- feat(voice): 发音预取/防卡顿——翻页后后台预拉取下一个词到缓存",
-  "updated_at": "2026-10-24T06:05:03Z"
+  "version": "v1.0.147",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.147/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.147/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.147/vocab-float_amd64.deb",
+  "release_notes": "\n### 🚀 Features\n- feat(quiz): 薄弱词拼写自测\n- feat(dnd): 免打扰时段\n- feat(clipboard): 剪贴板划词导入\n- feat(native-voice): 例句真人发音开关 + 缓存自动上限防膨胀\n- feat(native-voice): 真人发音缓存管理与清理",
+  "updated_at": "2026-10-24T07:28:52Z"
 }
