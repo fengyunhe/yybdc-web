@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.142",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.142/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.142/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.142/vocab-float_amd64.deb",
-  "release_notes": "\n### 🔧 Chores\n- chore(ci): 临时 release-probe workflow，实测 GITHUB_TOKEN 能否创建 release（诊断用，待删除）",
-  "updated_at": "2026-10-24T03:58:23Z"
+  "version": "v1.0.143",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.143/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.143/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.143/vocab-float_amd64.deb",
+  "release_notes": "\n暂无变更记录",
+  "updated_at": "2026-10-24T04:05:43Z"
 }
