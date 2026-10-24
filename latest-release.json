@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.145",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.145/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.145/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.145/vocab-float_amd64.deb",
-  "release_notes": "\n暂无变更记录",
-  "updated_at": "2026-10-24T04:29:36Z"
+  "version": "v1.0.146",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.146/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.146/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.146/vocab-float_amd64.deb",
+  "release_notes": "\n### 🚀 Features\n- feat(subtitle): 字幕模式支持单行/多行两种布局\n- feat(card): 字幕/mini 模式右键菜单增加「锁定卡片」入口\n- feat(voice): 发音预取/防卡顿——翻页后后台预拉取下一个词到缓存",
+  "updated_at": "2026-10-24T06:05:03Z"
 }
