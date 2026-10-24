@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.147",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.147/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.147/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.147/vocab-float_amd64.deb",
-  "release_notes": "\n### 🚀 Features\n- feat(quiz): 薄弱词拼写自测\n- feat(dnd): 免打扰时段\n- feat(clipboard): 剪贴板划词导入\n- feat(native-voice): 例句真人发音开关 + 缓存自动上限防膨胀\n- feat(native-voice): 真人发音缓存管理与清理",
-  "updated_at": "2026-10-24T07:28:52Z"
+  "version": "v1.0.148",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.148/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.148/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.148/vocab-float_amd64.deb",
+  "release_notes": "\n### 🚀 Features\n- feat(license): 首次安装自动上报 install-report\n- feat(card): 迷你模式宽高随内容自动调整 + 主题切换即时应用新主题",
+  "updated_at": "2026-10-24T08:41:58Z"
 }
