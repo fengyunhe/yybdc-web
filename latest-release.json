@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.150",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.150/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.150/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.150/vocab-float_amd64.deb",
-  "release_notes": "\n### 🚀 Features\n- feat(tray): 菜单栏优化——卡片显隐明确化、修正翻词快捷键显示、新增右键开关入口",
-  "updated_at": "2026-10-27T01:21:51Z"
+  "version": "v1.0.151",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.151/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.151/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.151/vocab-float_amd64.deb",
+  "release_notes": "\n### 🚀 Features\n- feat(srs): 记忆调度升级为 FSRS，旧数据平滑迁移不丢学习数据",
+  "updated_at": "2026-10-27T06:32:01Z"
 }
