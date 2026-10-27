@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.155",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.155/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.155/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.155/vocab-float_amd64.deb",
-  "release_notes": "\n### 🚀 Features\n- feat(settings): 设置界面网格化压缩，整体高度约减 29%",
-  "updated_at": "2026-10-27T10:18:02Z"
+  "version": "v1.0.156",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.156/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.156/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.156/vocab-float_amd64.deb",
+  "release_notes": "\n### 🚀 Features\n- feat(card): 右键菜单新增「设置面板」入口\n### 🐛 Bug Fixes\n- fix(card): 延迟显示释义在迷你/字幕模式不显示翻译\n### 📦 Other Changes\n- ref(auto_tag): 默认非交互自动执行，加 -i 交互开关",
+  "updated_at": "2026-10-27T11:20:10Z"
 }
