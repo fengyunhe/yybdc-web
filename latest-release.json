@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.160",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.160/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.160/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.160/vocab-float_amd64.deb",
-  "release_notes": "\n### ✅ Tests\n- test(subtitle): 新增单行超宽自适应回归测试，锁定宽度撑到整行完整放下",
-  "updated_at": "2026-10-28T03:48:05Z"
+  "version": "v1.0.161",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.161/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.161/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.161/vocab-float_amd64.deb",
+  "release_notes": "\n### 🚀 Features\n- feat(card): 右键菜单新增「🔍 检查更新」入口",
+  "updated_at": "2026-10-28T03:58:04Z"
 }
