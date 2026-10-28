@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.163",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.163/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.163/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.163/vocab-float_amd64.deb",
-  "release_notes": "\n### 🐛 Bug Fixes\n- fix(hotkey): Ctrl+Alt+L 锁定/解锁双通道去重，修复按键无反应、不能来回切换\n### ✅ Tests\n- test(hotkey): test_request_permission_opens_panel 加 skipif(darwin)，修复 Ubuntu CI 失败",
-  "updated_at": "2026-10-28T04:48:13Z"
+  "version": "v1.0.164",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.164/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.164/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.164/vocab-float_amd64.deb",
+  "release_notes": "\n### 📦 Other Changes\n- ci(test): test-minimal job 补装运行时依赖，修复 fsrs ModuleNotFoundError",
+  "updated_at": "2026-10-28T04:52:04Z"
 }
