@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.164",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.164/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.164/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.164/vocab-float_amd64.deb",
-  "release_notes": "\n### 📦 Other Changes\n- ci(test): test-minimal job 补装运行时依赖，修复 fsrs ModuleNotFoundError",
-  "updated_at": "2026-10-28T04:52:04Z"
+  "version": "v1.0.165",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.165/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.165/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.165/vocab-float_amd64.deb",
+  "release_notes": "\n### 🚀 Features\n- feat(wordbook): 词本列表置顶虚拟「已掌握」词本，聚合展示已记住+已跳过词\n### ✅ Tests\n- test(wordbook): 补充普通词本视图下跳过词橙色✓标识的回归测试",
+  "updated_at": "2026-10-28T05:37:45Z"
 }
