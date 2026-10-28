@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.157",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.157/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.157/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.157/vocab-float_amd64.deb",
-  "release_notes": "\n### 🚀 Features\n- feat(recall): 回忆模式无条件排除已跳过单词\n### 🐛 Bug Fixes\n- fix(auto_tag): 修复两处变量紧跟全角字符时的 echo 字节乱码（改用 printf）\n### ⚡ Performance\n- perf(subtitle): 字幕彩虹边框降帧 + 隐藏时暂停，降低持续 CPU",
-  "updated_at": "2026-10-28T02:16:13Z"
+  "version": "v1.0.158",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.158/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.158/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.158/vocab-float_amd64.deb",
+  "release_notes": "\n### 🚀 Features\n- feat: 字幕模式支持左/右对齐切换",
+  "updated_at": "2026-10-28T03:00:20Z"
 }
