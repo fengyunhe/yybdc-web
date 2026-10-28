@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.165",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.165/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.165/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.165/vocab-float_amd64.deb",
-  "release_notes": "\n### 🚀 Features\n- feat(wordbook): 词本列表置顶虚拟「已掌握」词本，聚合展示已记住+已跳过词\n### ✅ Tests\n- test(wordbook): 补充普通词本视图下跳过词橙色✓标识的回归测试",
-  "updated_at": "2026-10-28T05:37:45Z"
+  "version": "v1.0.166",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.166/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.166/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.166/vocab-float_amd64.deb",
+  "release_notes": "\n### 🚀 Features\n- feat(settings): 免打扰时段旁显示当前生效时区，与实际判定时区一致\n### 🐛 Bug Fixes\n- fix(dnd): 免打扰判定显式跟随系统本地时区，并补时区回归测试\n- fix(ui): Feedback/Registration 对话框改无边框，避免 macOS 拖动到边缘弹布局建议",
+  "updated_at": "2026-10-28T09:18:33Z"
 }
