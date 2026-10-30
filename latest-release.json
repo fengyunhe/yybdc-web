@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.170",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.170/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.170/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.170/vocab-float_amd64.deb",
-  "release_notes": "\n### 🐛 Bug Fixes\n- fix(subtitle): 字幕重排夹持保持水平位置稳定，并基于窗口所在屏定位，修复切词左移与拖动到副屏后切词跳回主屏\n### ✅ Tests\n- test: 字幕切词不漂移与双屏不跳回回归测试",
-  "updated_at": "2026-10-30T06:59:22Z"
+  "version": "v1.0.171",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.171/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.171/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.171/vocab-float_amd64.deb",
+  "release_notes": "\n### 🚀 Features\n- feat(wordbook): 词本管理支持批量跳过选中单词，底部展示掌握率（已记住+已跳过占词本百分比）\n### ✅ Tests\n- test: 词本批量跳过与掌握率统计回归测试",
+  "updated_at": "2026-10-30T07:53:14Z"
 }
