@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.167",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.167/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.167/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.167/vocab-float_amd64.deb",
-  "release_notes": "\n### 🐛 Bug Fixes\n- fix(subtitle): 重排后自动夹回屏幕并监听显示器拔插，避免字幕跑出屏幕或突然消失\n### ✅ Tests\n- test: 字幕夹持回归测试；修复 TestMiniAutoResize 对屏幕宽度的依赖",
-  "updated_at": "2026-10-30T06:20:35Z"
+  "version": "v1.0.168",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.168/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.168/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.168/vocab-float_amd64.deb",
+  "release_notes": "\n### 🔧 Chores\n- chore(lint): 移除 test_dialog_frameless 未使用的 pytest 导入，修复 CI ruff F401",
+  "updated_at": "2026-10-30T06:26:32Z"
 }
