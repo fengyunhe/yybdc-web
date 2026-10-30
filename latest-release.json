@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.168",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.168/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.168/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.168/vocab-float_amd64.deb",
-  "release_notes": "\n### 🔧 Chores\n- chore(lint): 移除 test_dialog_frameless 未使用的 pytest 导入，修复 CI ruff F401",
-  "updated_at": "2026-10-30T06:26:32Z"
+  "version": "v1.0.169",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.169/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.169/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.169/vocab-float_amd64.deb",
+  "release_notes": "\n### ✅ Tests\n- test: TestSubtitlePositionClamp 改用桩屏幕隔离屏幕宽度依赖，修复窄屏 CI(1024px)下的断言失败",
+  "updated_at": "2026-10-30T06:31:47Z"
 }
