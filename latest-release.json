@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.172",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.172/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.172/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.172/vocab-float_amd64.deb",
-  "release_notes": "\n### 🚀 Features\n- feat(wordbook): 单词行 hover 时右侧显示跳过图标，点击即跳过该词\n### ✅ Tests\n- test: 单词行 hover 跳过图标定位与点击跳过回归测试",
-  "updated_at": "2026-10-30T08:36:07Z"
+  "version": "v1.0.173",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.173/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.173/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.173/vocab-float_amd64.deb",
+  "release_notes": "\n### 🚀 Features\n- feat(wordbook): 已跳过单词行 hover 显示恢复图标可取消跳过，单词表禁用横向滚动条\n### ✅ Tests\n- test: 取消跳过与横向滚动条禁用回归测试",
+  "updated_at": "2026-10-30T09:11:53Z"
 }
