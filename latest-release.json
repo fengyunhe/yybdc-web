@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.175",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.175/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.175/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.175/vocab-float_amd64.deb",
-  "release_notes": "\n暂无变更记录",
-  "updated_at": "2026-10-31T06:34:11Z"
+  "version": "v1.0.177",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.177/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.177/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.177/vocab-float_amd64.deb",
+  "release_notes": "\n### 🐛 Bug Fixes\n- fix(ci): 消除并发创建 yybdc-web release 导致的重复 tag 冲突",
+  "updated_at": "2026-10-31T08:36:28Z"
 }
