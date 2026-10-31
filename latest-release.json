@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.174",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.174/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.174/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.174/vocab-float_amd64.deb",
-  "release_notes": "\n### 📚 Documentation\n- docs: align README storage docs with SQLite backend\n### ♻️ Refactor\n- refactor(card): 右键菜单闭包工厂改为命名方法 + partial\n### 🔧 Chores\n- chore: sync pyproject version with VERSION in auto_tag",
-  "updated_at": "2026-10-31T06:30:32Z"
+  "version": "v1.0.175",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.175/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.175/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.175/vocab-float_amd64.deb",
+  "release_notes": "\n暂无变更记录",
+  "updated_at": "2026-10-31T06:34:11Z"
 }
