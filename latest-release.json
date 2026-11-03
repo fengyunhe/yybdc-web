@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.179",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.179/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.179/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.179/vocab-float_amd64.deb",
-  "release_notes": "\n暂无变更记录",
-  "updated_at": "2026-11-01T05:32:31Z"
+  "version": "v1.0.180",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.180/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.180/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.180/vocab-float_amd64.deb",
+  "release_notes": "\n### 🚀 Features\n- feat(invite): 邀请得积分, 邀请码与后台存储一致",
+  "updated_at": "2026-11-03T22:33:36Z"
 }
