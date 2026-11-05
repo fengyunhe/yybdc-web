@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.183",
-  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.183/VocabFloat-macOS.dmg",
-  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.183/VocabFloat.exe",
-  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.183/vocab-float_amd64.deb",
-  "release_notes": "\n### 🚀 Features\n- feat(invite): 邀请链接改为 /invite?pcode=yybdc&ref= 格式",
-  "updated_at": "2026-11-05T06:00:58Z"
+  "version": "v1.0.184",
+  "macos_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.184/VocabFloat-macOS.dmg",
+  "windows_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.184/VocabFloat.exe",
+  "linux_url": "https://github.com/fengyunhe/yybdc-web/releases/download/v1.0.184/vocab-float_amd64.deb",
+  "release_notes": "\n### 🐛 Bug Fixes\n- fix(subtitle): 修复字幕消失/跑到不可见位置",
+  "updated_at": "2026-11-05T20:53:41Z"
 }
